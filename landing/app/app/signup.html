@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign up — LingoPeak</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="auth.css">
+</head>
+<body>
+  <div class="auth-card">
+    <a href="../index.html" class="auth-logo">
+      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 26L13 9L17 16L20 11L28 26H4Z" fill="#0052CC"/>
+        <path d="M20 11L28 26H22L17.5 17.5L20 11Z" fill="#FF6B35"/>
+        <circle cx="13" cy="6" r="2.4" fill="#FF6B35"/>
+      </svg>
+      LingoPeak
+    </a>
+    <h1 class="auth-title">Start your free trial</h1>
+    <p class="auth-subtitle">7 days free. No credit card required.</p>
+
+    <div class="error-banner" id="errorBanner"></div>
+
+    <form id="signupForm">
+      <div class="field-group">
+        <label for="fullName">Full name</label>
+        <input type="text" id="fullName" name="fullName" required autocomplete="name" placeholder="Ananya Sharma">
+      </div>
+      <div class="field-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@example.com">
+      </div>
+      <div class="field-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required autocomplete="new-password" placeholder="At least 8 characters" minlength="8">
+      </div>
+      <button type="submit" class="btn-submit" id="submitBtn">Create account</button>
+    </form>
+
+    <p class="auth-footer">Already have an account? <a href="login.html">Log in</a></p>
+  </div>
+
+  <script src="api.js"></script>
+  <script>
+    const form = document.getElementById('signupForm');
+    const errorBanner = document.getElementById('errorBanner');
+    const submitBtn = document.getElementById('submitBtn');
+
+    function showError(message) {
+      errorBanner.textContent = message;
+      errorBanner.classList.add('visible');
+    }
+    function hideError() {
+      errorBanner.classList.remove('visible');
+    }
+
+    // If already logged in, skip straight to the dashboard
+    if (Auth.isLoggedIn()) {
+      window.location.href = 'languages.html';
+    }
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      hideError();
+
+      const fullName = document.getElementById('fullName').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value;
+
+      if (password.length < 8) {
+        showError('Password must be at least 8 characters.');
+        return;
+      }
+
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<span class="spinner"></span>Creating account...';
+
+      try {
+        await Auth.signup({ email, password, fullName });
+        window.location.href = 'languages.html';
+      } catch (err) {
+        showError(err.message || 'Something went wrong. Please try again.');
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Create account';
+      }
+    });
+  </script>
+</body>
+</html>

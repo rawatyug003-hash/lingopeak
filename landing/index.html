@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LingoPeak — Premium AI Tutoring for the Price of a Coffee</title>
+<meta name="description" content="Reach your peak. Master any language with 24/7 AI-powered conversational tutoring, for the price of a coffee.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --blue: #0052CC;
+    --blue-dark: #003D99;
+    --orange: #FF6B35;
+    --orange-light: #FF8A5F;
+    --gray-900: #111827;
+    --gray-700: #374151;
+    --gray-500: #6B7280;
+    --gray-300: #D1D5DB;
+    --gray-100: #F3F4F6;
+    --bg-warm: #F9FAFB;
+    --cream: #FFFBF6;
+    --white: #FFFFFF;
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --grid: 8px;
+    --shadow-sm: 0 1px 2px rgba(17, 24, 39, 0.06), 0 1px 3px rgba(17, 24, 39, 0.08);
+    --shadow-md: 0 4px 12px rgba(17, 24, 39, 0.08), 0 2px 4px rgba(17, 24, 39, 0.06);
+    --shadow-lg: 0 12px 32px rgba(0, 82, 204, 0.14), 0 4px 8px rgba(17, 24, 39, 0.06);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    color: var(--gray-900);
+    background: var(--bg-warm);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, .display {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+  }
+
+  a { color: inherit; text-decoration: none; }
+  button { font-family: inherit; cursor: pointer; border: none; background: none; }
+  img { max-width: 100%; display: block; }
+
+  :focus-visible {
+    outline: 3px solid var(--orange);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--blue);
+  }
+
+  /* ===================== BUTTONS ===================== */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 14px 28px;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    font-size: 16px;
+    transition: transform 160ms ease-out, box-shadow 200ms ease-out, background-color 200ms ease-out;
+  }
+  .btn:active { transform: scale(0.97); }
+
+  .btn-primary {
+    background: var(--orange);
+    color: var(--white);
+    box-shadow: var(--shadow-md);
+  }
+  .btn-primary:hover { background: #E85A28; box-shadow: var(--shadow-lg); transform: translateY(-1px); }
+
+  .btn-secondary {
+    background: var(--white);
+    color: var(--blue);
+    border: 1.5px solid var(--gray-300);
+  }
+  .btn-secondary:hover { border-color: var(--blue); box-shadow: var(--shadow-sm); }
+
+  .btn-ghost {
+    background: transparent;
+    color: var(--blue);
+    padding: 10px 16px;
+  }
+  .btn-ghost:hover { background: rgba(0, 82, 204, 0.06); }
+
+  .btn-sm { padding: 10px 20px; font-size: 14px; }
+
+  /* ===================== NAV ===================== */
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(249, 250, 251, 0.88);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(17, 24, 39, 0.06);
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--gray-900);
+  }
+  .logo svg { width: 30px; height: 30px; }
+
+  .nav-links {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  .nav-links a {
+    padding: 10px 16px;
+    border-radius: var(--radius-sm);
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--gray-700);
+    transition: background-color 200ms ease-out, color 200ms ease-out;
+  }
+  .nav-links a:hover { background: rgba(0, 82, 204, 0.06); color: var(--blue); }
+
+  .nav-actions { display: flex; align-items: center; gap: 8px; }
+
+  .mobile-toggle { display: none; }
+
+  @media (max-width: 860px) {
+    .nav-links { display: none; }
+    .mobile-toggle { display: block; }
+  }
+
+  /* ===================== HERO ===================== */
+  .hero {
+    padding: 72px 0 96px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 56px;
+    align-items: center;
+  }
+
+  @media (max-width: 920px) {
+    .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+    .hero-visual { order: -1; }
+  }
+
+  .hero-content { animation: riseIn 600ms ease-out; }
+
+  .hero h1 {
+    font-size: clamp(36px, 5vw, 56px);
+    margin: 16px 0 20px;
+    color: var(--gray-900);
+  }
+  .hero h1 .accent { color: var(--orange); }
+
+  .hero-sub {
+    font-size: 19px;
+    color: var(--gray-700);
+    max-width: 480px;
+    margin-bottom: 32px;
+  }
+
+  .hero-ctas {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+  .trust-signal {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: var(--gray-500);
+  }
+  .trust-signal svg { flex-shrink: 0; color: var(--orange); }
+
+  /* --- Signature element: the ascending peak-path visual --- */
+  .hero-visual {
+    position: relative;
+    aspect-ratio: 4/3.4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .peak-card {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(160deg, #EAF1FF 0%, var(--cream) 55%, #FFF2EA 100%);
+    border-radius: 24px;
+    box-shadow: var(--shadow-lg);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .peak-card svg { width: 100%; height: 100%; }
+
+  @keyframes riseIn {
+    from { opacity: 0; transform: translateY(14px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes drawPath {
+    to { stroke-dashoffset: 0; }
+  }
+
+  @keyframes popIn {
+    from { opacity: 0; transform: scale(0.5); }
+    to { opacity: 1; transform: scale(1); }
+  }
+
+  .path-line {
+    stroke-dasharray: 600;
+    stroke-dashoffset: 600;
+    animation: drawPath 1800ms 300ms ease-out forwards;
+  }
+
+  .milestone {
+    opacity: 0;
+    animation: popIn 400ms ease-out forwards;
+    transform-origin: center;
+  }
+  .m1 { animation-delay: 500ms; }
+  .m2 { animation-delay: 900ms; }
+  .m3 { animation-delay: 1300ms; }
+  .m4 { animation-delay: 1750ms; }
+
+  /* ===================== SECTION SHELLS ===================== */
+  section { padding: 88px 0; }
+  .section-head {
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto 56px;
+  }
+  .section-head h2 { font-size: clamp(28px, 4vw, 38px); margin: 14px 0 14px; }
+  .section-head p { color: var(--gray-700); font-size: 17px; }
+
+  .alt-bg { background: var(--white); }
+
+  /* ===================== FEATURES ===================== */
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  @media (max-width: 920px) { .features-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 600px) { .features-grid { grid-template-columns: 1fr; } }
+
+  .feature-card {
+    background: var(--bg-warm);
+    border: 1px solid rgba(17,24,39,0.06);
+    border-radius: var(--radius-md);
+    padding: 28px 24px;
+    transition: transform 220ms ease-out, box-shadow 220ms ease-out, border-color 220ms ease-out;
+  }
+  .feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: rgba(0,82,204,0.15);
+  }
+
+  .feature-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    background: linear-gradient(135deg, var(--blue), var(--orange));
+  }
+  .feature-icon svg { width: 24px; height: 24px; color: white; }
+
+  .feature-card h3 { font-size: 19px; margin-bottom: 8px; }
+  .feature-card p { color: var(--gray-700); font-size: 15px; }
+
+  /* ===================== LANGUAGES ===================== */
+  .lang-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px;
+  }
+  @media (max-width: 920px) { .lang-grid { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 500px) { .lang-grid { grid-template-columns: repeat(2, 1fr); } }
+
+  .lang-card {
+    background: var(--white);
+    border-radius: var(--radius-md);
+    padding: 24px 16px;
+    text-align: center;
+    border: 1px solid rgba(17,24,39,0.06);
+    transition: transform 200ms ease-out, box-shadow 200ms ease-out;
+  }
+  .lang-card:hover { transform: translateY(-3px) scale(1.02); box-shadow: var(--shadow-md); }
+  .lang-flag { font-size: 32px; margin-bottom: 8px; }
+  .lang-name { font-weight: 600; font-size: 15px; margin-bottom: 4px; }
+  .lang-count { font-size: 13px; color: var(--gray-500); }
+
+  /* ===================== TESTIMONIALS ===================== */
+  .testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  @media (max-width: 920px) { .testimonial-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; } }
+
+  .testimonial-card {
+    background: var(--white);
+    border-radius: var(--radius-md);
+    padding: 28px;
+    border: 1px solid rgba(17,24,39,0.06);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .testimonial-quote { font-size: 15px; color: var(--gray-700); flex-grow: 1; }
+  .testimonial-person { display: flex; align-items: center; gap: 12px; }
+  .avatar {
+    width: 44px; height: 44px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+    background: linear-gradient(135deg, #EAF1FF, #FFF2EA);
+  }
+  .person-name { font-weight: 600; font-size: 14px; }
+  .person-role { font-size: 13px; color: var(--gray-500); }
+
+  /* ===================== PRICING ===================== */
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    align-items: start;
+  }
+  @media (max-width: 920px) { .pricing-grid { grid-template-columns: 1fr; max-width: 420px; margin: 0 auto; } }
+
+  .price-card {
+    background: var(--white);
+    border-radius: var(--radius-md);
+    padding: 32px 28px;
+    border: 1.5px solid rgba(17,24,39,0.08);
+    position: relative;
+    transition: transform 220ms ease-out, box-shadow 220ms ease-out;
+  }
+  .price-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+
+  .price-card.featured {
+    border-color: var(--blue);
+    box-shadow: var(--shadow-lg);
+    transform: scale(1.03);
+  }
+  .price-card.featured:hover { transform: scale(1.03) translateY(-4px); }
+
+  .badge-popular {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--orange);
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    padding: 6px 16px;
+    border-radius: 100px;
+    text-transform: uppercase;
+  }
+
+  .plan-name { font-size: 18px; font-weight: 700; font-family: 'Poppins', sans-serif; margin-bottom: 8px; }
+  .plan-price { font-size: 38px; font-weight: 700; font-family: 'Poppins', sans-serif; color: var(--gray-900); }
+  .plan-price span { font-size: 15px; font-weight: 500; color: var(--gray-500); }
+  .plan-limit { font-size: 13px; color: var(--blue); font-weight: 600; margin: 8px 0 20px; }
+
+  .plan-features { list-style: none; margin-bottom: 28px; }
+  .plan-features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    color: var(--gray-700);
+    padding: 7px 0;
+  }
+  .plan-features svg { flex-shrink: 0; margin-top: 2px; color: var(--orange); }
+
+  .price-card .btn { width: 100%; }
+
+  .annual-note { text-align: center; margin-top: 32px; color: var(--gray-500); font-size: 14px; }
+  .annual-note strong { color: var(--blue); }
+
+  /* ===================== FINAL CTA ===================== */
+  .final-cta {
+    background: linear-gradient(135deg, var(--blue) 0%, var(--blue-dark) 100%);
+    border-radius: 28px;
+    padding: 72px 40px;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    margin: 0 24px;
+  }
+  .final-cta::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 80% 20%, rgba(255,107,53,0.25), transparent 50%);
+  }
+  .final-cta h2 { color: white; font-size: clamp(28px, 4vw, 40px); margin-bottom: 14px; position: relative; }
+  .final-cta p { color: rgba(255,255,255,0.85); font-size: 17px; margin-bottom: 32px; position: relative; max-width: 480px; margin-left: auto; margin-right: auto; }
+  .final-cta .btn-primary { position: relative; }
+  .final-cta-wrap { padding: 0; }
+
+  /* ===================== FOOTER ===================== */
+  footer { padding: 64px 0 32px; }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 48px;
+  }
+  @media (max-width: 760px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
+
+  .footer-tagline { color: var(--gray-500); font-size: 14px; margin-top: 12px; max-width: 240px; }
+  .footer-col h4 { font-size: 14px; font-weight: 600; margin-bottom: 16px; color: var(--gray-900); }
+  .footer-col a {
+    display: block;
+    color: var(--gray-500);
+    font-size: 14px;
+    padding: 6px 0;
+    transition: color 200ms ease-out;
+  }
+  .footer-col a:hover { color: var(--blue); }
+
+  .footer-bottom {
+    border-top: 1px solid rgba(17,24,39,0.08);
+    padding-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    color: var(--gray-500);
+    font-size: 13px;
+  }
+
+  /* Stagger utility for scroll-in groups */
+  .stagger > * { opacity: 0; transform: translateY(10px); animation: riseIn 500ms ease-out forwards; }
+  .stagger > *:nth-child(1) { animation-delay: 0ms; }
+  .stagger > *:nth-child(2) { animation-delay: 40ms; }
+  .stagger > *:nth-child(3) { animation-delay: 80ms; }
+  .stagger > *:nth-child(4) { animation-delay: 120ms; }
+  .stagger > *:nth-child(5) { animation-delay: 160ms; }
+  .stagger > *:nth-child(6) { animation-delay: 200ms; }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="#" class="logo" aria-label="LingoPeak home">
+      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 26L13 9L17 16L20 11L28 26H4Z" fill="#0052CC"/>
+        <path d="M20 11L28 26H22L17.5 17.5L20 11Z" fill="#FF6B35"/>
+        <circle cx="13" cy="6" r="2.4" fill="#FF6B35"/>
+      </svg>
+      LingoPeak
+    </a>
+    <div class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#languages">Languages</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#testimonials">Success Stories</a>
+    </div>
+    <div class="nav-actions">
+      <a href="app/login.html" class="btn btn-ghost btn-sm">Log in</a>
+      <a href="app/signup.html" class="btn btn-primary btn-sm">Get Started Free</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="eyebrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 2L4 20H20L12 2Z" stroke="#FF6B35" stroke-width="2.2" stroke-linejoin="round"/></svg>
+          AI-Powered Language Tutoring
+        </span>
+        <h1>Reach Your Peak.<br>Master <span class="accent">Any Language.</span></h1>
+        <p class="hero-sub">Premium AI tutoring for the price of a coffee. 24/7 conversational practice, real-time pronunciation feedback, and a learning path built around you — no scheduling, no $50/hour tutors.</p>
+        <div class="hero-ctas">
+          <a href="#pricing" class="btn btn-primary">Start Learning Free</a>
+          <a href="#demo" class="btn btn-secondary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 3L19 12L5 21V3Z" fill="currentColor"/></svg>
+            Watch Demo
+          </a>
+        </div>
+        <div class="trust-signal">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/></svg>
+          No credit card required &nbsp;·&nbsp; 7-day free trial
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="peak-card">
+          <svg viewBox="0 0 400 340" xmlns="http://www.w3.org/2000/svg">
+            <!-- Mountain silhouette backdrop -->
+            <path d="M0 280 L80 160 L140 220 L210 90 L260 190 L320 130 L400 280 Z" fill="#0052CC" opacity="0.08"/>
+            <path d="M0 300 L100 200 L160 250 L230 140 L290 230 L340 190 L400 300 Z" fill="#FF6B35" opacity="0.07"/>
+
+            <!-- Ascending fluency path -->
+            <path class="path-line" d="M50 270 C 110 260, 120 200, 170 190 C 220 180, 230 120, 280 95 C 310 80, 320 60, 350 45"
+                  stroke="#0052CC" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+            <!-- Milestone markers along the path -->
+            <g class="milestone m1">
+              <circle cx="50" cy="270" r="9" fill="#0052CC"/>
+              <circle cx="50" cy="270" r="9" fill="none" stroke="white" stroke-width="2.5"/>
+            </g>
+            <g class="milestone m2">
+              <circle cx="170" cy="190" r="9" fill="#0052CC"/>
+              <circle cx="170" cy="190" r="9" fill="none" stroke="white" stroke-width="2.5"/>
+            </g>
+            <g class="milestone m3">
+              <circle cx="280" cy="95" r="9" fill="#FF6B35"/>
+              <circle cx="280" cy="95" r="9" fill="none" stroke="white" stroke-width="2.5"/>
+            </g>
+            <g class="milestone m4">
+              <circle cx="350" cy="45" r="13" fill="#FF6B35"/>
+              <circle cx="350" cy="45" r="13" fill="none" stroke="white" stroke-width="3"/>
+              <path d="M345 45L349 49L356 40" stroke="white" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+
+            <!-- Labels -->
+            <text x="50" y="295" text-anchor="middle" font-family="Inter" font-size="11" font-weight="600" fill="#6B7280">Day 1</text>
+            <text x="170" y="215" text-anchor="middle" font-family="Inter" font-size="11" font-weight="600" fill="#6B7280">Conversing</text>
+            <text x="280" y="120" text-anchor="middle" font-family="Inter" font-size="11" font-weight="600" fill="#6B7280">Fluent</text>
+            <text x="350" y="28" text-anchor="middle" font-family="Poppins" font-size="12" font-weight="700" fill="#FF6B35">Peak</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FEATURES ===================== -->
+  <section id="features" class="alt-bg">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">What you get</span>
+        <h2>Everything a $50/hour tutor gives you. For $19.99/month.</h2>
+        <p>Six core tools that turn scattered practice into real fluency.</p>
+      </div>
+      <div class="features-grid stagger">
+        <div class="feature-card">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M21 11.5C21 16.75 16.97 21 12 21C10.96 21 9.96 20.82 9.03 20.5L3 21L4.5 15.97C4.18 15.04 4 14.04 4 13C4 7.75 8.03 3.5 13 3.5C18 3.5 21 7.25 21 11.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
+          <h3>AI Conversation Partner</h3>
+          <p>Unlimited speaking practice with an AI tutor that adapts to your level and interests, day or night.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 19V5M4 19H20M4 19L9 13L13 16L20 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>Personalized Learning Paths</h3>
+          <p>A curriculum that reshapes itself around your goals, strengths, and the words you keep forgetting.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 14C13.66 14 15 12.66 15 11V5C15 3.34 13.66 2 12 2C10.34 2 9 3.34 9 5V11C9 12.66 10.34 14 12 14Z" stroke="currentColor" stroke-width="1.8"/><path d="M19 11C19 14.87 15.87 18 12 18C8.13 18 5 14.87 5 11M12 18V22" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+          <h3>Real-Time Pronunciation Feedback</h3>
+          <p>Advanced speech recognition catches accent and clarity issues the instant you speak, not days later.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 20.6L10.55 19.27C5.4 14.64 2 11.59 2 7.84C2 4.79 4.42 2.4 7.5 2.4C9.24 2.4 10.91 3.21 12 4.5C13.09 3.21 14.76 2.4 16.5 2.4C19.58 2.4 22 4.79 22 7.84C22 11.59 18.6 14.64 13.45 19.28L12 20.6Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
+          <h3>Pronunciation Mastery</h3>
+          <p>Side-by-side comparisons with native speaker audio so you can hear exactly what to fix.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 6H20M4 12H20M4 18H14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+          <h3>Real-World Content</h3>
+          <p>News, podcasts, and videos automatically leveled to your proficiency — culture, not just textbooks.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="9" cy="8" r="3.2" stroke="currentColor" stroke-width="1.8"/><path d="M3 20C3 16.7 5.7 14 9 14C12.3 14 15 16.7 15 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="17" cy="8" r="2.6" stroke="currentColor" stroke-width="1.6"/><path d="M16 14.2C18.9 14.6 21 17 21 20" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+          <h3>Global Community</h3>
+          <p>Connect with learners worldwide, swap progress, and find language exchange partners.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== LANGUAGES ===================== -->
+  <section id="languages">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Choose your path</span>
+        <h2>Six languages. One AI tutor that never sleeps.</h2>
+      </div>
+      <div class="lang-grid stagger">
+        <div class="lang-card"><div class="lang-flag">🇪🇸</div><div class="lang-name">Spanish</div><div class="lang-count">38K learners</div></div>
+        <div class="lang-card"><div class="lang-flag">🇫🇷</div><div class="lang-name">French</div><div class="lang-count">24K learners</div></div>
+        <div class="lang-card"><div class="lang-flag">🇩🇪</div><div class="lang-name">German</div><div class="lang-count">19K learners</div></div>
+        <div class="lang-card"><div class="lang-flag">🇯🇵</div><div class="lang-name">Japanese</div><div class="lang-count">31K learners</div></div>
+        <div class="lang-card"><div class="lang-flag">🇨🇳</div><div class="lang-name">Mandarin</div><div class="lang-count">22K learners</div></div>
+        <div class="lang-card"><div class="lang-flag">🇮🇹</div><div class="lang-name">Italian</div><div class="lang-count">16K learners</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIALS ===================== -->
+  <section id="testimonials" class="alt-bg">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Success stories</span>
+        <h2>Real fluency, not just streaks.</h2>
+      </div>
+      <div class="testimonial-grid stagger">
+        <div class="testimonial-card">
+          <p class="testimonial-quote">I tried Duolingo for two years and could barely order coffee in Spanish. Three months of LingoPeak conversations and I held a full call with my abuela.</p>
+          <div class="testimonial-person">
+            <div class="avatar">👩🏽</div>
+            <div><div class="person-name">Marisol R.</div><div class="person-role">Marketing Coordinator, Austin</div></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-quote">Preply quoted me $40/hour. I'm paying $20/month for LingoPeak and getting more actual speaking practice because I'm not limited to scheduled sessions.</p>
+          <div class="testimonial-person">
+            <div class="avatar">👨🏻</div>
+            <div><div class="person-name">Devon K.</div><div class="person-role">Grad Student, Toronto</div></div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-quote">The pronunciation feedback is what sold me. It caught a vowel sound in Japanese I'd been saying wrong for months and no app had ever flagged it.</p>
+          <div class="testimonial-person">
+            <div class="avatar">👩🏻</div>
+            <div><div class="person-name">Elena T.</div><div class="person-role">Software Engineer, Berlin</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PRICING ===================== -->
+  <section id="pricing">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Simple pricing</span>
+        <h2>Less than a coffee a day.</h2>
+        <p>Start free for 7 days. No credit card required. Cancel anytime.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="price-card">
+          <div class="plan-name">Starter</div>
+          <div class="plan-price">$9.99<span>/mo</span></div>
+          <div class="plan-limit">50 AI conversation minutes/mo</div>
+          <ul class="plan-features">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Basic vocabulary builder</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Progress tracking</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Mobile app access</li>
+          </ul>
+          <a href="#" class="btn btn-secondary">Start Free Trial</a>
+        </div>
+
+        <div class="price-card featured">
+          <span class="badge-popular">Most Popular</span>
+          <div class="plan-name">Pro</div>
+          <div class="plan-price">$19.99<span>/mo</span></div>
+          <div class="plan-limit">Unlimited AI conversation</div>
+          <ul class="plan-features">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Personalized learning paths</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Pronunciation feedback</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Real-world content library</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Priority support</li>
+          </ul>
+          <a href="#" class="btn btn-primary">Start Free Trial</a>
+        </div>
+
+        <div class="price-card">
+          <div class="plan-name">Premium</div>
+          <div class="plan-price">$29.99<span>/mo</span></div>
+          <div class="plan-limit">Unlimited + live sessions</div>
+          <ul class="plan-features">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Everything in Pro</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Live group sessions (2×/mo)</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Certification exams</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>1-on-1 coaching (2×/mo)</li>
+          </ul>
+          <a href="#" class="btn btn-secondary">Start Free Trial</a>
+        </div>
+      </div>
+      <p class="annual-note">Pay annually and save <strong>~17%</strong> on any plan.</p>
+    </div>
+  </section>
+
+  <!-- ===================== FINAL CTA ===================== -->
+  <section class="final-cta-wrap">
+    <div class="final-cta">
+      <h2>Ready to Reach Your Peak?</h2>
+      <p>Join thousands of learners getting real fluency without the real-tutor price tag.</p>
+      <a href="#pricing" class="btn btn-primary">Start Learning Free</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="#" class="logo" aria-label="LingoPeak home">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 26L13 9L17 16L20 11L28 26H4Z" fill="#0052CC"/>
+            <path d="M20 11L28 26H22L17.5 17.5L20 11Z" fill="#FF6B35"/>
+            <circle cx="13" cy="6" r="2.4" fill="#FF6B35"/>
+          </svg>
+          LingoPeak
+        </a>
+        <p class="footer-tagline">Reach your peak. Master any language. Affordable AI tutoring, anytime, anywhere.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#languages">Languages</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a href="#">Careers</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 LingoPeak. All rights reserved.</span>
+      <span>Made for language learners, by language learners.</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

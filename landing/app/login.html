@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Log in — LingoPeak</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="auth.css">
+</head>
+<body>
+  <div class="auth-card">
+    <a href="../index.html" class="auth-logo">
+      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 26L13 9L17 16L20 11L28 26H4Z" fill="#0052CC"/>
+        <path d="M20 11L28 26H22L17.5 17.5L20 11Z" fill="#FF6B35"/>
+        <circle cx="13" cy="6" r="2.4" fill="#FF6B35"/>
+      </svg>
+      LingoPeak
+    </a>
+    <h1 class="auth-title">Welcome back</h1>
+    <p class="auth-subtitle">Log in to keep your streak going.</p>
+
+    <div class="error-banner" id="errorBanner"></div>
+
+    <form id="loginForm">
+      <div class="field-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@example.com">
+      </div>
+      <div class="field-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required autocomplete="current-password" placeholder="Your password">
+      </div>
+      <button type="submit" class="btn-submit" id="submitBtn">Log in</button>
+    </form>
+
+    <p class="auth-footer">New to LingoPeak? <a href="signup.html">Start your free trial</a></p>
+  </div>
+
+  <script src="api.js"></script>
+  <script>
+    const form = document.getElementById('loginForm');
+    const errorBanner = document.getElementById('errorBanner');
+    const submitBtn = document.getElementById('submitBtn');
+
+    function showError(message) {
+      errorBanner.textContent = message;
+      errorBanner.classList.add('visible');
+    }
+    function hideError() {
+      errorBanner.classList.remove('visible');
+    }
+
+    if (Auth.isLoggedIn()) {
+      window.location.href = 'languages.html';
+    }
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      hideError();
+
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value;
+
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<span class="spinner"></span>Logging in...';
+
+      try {
+        await Auth.login({ email, password });
+        window.location.href = 'languages.html';
+      } catch (err) {
+        showError(err.message || 'Invalid email or password.');
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Log in';
+      }
+    });
+  </script>
+</body>
+</html>

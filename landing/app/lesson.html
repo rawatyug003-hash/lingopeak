@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Practice — LingoPeak</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --blue: #0052CC; --blue-dark: #003D99; --orange: #FF6B35;
+    --gray-900: #111827; --gray-700: #374151; --gray-500: #6B7280; --gray-300: #D1D5DB;
+    --bg-warm: #F9FAFB; --white: #FFFFFF;
+    --radius-sm: 8px; --radius-md: 14px;
+    --shadow-sm: 0 1px 2px rgba(17,24,39,0.06), 0 1px 3px rgba(17,24,39,0.08);
+    --shadow-md: 0 4px 12px rgba(17,24,39,0.08), 0 2px 4px rgba(17,24,39,0.06);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', sans-serif; background: var(--bg-warm); color: var(--gray-900); line-height: 1.6; }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; } }
+  :focus-visible { outline: 3px solid var(--orange); outline-offset: 2px; border-radius: 4px; }
+
+  header {
+    background: var(--white); border-bottom: 1px solid rgba(17,24,39,0.06);
+    padding: 14px 24px; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap;
+  }
+  .back-link {
+    display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: 14px; color: var(--gray-700);
+    text-decoration: none; transition: color 200ms;
+  }
+  .back-link:hover { color: var(--blue); }
+  .lang-badge { display: flex; align-items: center; gap: 8px; font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 17px; }
+  .lang-badge .flag { font-size: 22px; }
+  .header-actions { display: flex; align-items: center; gap: 12px; }
+  .btn-logout {
+    padding: 8px 16px; border-radius: var(--radius-sm); border: 1.5px solid var(--gray-300);
+    background: var(--white); font-family: inherit; font-weight: 600; font-size: 13px;
+    cursor: pointer; color: var(--gray-700); transition: border-color 200ms, color 200ms;
+  }
+  .btn-logout:hover { border-color: var(--blue); color: var(--blue); }
+
+  main { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+
+  /* ---------- Tabs ---------- */
+  .tabs { display: flex; gap: 6px; background: var(--white); border-radius: 100px; padding: 5px; width: fit-content; margin: 0 auto 28px; box-shadow: var(--shadow-sm); }
+  .tab-btn {
+    padding: 10px 22px; border-radius: 100px; border: none; background: transparent; font-family: inherit;
+    font-weight: 600; font-size: 14px; color: var(--gray-500); cursor: pointer; transition: background-color 220ms, color 220ms;
+  }
+  .tab-btn.active { background: var(--blue); color: white; }
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; animation: fadeIn 300ms ease-out; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+
+  /* ---------- Chat tab ---------- */
+  .chat-card { background: var(--white); border-radius: var(--radius-md); border: 1px solid rgba(17,24,39,0.06); overflow: hidden; box-shadow: var(--shadow-sm); }
+  .chat-window { height: 440px; overflow-y: auto; padding: 24px; display: flex; flex-direction: column; gap: 14px; }
+  .msg { max-width: 78%; padding: 12px 16px; border-radius: 16px; font-size: 15px; line-height: 1.55; opacity: 0; animation: msgIn 300ms ease-out forwards; }
+  @keyframes msgIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+  .msg.user { align-self: flex-end; background: var(--blue); color: white; border-bottom-right-radius: 4px; }
+  .msg.assistant { align-self: flex-start; background: var(--bg-warm); color: var(--gray-900); border-bottom-left-radius: 4px; }
+  .msg-feedback {
+    margin-top: 10px; padding-top: 10px; border-top: 1px solid rgba(17,24,39,0.08); font-size: 13px;
+  }
+  .correction-item { color: #9A3412; margin-bottom: 4px; }
+  .correction-item .arrow { color: var(--gray-500); margin: 0 4px; }
+  .encouragement-text { color: #166534; font-weight: 500; margin-top: 6px; }
+
+  .typing-indicator { align-self: flex-start; display: flex; gap: 4px; padding: 14px 18px; background: var(--bg-warm); border-radius: 16px; }
+  .typing-indicator span { width: 7px; height: 7px; border-radius: 50%; background: var(--gray-500); animation: bounce 1.2s infinite; }
+  .typing-indicator span:nth-child(2) { animation-delay: 0.15s; }
+  .typing-indicator span:nth-child(3) { animation-delay: 0.3s; }
+  @keyframes bounce { 0%,60%,100% { transform: translateY(0); opacity: 0.4; } 30% { transform: translateY(-4px); opacity: 1; } }
+
+  .chat-input-row { display: flex; gap: 10px; padding: 16px; border-top: 1px solid rgba(17,24,39,0.06); background: var(--white); }
+  .chat-input-row input {
+    flex: 1; padding: 12px 16px; border-radius: 100px; border: 1.5px solid var(--gray-300); font-family: inherit; font-size: 15px;
+    transition: border-color 200ms;
+  }
+  .chat-input-row input:focus { outline: none; border-color: var(--blue); }
+  .btn-send {
+    width: 44px; height: 44px; border-radius: 50%; background: var(--orange); border: none; color: white;
+    display: flex; align-items: center; justify-content: center; cursor: pointer; flex-shrink: 0;
+    transition: background-color 200ms, transform 160ms;
+  }
+  .btn-send:hover { background: #E85A28; }
+  .btn-send:active { transform: scale(0.92); }
+  .btn-send:disabled { opacity: 0.5; cursor: not-allowed; }
+
+  .empty-chat { text-align: center; color: var(--gray-500); font-size: 14px; margin: auto; padding: 40px 20px; }
+
+  /* ---------- Voice tab ---------- */
+  .card { background: var(--white); border-radius: var(--radius-md); border: 1px solid rgba(17,24,39,0.06); padding: 28px; box-shadow: var(--shadow-sm); }
+  .phrase-display {
+    background: var(--bg-warm); border-radius: var(--radius-sm); padding: 26px; text-align: center; font-size: 22px;
+    font-weight: 600; margin-bottom: 20px; border: 1px solid rgba(17,24,39,0.06);
+  }
+  .voice-controls { display: flex; gap: 12px; justify-content: center; margin-bottom: 18px; flex-wrap: wrap; }
+  .btn-mic {
+    display: inline-flex; align-items: center; gap: 8px; padding: 13px 26px; border-radius: 100px; border: none;
+    font-family: inherit; font-weight: 600; font-size: 15px; cursor: pointer;
+    transition: transform 160ms ease-out, box-shadow 200ms, background-color 200ms;
+  }
+  .btn-mic.idle { background: var(--orange); color: white; box-shadow: var(--shadow-md); }
+  .btn-mic.idle:hover { background: #E85A28; }
+  .btn-mic.recording { background: #DC2626; color: white; animation: pulse 1.2s infinite; }
+  .btn-mic:active { transform: scale(0.96); }
+  .btn-mic:disabled { opacity: 0.5; cursor: not-allowed; }
+  @keyframes pulse { 0%,100% { box-shadow: 0 0 0 0 rgba(220,38,38,0.4); } 50% { box-shadow: 0 0 0 10px rgba(220,38,38,0); } }
+  .btn-secondary-action {
+    padding: 13px 22px; border-radius: 100px; border: 1.5px solid var(--gray-300); background: white;
+    font-family: inherit; font-weight: 600; font-size: 15px; cursor: pointer; color: var(--gray-700); transition: border-color 200ms;
+  }
+  .btn-secondary-action:hover { border-color: var(--blue); color: var(--blue); }
+  .status-text { text-align: center; font-size: 14px; color: var(--gray-500); min-height: 20px; margin-bottom: 8px; }
+  .transcript-box { background: #EFF6FF; border: 1px solid #BFDBFE; border-radius: var(--radius-sm); padding: 14px 16px; font-size: 15px; color: #1E3A8A; margin-bottom: 16px; display: none; }
+  .transcript-box.visible { display: block; }
+  .result-card { display: none; }
+  .result-card.visible { display: block; }
+  .score-row { display: flex; align-items: center; gap: 16px; margin-bottom: 14px; }
+  .score-circle { width: 64px; height: 64px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 18px; color: white; flex-shrink: 0; }
+  .encouragement { font-size: 15px; color: var(--gray-700); }
+  .issues-list { list-style: none; padding: 0; margin-top: 10px; }
+  .issues-list li { font-size: 14px; color: var(--gray-700); padding: 8px 12px; background: #FFF7ED; border-radius: var(--radius-sm); margin-bottom: 6px; border-left: 3px solid var(--orange); }
+  .browser-warning { background: #FEF3C7; border: 1px solid #FDE68A; color: #92400E; padding: 12px 16px; border-radius: var(--radius-sm); font-size: 14px; display: none; margin-bottom: 20px; }
+  .browser-warning.visible { display: block; }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="languages.html" class="back-link">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M19 12H5M5 12L11 6M5 12L11 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    All languages
+  </a>
+  <div class="lang-badge"><span class="flag" id="langFlag">🌐</span><span id="langName">Loading...</span></div>
+  <div class="header-actions">
+    <button class="btn-logout" id="logoutBtn">Log out</button>
+  </div>
+</header>
+
+<main>
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="chat">💬 Conversation</button>
+    <button class="tab-btn" data-tab="voice">🎙️ Pronunciation</button>
+  </div>
+
+  <!-- ===================== CHAT TAB ===================== -->
+  <div class="tab-panel active" id="panel-chat">
+    <div class="chat-card">
+      <div class="chat-window" id="chatWindow">
+        <div class="empty-chat" id="emptyChatMsg">Say hello to start your first conversation in this language. Your tutor will reply and gently correct anything along the way.</div>
+      </div>
+      <div class="chat-input-row">
+        <input type="text" id="chatInput" placeholder="Type a message in any language to start..." autocomplete="off">
+        <button class="btn-send" id="sendBtn" aria-label="Send message">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 11L21 3L13 21L11 13L3 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== VOICE TAB ===================== -->
+  <div class="tab-panel" id="panel-voice">
+    <div class="card">
+      <div class="browser-warning" id="browserWarning">Your browser doesn't support voice recognition. Try Chrome or Edge on desktop, or Chrome on Android.</div>
+      <div class="phrase-display" id="phraseDisplay">Click "New phrase" to begin</div>
+      <div class="voice-controls">
+        <button class="btn-secondary-action" id="newPhraseBtn">New phrase</button>
+        <button class="btn-mic idle" id="micBtn" disabled>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 14C13.66 14 15 12.66 15 11V5C15 3.34 13.66 2 12 2C10.34 2 9 3.34 9 5V11C9 12.66 10.34 14 12 14Z"/><path d="M19 11C19 14.87 15.87 18 12 18C8.13 18 5 14.87 5 11H7C7 13.76 9.24 16 12 16C14.76 16 17 13.76 17 11H19Z"/><rect x="11" y="18" width="2" height="4"/></svg>
+          <span id="micBtnLabel">Tap to speak</span>
+        </button>
+      </div>
+      <p class="status-text" id="statusText"></p>
+      <div class="transcript-box" id="transcriptBox"></div>
+      <div class="result-card" id="resultCard">
+        <div class="score-row">
+          <div class="score-circle" id="scoreCircle">--</div>
+          <p class="encouragement" id="encouragementText"></p>
+        </div>
+        <ul class="issues-list" id="issuesList"></ul>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="api.js"></script>
+<script>
+  if (!Auth.isLoggedIn()) { window.location.href = 'login.html'; }
+
+  document.getElementById('logoutBtn').addEventListener('click', async () => {
+    await Auth.logout();
+    window.location.href = 'login.html';
+  });
+
+  const params = new URLSearchParams(window.location.search);
+  const profileId = params.get('profileId');
+  if (!profileId) { window.location.href = 'languages.html'; }
+
+  const FLAGS = { es: '🇪🇸', fr: '🇫🇷', de: '🇩🇪', ja: '🇯🇵', zh: '🇨🇳', it: '🇮🇹' };
+  let learningProfile = null;
+  let conversationId = null;
+
+  async function loadProfile() {
+    try {
+      const data = await apiJson('/api/learning-profiles/me');
+      learningProfile = (data.learningProfiles || []).find((p) => p.id === profileId);
+      if (!learningProfile) { window.location.href = 'languages.html'; return; }
+      document.getElementById('langFlag').textContent = FLAGS[learningProfile.language.code] || '🌐';
+      document.getElementById('langName').textContent = learningProfile.language.name;
+    } catch (err) {
+      window.location.href = 'languages.html';
+    }
+  }
+
+  // ---------------- Tabs ----------------
+  document.querySelectorAll('.tab-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.tab-btn').forEach((b) => b.classList.remove('active'));
+      document.querySelectorAll('.tab-panel').forEach((p) => p.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById(`panel-${btn.dataset.tab}`).classList.add('active');
+    });
+  });
+
+  // ---------------- Chat ----------------
+  const chatWindow = document.getElementById('chatWindow');
+  const chatInput = document.getElementById('chatInput');
+  const sendBtn = document.getElementById('sendBtn');
+  const emptyChatMsg = document.getElementById('emptyChatMsg');
+
+  function appendMessage(role, content, feedback) {
+    if (emptyChatMsg) emptyChatMsg.remove();
+    const div = document.createElement('div');
+    div.className = `msg ${role === 'USER' ? 'user' : 'assistant'}`;
+    div.textContent = content;
+
+    if (feedback && (feedback.corrections?.length || feedback.encouragement)) {
+      const fb = document.createElement('div');
+      fb.className = 'msg-feedback';
+      (feedback.corrections || []).forEach((c) => {
+        const line = document.createElement('div');
+        line.className = 'correction-item';
+        line.innerHTML = `${escapeHtml(c.original)}<span class="arrow">→</span><strong>${escapeHtml(c.corrected)}</strong>`;
+        fb.appendChild(line);
+      });
+      if (feedback.encouragement) {
+        const enc = document.createElement('div');
+        enc.className = 'encouragement-text';
+        enc.textContent = feedback.encouragement;
+        fb.appendChild(enc);
+      }
+      div.appendChild(fb);
+    }
+
+    chatWindow.appendChild(div);
+    chatWindow.scrollTop = chatWindow.scrollHeight;
+  }
+
+  function escapeHtml(str) {
+    const d = document.createElement('div');
+    d.textContent = str;
+    return d.innerHTML;
+  }
+
+  function showTyping() {
+    const div = document.createElement('div');
+    div.className = 'typing-indicator';
+    div.id = 'typingIndicator';
+    div.innerHTML = '<span></span><span></span><span></span>';
+    chatWindow.appendChild(div);
+    chatWindow.scrollTop = chatWindow.scrollHeight;
+  }
+  function hideTyping() {
+    document.getElementById('typingIndicator')?.remove();
+  }
+
+  async function sendMessage() {
+    const content = chatInput.value.trim();
+    if (!content) return;
+
+    appendMessage('USER', content, null);
+    chatInput.value = '';
+    sendBtn.disabled = true;
+    showTyping();
+
+    try {
+      const data = await apiJson('/api/conversations/message', {
+        method: 'POST',
+        body: JSON.stringify({ conversationId, learningProfileId: profileId, content }),
+      });
+      conversationId = data.conversationId;
+      hideTyping();
+      appendMessage('ASSISTANT', data.message.content, data.message.feedback);
+    } catch (err) {
+      hideTyping();
+      appendMessage('ASSISTANT', err.message || 'Something went wrong reaching your tutor. Please try again.', null);
+    } finally {
+      sendBtn.disabled = false;
+    }
+  }
+
+  sendBtn.addEventListener('click', sendMessage);
+  chatInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') sendMessage(); });
+
+  // ---------------- Voice ----------------
+  const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+  const micBtn = document.getElementById('micBtn');
+  const micBtnLabel = document.getElementById('micBtnLabel');
+  const newPhraseBtn = document.getElementById('newPhraseBtn');
+  const phraseDisplay = document.getElementById('phraseDisplay');
+  const statusText = document.getElementById('statusText');
+  const transcriptBox = document.getElementById('transcriptBox');
+  const resultCard = document.getElementById('resultCard');
+  const scoreCircle = document.getElementById('scoreCircle');
+  const encouragementText = document.getElementById('encouragementText');
+  const issuesList = document.getElementById('issuesList');
+  const browserWarning = document.getElementById('browserWarning');
+
+  let currentPhrase = null;
+  let recognition = null;
+  let isRecording = false;
+
+  if (!SpeechRecognition) {
+    browserWarning.classList.add('visible');
+  } else {
+    micBtn.disabled = false;
+  }
+
+  const SPEECH_LANG_MAP = { es: 'es-ES', fr: 'fr-FR', de: 'de-DE', ja: 'ja-JP', zh: 'zh-CN', it: 'it-IT' };
+
+  newPhraseBtn.addEventListener('click', async () => {
+    statusText.textContent = '';
+    resultCard.classList.remove('visible');
+    transcriptBox.classList.remove('visible');
+    try {
+      const data = await apiJson(`/api/voice/practice-phrase?learningProfileId=${profileId}`);
+      currentPhrase = data.phrase;
+      phraseDisplay.textContent = currentPhrase;
+    } catch (err) {
+      statusText.textContent = err.message || 'Could not load a phrase right now.';
+    }
+  });
+
+  micBtn.addEventListener('click', () => {
+    if (!currentPhrase) { statusText.textContent = 'Pick a phrase first by clicking "New phrase".'; return; }
+    if (isRecording) { recognition.stop(); return; }
+    startRecording();
+  });
+
+  function startRecording() {
+    recognition = new SpeechRecognition();
+    recognition.lang = SPEECH_LANG_MAP[learningProfile?.language?.code] || 'en-US';
+    recognition.interimResults = false;
+    recognition.maxAlternatives = 1;
+
+    recognition.onstart = () => {
+      isRecording = true;
+      micBtn.classList.remove('idle'); micBtn.classList.add('recording');
+      micBtnLabel.textContent = 'Listening... tap to stop';
+      statusText.textContent = 'Speak the phrase above clearly.';
+    };
+    recognition.onresult = async (event) => {
+      const transcript = event.results[0][0].transcript;
+      transcriptBox.textContent = `You said: "${transcript}"`;
+      transcriptBox.classList.add('visible');
+      await checkPronunciation(transcript);
+    };
+    recognition.onerror = (event) => { statusText.textContent = `Mic error: ${event.error}. Try again.`; resetMicButton(); };
+    recognition.onend = () => { resetMicButton(); };
+    recognition.start();
+  }
+
+  function resetMicButton() {
+    isRecording = false;
+    micBtn.classList.remove('recording'); micBtn.classList.add('idle');
+    micBtnLabel.textContent = 'Tap to speak';
+  }
+
+  async function checkPronunciation(transcribedSpeech) {
+    statusText.textContent = 'Checking your pronunciation...';
+    try {
+      const data = await apiJson('/api/voice/check-pronunciation', {
+        method: 'POST',
+        body: JSON.stringify({ learningProfileId: profileId, targetPhrase: currentPhrase, transcribedSpeech }),
+      });
+      showResult(data.result);
+      statusText.textContent = '';
+    } catch (err) {
+      statusText.textContent = err.message || 'Could not check pronunciation right now.';
+    }
+  }
+
+  function showResult(result) {
+    resultCard.classList.add('visible');
+    scoreCircle.textContent = result.score;
+    scoreCircle.style.background = result.score >= 80 ? '#16A34A' : result.score >= 50 ? '#FF6B35' : '#DC2626';
+    encouragementText.textContent = result.encouragement;
+    issuesList.innerHTML = '';
+    (result.likelyIssues || []).forEach((issue) => {
+      const li = document.createElement('li');
+      li.textContent = issue;
+      issuesList.appendChild(li);
+    });
+  }
+
+  loadProfile();
+</script>
+</body>
+</html>

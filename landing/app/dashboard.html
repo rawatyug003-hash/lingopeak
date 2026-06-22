@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard — LingoPeak</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --blue: #0052CC; --orange: #FF6B35; --gray-900: #111827; --gray-700: #374151;
+    --gray-500: #6B7280; --gray-300: #D1D5DB; --bg-warm: #F9FAFB; --white: #FFFFFF;
+    --radius-sm: 8px; --radius-md: 12px;
+    --shadow-md: 0 4px 12px rgba(17,24,39,0.08), 0 2px 4px rgba(17,24,39,0.06);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', sans-serif; background: var(--bg-warm); color: var(--gray-900); line-height: 1.6; }
+  header {
+    background: var(--white); border-bottom: 1px solid rgba(17,24,39,0.06);
+    padding: 16px 24px; display: flex; justify-content: space-between; align-items: center;
+  }
+  .logo { display: flex; align-items: center; gap: 10px; font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 19px; }
+  .logo svg { width: 26px; height: 26px; }
+  .header-actions { display: flex; align-items: center; gap: 14px; }
+  .user-chip { font-size: 14px; color: var(--gray-700); }
+  .btn-logout {
+    padding: 9px 18px; border-radius: var(--radius-sm); border: 1.5px solid var(--gray-300);
+    background: var(--white); font-family: inherit; font-weight: 600; font-size: 14px;
+    cursor: pointer; color: var(--gray-700); transition: border-color 200ms, background-color 200ms;
+  }
+  .btn-logout:hover { border-color: var(--blue); color: var(--blue); }
+
+  main { max-width: 880px; margin: 0 auto; padding: 40px 24px; }
+  .welcome h1 { font-family: 'Poppins', sans-serif; font-size: 28px; margin-bottom: 6px; }
+  .welcome p { color: var(--gray-500); margin-bottom: 32px; }
+
+  .card {
+    background: var(--white); border-radius: var(--radius-md); border: 1px solid rgba(17,24,39,0.06);
+    padding: 28px; margin-bottom: 24px;
+  }
+  .card h2 { font-family: 'Poppins', sans-serif; font-size: 18px; margin-bottom: 4px; }
+  .card .card-sub { color: var(--gray-500); font-size: 14px; margin-bottom: 20px; }
+
+  select {
+    padding: 10px 14px; border-radius: var(--radius-sm); border: 1.5px solid var(--gray-300);
+    font-family: inherit; font-size: 14px; margin-bottom: 16px; width: 100%;
+  }
+
+  .phrase-display {
+    background: var(--bg-warm); border-radius: var(--radius-sm); padding: 24px;
+    text-align: center; font-size: 22px; font-weight: 600; margin-bottom: 20px;
+    border: 1px solid rgba(17,24,39,0.06);
+  }
+
+  .voice-controls { display: flex; gap: 12px; justify-content: center; margin-bottom: 20px; flex-wrap: wrap; }
+
+  .btn-mic {
+    display: inline-flex; align-items: center; gap: 8px; padding: 13px 26px;
+    border-radius: 100px; border: none; font-family: inherit; font-weight: 600; font-size: 15px;
+    cursor: pointer; transition: transform 160ms ease-out, box-shadow 200ms ease-out, background-color 200ms;
+  }
+  .btn-mic.idle { background: var(--orange); color: white; box-shadow: var(--shadow-md); }
+  .btn-mic.idle:hover { background: #E85A28; }
+  .btn-mic.recording { background: #DC2626; color: white; animation: pulse 1.2s infinite; }
+  .btn-mic:active { transform: scale(0.96); }
+  .btn-mic:disabled { opacity: 0.5; cursor: not-allowed; }
+  @keyframes pulse { 0%,100% { box-shadow: 0 0 0 0 rgba(220,38,38,0.4); } 50% { box-shadow: 0 0 0 10px rgba(220,38,38,0); } }
+
+  .btn-secondary-action {
+    padding: 13px 22px; border-radius: 100px; border: 1.5px solid var(--gray-300);
+    background: white; font-family: inherit; font-weight: 600; font-size: 15px; cursor: pointer;
+    color: var(--gray-700); transition: border-color 200ms;
+  }
+  .btn-secondary-action:hover { border-color: var(--blue); color: var(--blue); }
+
+  .transcript-box {
+    background: #EFF6FF; border: 1px solid #BFDBFE; border-radius: var(--radius-sm);
+    padding: 14px 16px; font-size: 15px; color: #1E3A8A; margin-bottom: 16px; display: none;
+  }
+  .transcript-box.visible { display: block; }
+
+  .result-card { display: none; }
+  .result-card.visible { display: block; }
+  .score-row { display: flex; align-items: center; gap: 16px; margin-bottom: 14px; }
+  .score-circle {
+    width: 64px; height: 64px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 18px; color: white; flex-shrink: 0;
+  }
+  .encouragement { font-size: 15px; color: var(--gray-700); }
+  .issues-list { list-style: none; padding: 0; margin-top: 10px; }
+  .issues-list li {
+    font-size: 14px; color: var(--gray-700); padding: 8px 12px; background: #FFF7ED;
+    border-radius: var(--radius-sm); margin-bottom: 6px; border-left: 3px solid var(--orange);
+  }
+
+  .status-text { text-align: center; font-size: 14px; color: var(--gray-500); min-height: 20px; margin-bottom: 8px; }
+
+  .browser-warning {
+    background: #FEF3C7; border: 1px solid #FDE68A; color: #92400E; padding: 12px 16px;
+    border-radius: var(--radius-sm); font-size: 14px; display: none;
+  }
+  .browser-warning.visible { display: block; }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="../index.html" class="logo">
+    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M4 26L13 9L17 16L20 11L28 26H4Z" fill="#0052CC"/>
+      <path d="M20 11L28 26H22L17.5 17.5L20 11Z" fill="#FF6B35"/>
+      <circle cx="13" cy="6" r="2.4" fill="#FF6B35"/>
+    </svg>
+    LingoPeak
+  </a>
+  <div class="header-actions">
+    <span class="user-chip" id="userChip">Loading...</span>
+    <button class="btn-logout" id="logoutBtn">Log out</button>
+  </div>
+</header>
+
+<main>
+  <div class="welcome">
+    <h1>Pronunciation practice</h1>
+    <p>Speak the phrase out loud. Your browser transcribes it, and your AI tutor checks how close you got.</p>
+  </div>
+
+  <div class="browser-warning" id="browserWarning">
+    Your browser doesn't support voice recognition. Try Chrome or Edge on desktop, or Chrome on Android.
+  </div>
+
+  <div class="card">
+    <h2>Choose a language to practice</h2>
+    <p class="card-sub">You'll need a learning profile set up for this language first (via the API for now).</p>
+    <select id="languageSelect">
+      <option value="es">🇪🇸 Spanish</option>
+      <option value="fr">🇫🇷 French</option>
+      <option value="de">🇩🇪 German</option>
+      <option value="ja">🇯🇵 Japanese</option>
+      <option value="zh">🇨🇳 Mandarin</option>
+      <option value="it">🇮🇹 Italian</option>
+    </select>
+
+    <div class="phrase-display" id="phraseDisplay">Click "New phrase" to begin</div>
+
+    <div class="voice-controls">
+      <button class="btn-secondary-action" id="newPhraseBtn">New phrase</button>
+      <button class="btn-mic idle" id="micBtn" disabled>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 14C13.66 14 15 12.66 15 11V5C15 3.34 13.66 2 12 2C10.34 2 9 3.34 9 5V11C9 12.66 10.34 14 12 14Z"/><path d="M19 11C19 14.87 15.87 18 12 18C8.13 18 5 14.87 5 11H7C7 13.76 9.24 16 12 16C14.76 16 17 13.76 17 11H19Z"/><rect x="11" y="18" width="2" height="4"/></svg>
+        <span id="micBtnLabel">Tap to speak</span>
+      </button>
+    </div>
+
+    <p class="status-text" id="statusText"></p>
+
+    <div class="transcript-box" id="transcriptBox"></div>
+
+    <div class="result-card" id="resultCard">
+      <div class="score-row">
+        <div class="score-circle" id="scoreCircle">--</div>
+        <p class="encouragement" id="encouragementText"></p>
+      </div>
+      <ul class="issues-list" id="issuesList"></ul>
+    </div>
+  </div>
+</main>
+
+<script src="api.js"></script>
+<script>
+  // ---- Auth guard + header ----
+  if (!Auth.isLoggedIn()) {
+    window.location.href = 'login.html';
+  }
+
+  const userChip = document.getElementById('userChip');
+  const user = TokenStore.getUser();
+  if (user) userChip.textContent = user.fullName || user.email;
+
+  document.getElementById('logoutBtn').addEventListener('click', async () => {
+    await Auth.logout();
+    window.location.href = 'login.html';
+  });
+
+  // ---- Voice practice ----
+  const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+  const micBtn = document.getElementById('micBtn');
+  const micBtnLabel = document.getElementById('micBtnLabel');
+  const newPhraseBtn = document.getElementById('newPhraseBtn');
+  const phraseDisplay = document.getElementById('phraseDisplay');
+  const languageSelect = document.getElementById('languageSelect');
+  const statusText = document.getElementById('statusText');
+  const transcriptBox = document.getElementById('transcriptBox');
+  const resultCard = document.getElementById('resultCard');
+  const scoreCircle = document.getElementById('scoreCircle');
+  const encouragementText = document.getElementById('encouragementText');
+  const issuesList = document.getElementById('issuesList');
+  const browserWarning = document.getElementById('browserWarning');
+
+  let currentPhrase = null;
+  let currentLearningProfileId = null; // populated once you've created a LearningProfile via the API
+  let recognition = null;
+  let isRecording = false;
+
+  if (!SpeechRecognition) {
+    browserWarning.classList.add('visible');
+  } else {
+    micBtn.disabled = false;
+  }
+
+  const SPEECH_LANG_MAP = { es: 'es-ES', fr: 'fr-FR', de: 'de-DE', ja: 'ja-JP', zh: 'zh-CN', it: 'it-IT' };
+
+  // NOTE: this demo speaks/listens for whatever language is picked above,
+  // but checking pronunciation server-side requires a real learningProfileId
+  // for that language on your account. Until you've created one (see
+  // README "Voice practice setup"), "New phrase" pulls a sample phrase
+  // directly so you can still test the mic + transcription flow end-to-end.
+  const SAMPLE_PHRASES = {
+    es: 'Hola, ¿cómo estás?', fr: 'Bonjour, comment ça va?', de: 'Hallo, wie geht es dir?',
+    ja: 'こんにちは、お元気ですか？', zh: '你好，你好吗？', it: 'Ciao, come stai?',
+  };
+
+  newPhraseBtn.addEventListener('click', async () => {
+    const lang = languageSelect.value;
+    statusText.textContent = '';
+    resultCard.classList.remove('visible');
+    transcriptBox.classList.remove('visible');
+
+    if (currentLearningProfileId) {
+      try {
+        const data = await apiJson(`/api/voice/practice-phrase?learningProfileId=${currentLearningProfileId}`);
+        currentPhrase = data.phrase;
+        phraseDisplay.textContent = currentPhrase;
+        return;
+      } catch (err) {
+        // fall through to local sample phrase if the API call fails
+      }
+    }
+    currentPhrase = SAMPLE_PHRASES[lang];
+    phraseDisplay.textContent = currentPhrase;
+  });
+
+  micBtn.addEventListener('click', () => {
+    if (!currentPhrase) {
+      statusText.textContent = 'Pick a phrase first by clicking "New phrase".';
+      return;
+    }
+    if (isRecording) {
+      recognition.stop();
+      return;
+    }
+    startRecording();
+  });
+
+  function startRecording() {
+    recognition = new SpeechRecognition();
+    recognition.lang = SPEECH_LANG_MAP[languageSelect.value] || 'en-US';
+    recognition.interimResults = false;
+    recognition.maxAlternatives = 1;
+
+    recognition.onstart = () => {
+      isRecording = true;
+      micBtn.classList.remove('idle');
+      micBtn.classList.add('recording');
+      micBtnLabel.textContent = 'Listening... tap to stop';
+      statusText.textContent = 'Speak the phrase above clearly.';
+    };
+
+    recognition.onresult = async (event) => {
+      const transcript = event.results[0][0].transcript;
+      transcriptBox.textContent = `You said: "${transcript}"`;
+      transcriptBox.classList.add('visible');
+      await checkPronunciation(transcript);
+    };
+
+    recognition.onerror = (event) => {
+      statusText.textContent = `Mic error: ${event.error}. Try again.`;
+      resetMicButton();
+    };
+
+    recognition.onend = () => {
+      resetMicButton();
+    };
+
+    recognition.start();
+  }
+
+  function resetMicButton() {
+    isRecording = false;
+    micBtn.classList.remove('recording');
+    micBtn.classList.add('idle');
+    micBtnLabel.textContent = 'Tap to speak';
+  }
+
+  async function checkPronunciation(transcribedSpeech) {
+    statusText.textContent = 'Checking your pronunciation...';
+
+    if (!currentLearningProfileId) {
+      statusText.textContent = 'Set up a learning profile for this language to get AI feedback (see README). Showing transcript only for now.';
+      return;
+    }
+
+    try {
+      const data = await apiJson('/api/voice/check-pronunciation', {
+        method: 'POST',
+        body: JSON.stringify({
+          learningProfileId: currentLearningProfileId,
+          targetPhrase: currentPhrase,
+          transcribedSpeech,
+        }),
+      });
+      showResult(data.result);
+      statusText.textContent = '';
+    } catch (err) {
+      statusText.textContent = err.message || 'Could not check pronunciation right now.';
+    }
+  }
+
+  function showResult(result) {
+    resultCard.classList.add('visible');
+    scoreCircle.textContent = result.score;
+    scoreCircle.style.background = result.score >= 80 ? '#16A34A' : result.score >= 50 ? '#FF6B35' : '#DC2626';
+    encouragementText.textContent = result.encouragement;
+
+    issuesList.innerHTML = '';
+    (result.likelyIssues || []).forEach((issue) => {
+      const li = document.createElement('li');
+      li.textContent = issue;
+      issuesList.appendChild(li);
+    });
+  }
+</script>
+</body>
+</html>

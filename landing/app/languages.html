@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Choose a language — LingoPeak</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --blue: #0052CC; --blue-dark: #003D99; --orange: #FF6B35; --orange-light: #FF8A5F;
+    --gray-900: #111827; --gray-700: #374151; --gray-500: #6B7280; --gray-300: #D1D5DB;
+    --bg-warm: #F9FAFB; --cream: #FFFBF6; --white: #FFFFFF;
+    --radius-sm: 8px; --radius-md: 14px;
+    --shadow-sm: 0 1px 2px rgba(17,24,39,0.06), 0 1px 3px rgba(17,24,39,0.08);
+    --shadow-md: 0 4px 12px rgba(17,24,39,0.08), 0 2px 4px rgba(17,24,39,0.06);
+    --shadow-lg: 0 16px 40px rgba(0,82,204,0.16), 0 4px 8px rgba(17,24,39,0.06);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: var(--bg-warm);
+    color: var(--gray-900);
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; }
+  }
+  :focus-visible { outline: 3px solid var(--orange); outline-offset: 2px; border-radius: 4px; }
+
+  header {
+    background: var(--white); border-bottom: 1px solid rgba(17,24,39,0.06);
+    padding: 16px 24px; display: flex; justify-content: space-between; align-items: center;
+  }
+  .logo { display: flex; align-items: center; gap: 10px; font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 19px; }
+  .logo svg { width: 26px; height: 26px; }
+  .header-actions { display: flex; align-items: center; gap: 14px; }
+  .user-chip { font-size: 14px; color: var(--gray-700); }
+  .btn-logout {
+    padding: 9px 18px; border-radius: var(--radius-sm); border: 1.5px solid var(--gray-300);
+    background: var(--white); font-family: inherit; font-weight: 600; font-size: 14px;
+    cursor: pointer; color: var(--gray-700); transition: border-color 200ms, color 200ms;
+  }
+  .btn-logout:hover { border-color: var(--blue); color: var(--blue); }
+
+  /* ---------- Hero / intro ---------- */
+  .intro {
+    max-width: 920px; margin: 0 auto; padding: 56px 24px 36px; text-align: center;
+    position: relative;
+  }
+  .intro-eyebrow {
+    display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 600;
+    letter-spacing: 0.04em; text-transform: uppercase; color: var(--blue); margin-bottom: 14px;
+    opacity: 0; animation: riseIn 600ms ease-out forwards;
+  }
+  .intro h1 {
+    font-family: 'Poppins', sans-serif; font-size: clamp(28px, 4.5vw, 42px); font-weight: 700;
+    margin-bottom: 12px; opacity: 0; animation: riseIn 600ms 80ms ease-out forwards;
+  }
+  .intro p {
+    color: var(--gray-700); font-size: 17px; max-width: 540px; margin: 0 auto;
+    opacity: 0; animation: riseIn 600ms 160ms ease-out forwards;
+  }
+  @keyframes riseIn { from { opacity:0; transform: translateY(12px); } to { opacity:1; transform: translateY(0); } }
+
+  /* ---------- Animated peak path behind the intro ---------- */
+  .intro-bg {
+    position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+    width: 100%; max-width: 700px; height: 160px; z-index: -1; opacity: 0.9;
+  }
+  .peak-line {
+    stroke-dasharray: 500; stroke-dashoffset: 500;
+    animation: drawLine 1600ms 200ms ease-out forwards;
+  }
+  @keyframes drawLine { to { stroke-dashoffset: 0; } }
+
+  /* ---------- Language grid ---------- */
+  .lang-section { max-width: 1080px; margin: 0 auto; padding: 0 24px 80px; }
+  .lang-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px;
+  }
+  @media (max-width: 880px) { .lang-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) { .lang-grid { grid-template-columns: 1fr; } }
+
+  .lang-card {
+    background: var(--white); border-radius: var(--radius-md); border: 1.5px solid rgba(17,24,39,0.07);
+    padding: 28px 24px; cursor: pointer; position: relative; overflow: hidden;
+    transition: transform 240ms cubic-bezier(.2,.8,.2,1), box-shadow 240ms ease-out, border-color 240ms ease-out;
+    opacity: 0; transform: translateY(16px);
+    animation: cardIn 520ms ease-out forwards;
+  }
+  .lang-card:nth-child(1) { animation-delay: 60ms; }
+  .lang-card:nth-child(2) { animation-delay: 110ms; }
+  .lang-card:nth-child(3) { animation-delay: 160ms; }
+  .lang-card:nth-child(4) { animation-delay: 210ms; }
+  .lang-card:nth-child(5) { animation-delay: 260ms; }
+  .lang-card:nth-child(6) { animation-delay: 310ms; }
+  @keyframes cardIn { to { opacity: 1; transform: translateY(0); } }
+
+  .lang-card:hover {
+    transform: translateY(-6px); box-shadow: var(--shadow-lg); border-color: rgba(0,82,204,0.25);
+  }
+  .lang-card:active { transform: translateY(-3px) scale(0.99); }
+
+  .lang-card::before {
+    content: ''; position: absolute; top: -40%; right: -30%; width: 220px; height: 220px;
+    border-radius: 50%; background: var(--card-tint, rgba(0,82,204,0.06));
+    transition: transform 400ms ease-out;
+  }
+  .lang-card:hover::before { transform: scale(1.3); }
+
+  .lang-card-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 18px; position: relative; }
+  .lang-flag {
+    font-size: 38px; line-height: 1; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.08));
+    transition: transform 240ms ease-out;
+  }
+  .lang-card:hover .lang-flag { transform: scale(1.12) rotate(-4deg); }
+
+  .lang-popularity {
+    font-size: 12px; font-weight: 600; color: var(--blue); background: rgba(0,82,204,0.08);
+    padding: 5px 10px; border-radius: 100px;
+  }
+
+  .lang-name { font-family: 'Poppins', sans-serif; font-size: 21px; font-weight: 700; margin-bottom: 4px; position: relative; }
+  .lang-native { color: var(--gray-500); font-size: 14px; margin-bottom: 18px; position: relative; }
+
+  .lang-meta { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--gray-500); position: relative; }
+  .lang-meta svg { color: var(--orange); flex-shrink: 0; }
+
+  .lang-cta {
+    margin-top: 18px; display: flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 600;
+    color: var(--blue); position: relative;
+  }
+  .lang-cta svg { transition: transform 220ms ease-out; }
+  .lang-card:hover .lang-cta svg { transform: translateX(4px); }
+
+  /* Progress ring shown only for languages the user has already started */
+  .lang-progress-row { display: flex; align-items: center; gap: 10px; margin-top: 14px; position: relative; }
+  .progress-track { flex: 1; height: 6px; border-radius: 100px; background: var(--bg-warm); overflow: hidden; }
+  .progress-fill { height: 100%; border-radius: 100px; background: linear-gradient(90deg, var(--blue), var(--orange)); width: 0%; transition: width 700ms ease-out; }
+  .progress-pct { font-size: 12px; font-weight: 600; color: var(--gray-700); white-space: nowrap; }
+
+  /* ---------- Status banner ---------- */
+  .status-banner {
+    max-width: 1080px; margin: 0 auto 28px; padding: 0 24px;
+  }
+  .banner-inner {
+    background: #FFF7ED; border: 1px solid #FED7AA; color: #9A3412;
+    padding: 14px 18px; border-radius: var(--radius-sm); font-size: 14px; display: none;
+  }
+  .banner-inner.visible { display: block; }
+
+  /* ---------- Loading state for a card while creating profile ---------- */
+  .lang-card.loading { pointer-events: none; }
+  .lang-card.loading .lang-cta span { opacity: 0; }
+  .lang-card.loading .lang-cta::after {
+    content: ''; position: absolute; right: 0; width: 16px; height: 16px;
+    border: 2px solid rgba(0,82,204,0.25); border-top-color: var(--blue); border-radius: 50%;
+    animation: spin 700ms linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="../index.html" class="logo">
+    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M4 26L13 9L17 16L20 11L28 26H4Z" fill="#0052CC"/>
+      <path d="M20 11L28 26H22L17.5 17.5L20 11Z" fill="#FF6B35"/>
+      <circle cx="13" cy="6" r="2.4" fill="#FF6B35"/>
+    </svg>
+    LingoPeak
+  </a>
+  <div class="header-actions">
+    <span class="user-chip" id="userChip">Loading...</span>
+    <button class="btn-logout" id="logoutBtn">Log out</button>
+  </div>
+</header>
+
+<div class="intro">
+  <svg class="intro-bg" viewBox="0 0 700 160" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path class="peak-line" d="M40 130 C 140 120, 160 60, 260 50 C 360 40, 380 90, 480 70 C 560 55, 580 30, 650 25"
+          stroke="#0052CC" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.18"/>
+  </svg>
+  <span class="intro-eyebrow">Pick your path</span>
+  <h1>Which language will you reach the peak of?</h1>
+  <p>Every path starts with a single conversation. Choose a language below and your AI tutor will meet you exactly where you are.</p>
+</div>
+
+<div class="status-banner">
+  <div class="banner-inner" id="statusBanner"></div>
+</div>
+
+<section class="lang-section">
+  <div class="lang-grid" id="langGrid">
+    <!-- Cards injected by JS so progress data can be merged in -->
+  </div>
+</section>
+
+<script src="api.js"></script>
+<script>
+  if (!Auth.isLoggedIn()) {
+    window.location.href = 'login.html';
+  }
+
+  const userChip = document.getElementById('userChip');
+  const user = TokenStore.getUser();
+  if (user) userChip.textContent = user.fullName || user.email;
+
+  document.getElementById('logoutBtn').addEventListener('click', async () => {
+    await Auth.logout();
+    window.location.href = 'login.html';
+  });
+
+  const LANGUAGES = [
+    { code: 'es', name: 'Spanish', native: 'Español', flag: '🇪🇸', tint: 'rgba(255,107,53,0.08)', learners: '38K learners', speakers: '500M+ speakers worldwide' },
+    { code: 'fr', name: 'French', native: 'Français', flag: '🇫🇷', tint: 'rgba(0,82,204,0.07)', learners: '24K learners', speakers: '280M+ speakers worldwide' },
+    { code: 'de', name: 'German', native: 'Deutsch', flag: '🇩🇪', tint: 'rgba(0,82,204,0.07)', learners: '19K learners', speakers: '130M+ speakers worldwide' },
+    { code: 'ja', name: 'Japanese', native: '日本語', flag: '🇯🇵', tint: 'rgba(255,107,53,0.08)', learners: '31K learners', speakers: '125M+ speakers worldwide' },
+    { code: 'zh', name: 'Mandarin', native: '中文', flag: '🇨🇳', tint: 'rgba(255,107,53,0.08)', learners: '22K learners', speakers: '1.1B+ speakers worldwide' },
+    { code: 'it', name: 'Italian', native: 'Italiano', flag: '🇮🇹', tint: 'rgba(0,82,204,0.07)', learners: '16K learners', speakers: '65M+ speakers worldwide' },
+  ];
+
+  const grid = document.getElementById('langGrid');
+  const banner = document.getElementById('statusBanner');
+
+  function showBanner(msg) {
+    banner.textContent = msg;
+    banner.classList.add('visible');
+  }
+
+  let myProfiles = [];
+
+  async function loadMyProfiles() {
+    try {
+      const data = await apiJson('/api/learning-profiles/me');
+      myProfiles = data.learningProfiles || [];
+    } catch (err) {
+      // Non-fatal — cards just render without progress info
+      myProfiles = [];
+    }
+  }
+
+  function renderCards() {
+    grid.innerHTML = '';
+
+    LANGUAGES.forEach((lang) => {
+      const existing = myProfiles.find((p) => p.language.code === lang.code);
+
+      const card = document.createElement('div');
+      card.className = 'lang-card';
+      card.style.setProperty('--card-tint', lang.tint);
+      card.setAttribute('role', 'button');
+      card.setAttribute('tabindex', '0');
+      card.setAttribute('aria-label', `Start learning ${lang.name}`);
+
+      const progressHtml = existing
+        ? `<div class="lang-progress-row">
+             <div class="progress-track"><div class="progress-fill" style="width:${levelToPercent(existing.proficiencyLevel)}%"></div></div>
+             <span class="progress-pct">${formatLevel(existing.proficiencyLevel)}</span>
+           </div>`
+        : `<div class="lang-meta">
+             <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 2L4 20H20L12 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+             ${lang.speakers}
+           </div>`;
+
+      card.innerHTML = `
+        <div class="lang-card-top">
+          <span class="lang-flag">${lang.flag}</span>
+          <span class="lang-popularity">${lang.learners}</span>
+        </div>
+        <div class="lang-name">${lang.name}</div>
+        <div class="lang-native">${lang.native}</div>
+        ${progressHtml}
+        <div class="lang-cta">
+          <span>${existing ? 'Continue learning' : 'Start learning'}</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      `;
+
+      const activate = () => selectLanguage(lang, card, existing);
+      card.addEventListener('click', activate);
+      card.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); activate(); } });
+
+      grid.appendChild(card);
+    });
+  }
+
+  function levelToPercent(level) {
+    const map = { BEGINNER: 12, ELEMENTARY: 28, INTERMEDIATE: 48, UPPER_INTERMEDIATE: 68, ADVANCED: 85, FLUENT: 100 };
+    return map[level] ?? 10;
+  }
+  function formatLevel(level) {
+    return (level || 'BEGINNER').replace('_', ' ').toLowerCase().replace(/\b\w/g, (c) => c.toUpperCase());
+  }
+
+  async function selectLanguage(lang, cardEl, existingProfile) {
+    if (cardEl.classList.contains('loading')) return;
+
+    if (existingProfile) {
+      window.location.href = `lesson.html?profileId=${existingProfile.id}`;
+      return;
+    }
+
+    cardEl.classList.add('loading');
+    try {
+      const data = await apiJson('/api/learning-profiles', {
+        method: 'POST',
+        body: JSON.stringify({ languageCode: lang.code, proficiencyLevel: 'BEGINNER' }),
+      });
+      window.location.href = `lesson.html?profileId=${data.learningProfile.id}`;
+    } catch (err) {
+      cardEl.classList.remove('loading');
+      showBanner(err.message || `Could not start ${lang.name} right now. Please try again.`);
+    }
+  }
+
+  (async function init() {
+    await loadMyProfiles();
+    renderCards();
+  })();
+</script>
+</body>
+</html>
