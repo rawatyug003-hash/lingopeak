@@ -198,7 +198,14 @@
   const profileId = params.get('profileId');
   if (!profileId) { window.location.href = 'languages.html'; }
 
-  const FLAGS = { es: '🇪🇸', fr: '🇫🇷', de: '🇩🇪', ja: '🇯🇵', zh: '🇨🇳', it: '🇮🇹' };
+  const FLAGS = {
+    es: '<svg viewBox="0 0 32 32" width="24" height="24"><rect width="32" height="32" rx="5" fill="#AA151B"/><rect y="8" width="32" height="16" fill="#F1BF00"/></svg>',
+    fr: '<svg viewBox="0 0 32 32" width="24" height="24"><rect width="32" height="32" rx="5" fill="#fff"/><rect width="11" height="32" fill="#002395"/><rect x="21" width="11" height="32" fill="#ED2939"/></svg>',
+    de: '<svg viewBox="0 0 32 32" width="24" height="24"><rect width="32" height="32" rx="5" fill="#FFCE00"/><rect width="32" height="10.7" fill="#000"/><rect y="21.3" width="32" height="10.7" fill="#DD0000"/></svg>',
+    ja: '<svg viewBox="0 0 32 32" width="24" height="24"><rect width="32" height="32" rx="5" fill="#fff"/><circle cx="16" cy="16" r="7" fill="#BC002D"/></svg>',
+    zh: '<svg viewBox="0 0 32 32" width="24" height="24"><rect width="32" height="32" rx="5" fill="#DE2910"/><polygon points="8,7 9.6,11.5 14.5,11.5 10.5,14.2 12,18.5 8,15.8 4,18.5 5.5,14.2 1.5,11.5 6.4,11.5" fill="#FFDE00" transform="scale(0.9) translate(2,2)"/></svg>',
+    it: '<svg viewBox="0 0 32 32" width="24" height="24"><rect width="32" height="32" rx="5" fill="#fff"/><rect width="11" height="32" fill="#009246"/><rect x="21" width="11" height="32" fill="#CE2B37"/></svg>',
+  };
   let learningProfile = null;
   let conversationId = null;
 
@@ -207,7 +214,7 @@
       const data = await apiJson('/api/learning-profiles/me');
       learningProfile = (data.learningProfiles || []).find((p) => p.id === profileId);
       if (!learningProfile) { window.location.href = 'languages.html'; return; }
-      document.getElementById('langFlag').textContent = FLAGS[learningProfile.language.code] || '🌐';
+      document.getElementById('langFlag').innerHTML = FLAGS[learningProfile.language.code] || '';
       document.getElementById('langName').textContent = learningProfile.language.name;
     } catch (err) {
       window.location.href = 'languages.html';

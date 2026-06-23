@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — LingoPeak</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --blue: #0052CC; --orange: #FF6B35; --gray-900: #111827; --gray-700: #374151;
+    --gray-500: #6B7280; --gray-300: #D1D5DB; --bg-warm: #F9FAFB; --white: #FFFFFF;
+    --radius-sm: 8px; --radius-md: 12px;
+    --shadow-sm: 0 1px 2px rgba(17,24,39,0.06), 0 1px 3px rgba(17,24,39,0.08);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', sans-serif; background: var(--bg-warm); color: var(--gray-900); line-height: 1.7; }
+  header {
+    background: var(--white); border-bottom: 1px solid rgba(17,24,39,0.06);
+    padding: 16px 24px; display: flex; align-items: center; justify-content: space-between;
+  }
+  .logo { display: flex; align-items: center; gap: 10px; font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 19px; text-decoration: none; color: var(--gray-900); }
+  .logo svg { width: 26px; height: 26px; }
+  .nav-back { font-size: 14px; font-weight: 600; color: var(--gray-700); text-decoration: none; }
+  .nav-back:hover { color: var(--blue); }
+
+  main { max-width: 760px; margin: 0 auto; padding: 56px 24px 80px; }
+  .doc-card { background: var(--white); border-radius: var(--radius-md); border: 1px solid rgba(17,24,39,0.06); box-shadow: var(--shadow-sm); padding: 48px 44px; }
+  @media (max-width: 600px) { .doc-card { padding: 32px 22px; } }
+
+  h1 { font-family: 'Poppins', sans-serif; font-size: 30px; font-weight: 700; color: var(--blue); margin-bottom: 8px; }
+  .effective-date { font-size: 14px; color: var(--gray-500); font-style: italic; margin-bottom: 28px; }
+  .intro-para { font-size: 15px; color: var(--gray-700); margin-bottom: 32px; padding-bottom: 28px; border-bottom: 1px solid rgba(17,24,39,0.08); }
+
+  h2 { font-family: 'Poppins', sans-serif; font-size: 19px; font-weight: 700; color: var(--gray-900); margin: 32px 0 12px; }
+  p { font-size: 15px; color: var(--gray-700); margin-bottom: 14px; }
+  ul { margin: 0 0 16px 0; padding-left: 0; list-style: none; }
+  li { font-size: 15px; color: var(--gray-700); margin-bottom: 10px; padding-left: 22px; position: relative; }
+  li::before { content: ''; position: absolute; left: 4px; top: 8px; width: 6px; height: 6px; border-radius: 50%; background: var(--orange); }
+
+  table { width: 100%; border-collapse: collapse; margin: 20px 0 28px; font-size: 13.5px; }
+  th { background: #EAF1FF; color: var(--gray-900); font-weight: 700; text-align: left; padding: 10px 12px; border: 1px solid var(--gray-300); }
+  td { padding: 10px 12px; border: 1px solid var(--gray-300); color: var(--gray-700); vertical-align: top; }
+
+  .contact-line { font-weight: 600; color: var(--gray-900); margin-bottom: 6px; }
+  .disclaimer-box {
+    margin-top: 40px; padding: 18px 20px; background: var(--bg-warm); border-radius: var(--radius-sm);
+    border-left: 3px solid var(--orange); font-size: 13px; color: var(--gray-500); font-style: italic;
+  }
+  .placeholder { background: #FEF3C7; padding: 1px 4px; border-radius: 3px; color: #92400E; font-style: normal; }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="../index.html" class="logo">
+    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M4 26L13 9L17 16L20 11L28 26H4Z" fill="#0052CC"/>
+      <path d="M20 11L28 26H22L17.5 17.5L20 11Z" fill="#FF6B35"/>
+      <circle cx="13" cy="6" r="2.4" fill="#FF6B35"/>
+    </svg>
+    LingoPeak
+  </a>
+  <a href="../index.html" class="nav-back">← Back to home</a>
+</header>
+
+<main>
+  <div class="doc-card">
+    <h1>Privacy Policy</h1>
+    <p class="effective-date">Effective date: <span class="placeholder">[Insert date you publish this]</span></p>
+
+    <p class="intro-para">This Privacy Policy explains what personal data LingoPeak ("we," "us") collects when you use our website and Service, why we collect it, how it's stored, and the choices you have. It is written in plain language and reflects the actual data our systems collect — not a generic template.</p>
+
+    <h2>1. Data We Collect and Why</h2>
+    <p>The table below summarizes exactly what we collect, why, and where it lives:</p>
+    <table>
+      <tr><th>What we collect</th><th>Why we collect it</th><th>Where it's stored</th></tr>
+      <tr><td>Name, email, password (encrypted)</td><td>To create and secure your account, and let you log in</td><td>Our PostgreSQL database (hosted on Railway)</td></tr>
+      <tr><td>Subscription and billing status</td><td>To know which plan you're on and manage your access</td><td>Our database; payment details themselves are handled by Razorpay, not stored by us</td></tr>
+      <tr><td>Languages you're learning and proficiency level</td><td>To personalize lessons and AI tutor conversations</td><td>Our database</td></tr>
+      <tr><td>Your messages to the AI tutor and its replies</td><td>To hold a conversation, give corrections, and improve your learning path</td><td>Our database; also processed by our AI provider (Anthropic) to generate each reply</td></tr>
+      <tr><td>Pronunciation practice transcripts and scores</td><td>To give you feedback on spoken phrases</td><td>Our database; the audio-to-text transcription happens in your browser and is not stored as audio by us</td></tr>
+      <tr><td>Usage data (minutes used, streaks, login times)</td><td>To enforce plan limits and show your progress</td><td>Our database</td></tr>
+    </table>
+
+    <h2>2. How We Use Your Data</h2>
+    <ul>
+      <li>To provide the Service: creating your account, running AI tutor conversations, scoring pronunciation, tracking your progress and streaks.</li>
+      <li>To process payments: your subscription tier and billing status are linked to your account so we know what access to give you. Card and payment details are handled directly by Razorpay under its own privacy and security practices — we never see or store your full card number.</li>
+      <li>To communicate with you: for example, account confirmations, billing receipts, or support replies if you contact us.</li>
+      <li>To improve the Service: understanding which features are used helps us prioritize what to build next. We do not sell your personal data to advertisers.</li>
+    </ul>
+
+    <h2>3. Third Parties Who Process Your Data</h2>
+    <p>We rely on a small number of trusted service providers to run LingoPeak. Each only receives the data necessary to perform its function:</p>
+    <ul>
+      <li><strong>Anthropic (AI provider)</strong> — receives your conversation messages and pronunciation transcripts to generate the AI tutor's replies and feedback.</li>
+      <li><strong>Razorpay (payment processor)</strong> — receives your billing and payment information to process subscription charges; governed by Razorpay's own privacy policy.</li>
+      <li><strong>Railway (infrastructure host)</strong> — hosts our database and backend servers; does not access your data for any purpose other than providing hosting infrastructure.</li>
+    </ul>
+    <p>We do not sell, rent, or trade your personal data to third parties for marketing purposes.</p>
+
+    <h2>4. Data Retention</h2>
+    <p>We retain your account data for as long as your account is active. If you delete your account, we will delete or anonymize your personal data within a reasonable period, except where we are required to retain certain records (such as billing history) for legal, tax, or accounting purposes under Indian law.</p>
+
+    <h2>5. Your Rights</h2>
+    <p>Depending on applicable law (including India's Digital Personal Data Protection Act), you generally have the right to:</p>
+    <ul>
+      <li>Access the personal data we hold about you.</li>
+      <li>Request correction of inaccurate data.</li>
+      <li>Request deletion of your account and associated personal data.</li>
+      <li>Withdraw consent for processing, where consent is the basis for that processing (note: withdrawing consent for core data like your account email may mean we can no longer provide the Service to you).</li>
+    </ul>
+    <p>To exercise any of these rights, contact us using the details in Section 8 below.</p>
+
+    <h2>6. Data Security</h2>
+    <p>We take reasonable technical measures to protect your data, including:</p>
+    <ul>
+      <li>Encrypting your password using industry-standard hashing (we never store your actual password in readable form).</li>
+      <li>Using secure, token-based authentication for account sessions.</li>
+      <li>Restricting database access to authorized systems only.</li>
+    </ul>
+    <p>No system is perfectly secure, and we cannot guarantee absolute security, but we are committed to promptly addressing any data security issue that arises and notifying affected users where required by law.</p>
+
+    <h2>7. Children's Privacy</h2>
+    <p>LingoPeak is not directed at children under 13, and we do not knowingly collect personal data from children under 13. If you are a parent or guardian and believe your child has provided us with personal data without your consent, please contact us so we can delete it.</p>
+
+    <h2>8. Contact Us</h2>
+    <p>If you have questions about this Privacy Policy or want to exercise your data rights, contact us at:</p>
+    <p class="contact-line">Email: <span class="placeholder">[Insert your support email]</span></p>
+    <p class="contact-line">Business name: LingoPeak (operated by <span class="placeholder">[Your Full Legal Name]</span>, sole proprietorship, India)</p>
+
+    <h2>9. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy as our Service evolves or as required by law. We will update the effective date above when changes are made, and for material changes, we will make reasonable efforts to notify you directly.</p>
+
+    <div class="disclaimer-box">
+      This document reflects LingoPeak's actual data collection as implemented in its current system, written specifically for this product rather than copied from a generic template. It is provided as a strong starting point and does not constitute legal advice. Before launching publicly, we recommend a one-time review by a lawyer licensed in India to confirm full compliance with the Digital Personal Data Protection Act (DPDP Act, 2023) and any sector-specific requirements.
+    </div>
+  </div>
+</main>
+
+</body>
+</html>

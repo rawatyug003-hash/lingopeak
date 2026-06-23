@@ -341,7 +341,8 @@
     transition: transform 200ms ease-out, box-shadow 200ms ease-out;
   }
   .lang-card:hover { transform: translateY(-3px) scale(1.02); box-shadow: var(--shadow-md); }
-  .lang-flag { font-size: 32px; margin-bottom: 8px; }
+  .lang-flag { display: flex; justify-content: center; margin-bottom: 8px; }
+  .lang-flag svg { display: block; border-radius: 4px; box-shadow: 0 1px 3px rgba(17,24,39,0.15); }
   .lang-name { font-weight: 600; font-size: 15px; margin-bottom: 4px; }
   .lang-count { font-size: 13px; color: var(--gray-500); }
 
@@ -641,12 +642,12 @@
         <h2>Six languages. One AI tutor that never sleeps.</h2>
       </div>
       <div class="lang-grid stagger">
-        <div class="lang-card"><div class="lang-flag">🇪🇸</div><div class="lang-name">Spanish</div><div class="lang-count">38K learners</div></div>
-        <div class="lang-card"><div class="lang-flag">🇫🇷</div><div class="lang-name">French</div><div class="lang-count">24K learners</div></div>
-        <div class="lang-card"><div class="lang-flag">🇩🇪</div><div class="lang-name">German</div><div class="lang-count">19K learners</div></div>
-        <div class="lang-card"><div class="lang-flag">🇯🇵</div><div class="lang-name">Japanese</div><div class="lang-count">31K learners</div></div>
-        <div class="lang-card"><div class="lang-flag">🇨🇳</div><div class="lang-name">Mandarin</div><div class="lang-count">22K learners</div></div>
-        <div class="lang-card"><div class="lang-flag">🇮🇹</div><div class="lang-name">Italian</div><div class="lang-count">16K learners</div></div>
+        <div class="lang-card"><div class="lang-flag"><svg viewBox="0 0 32 32" width="32" height="32"><rect width="32" height="32" rx="4" fill="#AA151B"/><rect y="8" width="32" height="16" fill="#F1BF00"/></svg></div><div class="lang-name">Spanish</div><div class="lang-count">38K learners</div></div>
+        <div class="lang-card"><div class="lang-flag"><svg viewBox="0 0 32 32" width="32" height="32"><rect width="32" height="32" rx="4" fill="#fff"/><rect width="11" height="32" fill="#002395"/><rect x="21" width="11" height="32" fill="#ED2939"/></svg></div><div class="lang-name">French</div><div class="lang-count">24K learners</div></div>
+        <div class="lang-card"><div class="lang-flag"><svg viewBox="0 0 32 32" width="32" height="32"><rect width="32" height="32" rx="4" fill="#FFCE00"/><rect width="32" height="10.7" fill="#000"/><rect y="21.3" width="32" height="10.7" fill="#DD0000"/></svg></div><div class="lang-name">German</div><div class="lang-count">19K learners</div></div>
+        <div class="lang-card"><div class="lang-flag"><svg viewBox="0 0 32 32" width="32" height="32"><rect width="32" height="32" rx="4" fill="#fff"/><circle cx="16" cy="16" r="7" fill="#BC002D"/></svg></div><div class="lang-name">Japanese</div><div class="lang-count">31K learners</div></div>
+        <div class="lang-card"><div class="lang-flag"><svg viewBox="0 0 32 32" width="32" height="32"><rect width="32" height="32" rx="4" fill="#DE2910"/><polygon points="8,7 9.6,11.5 14.5,11.5 10.5,14.2 12,18.5 8,15.8 4,18.5 5.5,14.2 1.5,11.5 6.4,11.5" fill="#FFDE00" transform="scale(0.9) translate(2,2)"/></svg></div><div class="lang-name">Mandarin</div><div class="lang-count">22K learners</div></div>
+        <div class="lang-card"><div class="lang-flag"><svg viewBox="0 0 32 32" width="32" height="32"><rect width="32" height="32" rx="4" fill="#fff"/><rect width="11" height="32" fill="#009246"/><rect x="21" width="11" height="32" fill="#CE2B37"/></svg></div><div class="lang-name">Italian</div><div class="lang-count">16K learners</div></div>
       </div>
     </div>
   </section>
@@ -775,8 +776,8 @@
       </div>
       <div class="footer-col">
         <h4>Legal</h4>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
+        <a href="app/privacy.html">Privacy Policy</a>
+        <a href="app/terms.html">Terms of Service</a>
       </div>
     </div>
     <div class="footer-bottom">

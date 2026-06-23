@@ -3,7 +3,7 @@
 // (this is a demo-grade client; for production you'd consider httpOnly cookies
 // for the refresh token to reduce XSS exposure).
 
-const API_BASE_URL = window.LINGOPEAK_API_URL || 'http://localhost:3001';
+const API_BASE_URL = window.LINGOPEAK_API_URL || 'https://lingopeak-production.up.railway.app';
 
 const TokenStore = {
   getAccessToken() { return localStorage.getItem('lp_access_token'); },
