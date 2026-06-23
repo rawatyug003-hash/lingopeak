@@ -383,6 +383,25 @@
   }
   @media (max-width: 920px) { .pricing-grid { grid-template-columns: 1fr; max-width: 420px; margin: 0 auto; } }
 
+  .billing-toggle {
+    display: flex; gap: 4px; background: var(--white); border-radius: 100px; padding: 5px;
+    width: fit-content; margin: 0 auto 40px; box-shadow: var(--shadow-sm);
+  }
+  .toggle-btn {
+    padding: 10px 22px; border-radius: 100px; border: none; background: transparent; font-family: inherit;
+    font-weight: 600; font-size: 14px; color: var(--gray-500); cursor: pointer;
+    transition: background-color 220ms ease-out, color 220ms ease-out;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .toggle-btn.active { background: var(--blue); color: white; }
+  .toggle-btn .save-chip {
+    background: var(--orange); color: white; font-size: 11px; font-weight: 700;
+    padding: 2px 8px; border-radius: 100px;
+  }
+  .toggle-btn:not(.active) .save-chip { background: rgba(255,107,53,0.12); color: var(--orange); }
+
+  .plan-effective { font-size: 13px; color: var(--gray-500); margin-top: 4px; margin-bottom: 4px; }
+
   .price-card {
     background: var(--white);
     border-radius: var(--radius-md);
@@ -596,7 +615,7 @@
     <div class="container">
       <div class="section-head">
         <span class="eyebrow">What you get</span>
-        <h2>Everything a $50/hour tutor gives you. For $19.99/month.</h2>
+        <h2>Everything a $50/hour tutor gives you. For ₹1,199/month.</h2>
         <p>Six core tools that turn scattered practice into real fluency.</p>
       </div>
       <div class="features-grid stagger">
@@ -694,23 +713,36 @@
         <p>Start free for 7 days. No credit card required. Cancel anytime.</p>
       </div>
 
+      <div class="billing-toggle">
+        <button class="toggle-btn active" data-period="monthly">Monthly</button>
+        <button class="toggle-btn" data-period="annual">Annual <span class="save-chip">Save 20%</span></button>
+      </div>
+
       <div class="pricing-grid">
         <div class="price-card">
           <div class="plan-name">Starter</div>
-          <div class="plan-price">$9.99<span>/mo</span></div>
+          <div class="plan-price">
+            <span class="price-monthly">₹599<span>/mo</span></span>
+            <span class="price-annual" style="display:none;">₹5,749<span>/yr</span></span>
+          </div>
+          <div class="plan-effective" style="display:none;">≈ ₹479/month, billed yearly</div>
           <div class="plan-limit">50 AI conversation minutes/mo</div>
           <ul class="plan-features">
             <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Basic vocabulary builder</li>
             <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Progress tracking</li>
             <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Mobile app access</li>
           </ul>
-          <a href="#" class="btn btn-secondary">Start Free Trial</a>
+          <a href="app/signup.html" class="btn btn-secondary">Start Free Trial</a>
         </div>
 
         <div class="price-card featured">
           <span class="badge-popular">Most Popular</span>
           <div class="plan-name">Pro</div>
-          <div class="plan-price">$19.99<span>/mo</span></div>
+          <div class="plan-price">
+            <span class="price-monthly">₹1,199<span>/mo</span></span>
+            <span class="price-annual" style="display:none;">₹11,499<span>/yr</span></span>
+          </div>
+          <div class="plan-effective" style="display:none;">≈ ₹958/month, billed yearly</div>
           <div class="plan-limit">Unlimited AI conversation</div>
           <ul class="plan-features">
             <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Personalized learning paths</li>
@@ -718,12 +750,16 @@
             <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Real-world content library</li>
             <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Priority support</li>
           </ul>
-          <a href="#" class="btn btn-primary">Start Free Trial</a>
+          <a href="app/signup.html" class="btn btn-primary">Start Free Trial</a>
         </div>
 
         <div class="price-card">
           <div class="plan-name">Premium</div>
-          <div class="plan-price">$29.99<span>/mo</span></div>
+          <div class="plan-price">
+            <span class="price-monthly">₹2,199<span>/mo</span></span>
+            <span class="price-annual" style="display:none;">₹21,099<span>/yr</span></span>
+          </div>
+          <div class="plan-effective" style="display:none;">≈ ₹1,758/month, billed yearly</div>
           <div class="plan-limit">Unlimited + live sessions</div>
           <ul class="plan-features">
             <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Everything in Pro</li>
@@ -731,12 +767,25 @@
             <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Certification exams</li>
             <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>1-on-1 coaching (2×/mo)</li>
           </ul>
-          <a href="#" class="btn btn-secondary">Start Free Trial</a>
+          <a href="app/signup.html" class="btn btn-secondary">Start Free Trial</a>
         </div>
       </div>
-      <p class="annual-note">Pay annually and save <strong>~17%</strong> on any plan.</p>
+      <p class="annual-note">Pay annually and save <strong>20%</strong> on any plan.</p>
     </div>
   </section>
+
+  <script>
+    document.querySelectorAll('.toggle-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.toggle-btn').forEach((b) => b.classList.remove('active'));
+        btn.classList.add('active');
+        const isAnnual = btn.dataset.period === 'annual';
+        document.querySelectorAll('.price-monthly').forEach((el) => el.style.display = isAnnual ? 'none' : 'inline');
+        document.querySelectorAll('.price-annual').forEach((el) => el.style.display = isAnnual ? 'inline' : 'none');
+        document.querySelectorAll('.plan-effective').forEach((el) => el.style.display = isAnnual ? 'block' : 'none');
+      });
+    });
+  </script>
 
   <!-- ===================== FINAL CTA ===================== -->
   <section class="final-cta-wrap">

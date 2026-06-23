@@ -1,22 +1,26 @@
-// Mirrors the pricing tiers from the LingoPeak business plan (Section 5).
+// Mirrors LingoPeak's real India pricing (INR), set after market research
+// comparing against Duolingo Super's India pricing (~\u20b9566/mo).
 // monthlyMinutesLimit: -1 means unlimited.
 
 const SUBSCRIPTION_TIERS = {
   FREE: {
     name: 'Free Trial',
-    priceMonthly: 0,
+    priceMonthlyINR: 0,
+    priceAnnualINR: 0,
     monthlyMinutesLimit: 15,
     features: ['basic_vocabulary', 'progress_tracking'],
   },
   STARTER: {
     name: 'Starter',
-    priceMonthly: 9.99,
+    priceMonthlyINR: 599,
+    priceAnnualINR: 5749, // ~20% off vs. 599*12 = 7188
     monthlyMinutesLimit: 50,
     features: ['basic_vocabulary', 'progress_tracking', 'mobile_app'],
   },
   PRO: {
     name: 'Pro',
-    priceMonthly: 19.99,
+    priceMonthlyINR: 1199,
+    priceAnnualINR: 11499, // ~20% off vs. 1199*12 = 14388
     monthlyMinutesLimit: -1, // unlimited
     features: [
       'personalized_paths',
@@ -27,7 +31,8 @@ const SUBSCRIPTION_TIERS = {
   },
   PREMIUM: {
     name: 'Premium',
-    priceMonthly: 29.99,
+    priceMonthlyINR: 2199,
+    priceAnnualINR: 21099, // ~20% off vs. 2199*12 = 26388
     monthlyMinutesLimit: -1, // unlimited
     features: [
       'personalized_paths',
@@ -42,7 +47,7 @@ const SUBSCRIPTION_TIERS = {
   },
 };
 
-const ANNUAL_DISCOUNT_PERCENT = 17; // within the doc's stated 15-20% range
+const ANNUAL_DISCOUNT_PERCENT = 20;
 
 function getMinutesLimit(tier) {
   return SUBSCRIPTION_TIERS[tier]?.monthlyMinutesLimit ?? 0;
