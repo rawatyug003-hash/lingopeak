@@ -35,6 +35,13 @@
   }
   .logo { display: flex; align-items: center; gap: 10px; font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 19px; }
   .logo svg { width: 26px; height: 26px; }
+  .header-nav { display: flex; gap: 6px; }
+  .nav-link {
+    padding: 9px 16px; border-radius: 100px; font-weight: 600; font-size: 14px; color: var(--gray-700);
+    text-decoration: none; transition: background-color 200ms, color 200ms;
+  }
+  .nav-link:hover { background: rgba(0,82,204,0.06); color: var(--blue); }
+  .nav-link.active { background: var(--blue); color: white; }
   .header-actions { display: flex; align-items: center; gap: 14px; }
   .user-chip { font-size: 14px; color: var(--gray-700); }
   .btn-logout {
@@ -174,6 +181,10 @@
     </svg>
     LingoPeak
   </a>
+  <div class="header-nav">
+    <a href="languages.html" class="nav-link active">Languages</a>
+    <a href="progress.html" class="nav-link">Progress</a>
+  </div>
   <div class="header-actions">
     <span class="user-chip" id="userChip">Loading...</span>
     <button class="btn-logout" id="logoutBtn">Log out</button>

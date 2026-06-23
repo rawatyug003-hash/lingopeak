@@ -135,6 +135,7 @@
   </a>
   <div class="lang-badge"><span class="flag" id="langFlag">🌐</span><span id="langName">Loading...</span></div>
   <div class="header-actions">
+    <a href="#" id="progressLink" class="back-link">Progress</a>
     <button class="btn-logout" id="logoutBtn">Log out</button>
   </div>
 </header>
@@ -197,6 +198,7 @@
   const params = new URLSearchParams(window.location.search);
   const profileId = params.get('profileId');
   if (!profileId) { window.location.href = 'languages.html'; }
+  document.getElementById('progressLink').href = `progress.html?profileId=${profileId}`;
 
   const FLAGS = {
     es: '<svg viewBox="0 0 32 32" width="24" height="24"><rect width="32" height="32" rx="5" fill="#AA151B"/><rect y="8" width="32" height="16" fill="#F1BF00"/></svg>',

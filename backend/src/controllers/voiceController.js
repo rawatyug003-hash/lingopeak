@@ -1,6 +1,7 @@
 const prisma = require('../config/prisma');
 const { ApiError } = require('../middleware/errorHandler');
 const { analyzePronunciation } = require('../services/pronunciationService');
+const { recordPracticeActivity } = require('../services/streakService');
 const { z } = require('zod');
 
 const checkPronunciationSchema = z.object({
@@ -25,6 +26,8 @@ async function checkPronunciation(req, res, next) {
       languageName: learningProfile.language.name,
       proficiencyLevel: learningProfile.proficiencyLevel,
     });
+
+    await recordPracticeActivity(learningProfile.id, { minutesSpent: 0.25 });
 
     res.json({ result });
   } catch (err) {

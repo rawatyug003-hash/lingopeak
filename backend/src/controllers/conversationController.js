@@ -3,6 +3,7 @@ const { ApiError } = require('../middleware/errorHandler');
 const { sendMessageSchema } = require('../utils/validation');
 const { getTutorReply } = require('../services/aiTutorService');
 const { assertWithinUsageLimit, recordUsage } = require('../services/usageService');
+const { recordPracticeActivity } = require('../services/streakService');
 
 const HISTORY_WINDOW = 20; // most recent messages sent to the model for context
 
@@ -69,10 +70,7 @@ async function sendMessage(req, res, next) {
     });
 
     await recordUsage(req.userId);
-    await prisma.learningProfile.update({
-      where: { id: learningProfile.id },
-      data: { lastPracticedAt: new Date() },
-    });
+    await recordPracticeActivity(learningProfile.id, { minutesSpent: 0.5 });
 
     res.status(201).json({
       conversationId: conversation.id,
