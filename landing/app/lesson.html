@@ -144,6 +144,7 @@
   <div class="tabs">
     <button class="tab-btn active" data-tab="chat">💬 Conversation</button>
     <button class="tab-btn" data-tab="voice">🎙️ Pronunciation</button>
+    <a href="#" id="flashcardsLink" class="tab-btn" style="text-decoration:none; display:inline-block;">🗂️ Flashcards</a>
   </div>
 
   <!-- ===================== CHAT TAB ===================== -->
@@ -199,6 +200,7 @@
   const profileId = params.get('profileId');
   if (!profileId) { window.location.href = 'languages.html'; }
   document.getElementById('progressLink').href = `progress.html?profileId=${profileId}`;
+  document.getElementById('flashcardsLink').href = `flashcards.html?profileId=${profileId}`;
 
   const FLAGS = {
     es: '<svg viewBox="0 0 32 32" width="24" height="24"><rect width="32" height="32" rx="5" fill="#AA151B"/><rect y="8" width="32" height="16" fill="#F1BF00"/></svg>',

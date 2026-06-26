@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flashcards — LingoPeak</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --blue: #0052CC; --blue-dark: #003D99; --orange: #FF6B35;
+    --gray-900: #111827; --gray-700: #374151; --gray-500: #6B7280; --gray-300: #D1D5DB;
+    --bg-warm: #F9FAFB; --white: #FFFFFF;
+    --radius-sm: 8px; --radius-md: 14px; --radius-lg: 22px;
+    --shadow-sm: 0 1px 2px rgba(17,24,39,0.06), 0 1px 3px rgba(17,24,39,0.08);
+    --shadow-md: 0 4px 12px rgba(17,24,39,0.08), 0 2px 4px rgba(17,24,39,0.06);
+    --shadow-lg: 0 16px 40px rgba(0,82,204,0.14), 0 4px 8px rgba(17,24,39,0.06);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', sans-serif; background: var(--bg-warm); color: var(--gray-900); line-height: 1.6; }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; } }
+  :focus-visible { outline: 3px solid var(--orange); outline-offset: 2px; border-radius: 4px; }
+
+  header {
+    background: var(--white); border-bottom: 1px solid rgba(17,24,39,0.06);
+    padding: 14px 24px; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap;
+  }
+  .back-link { display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: 14px; color: var(--gray-700); text-decoration: none; transition: color 200ms; }
+  .back-link:hover { color: var(--blue); }
+  .lang-badge { display: flex; align-items: center; gap: 8px; font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 17px; }
+  .lang-badge .flag { font-size: 22px; }
+  .btn-logout {
+    padding: 8px 16px; border-radius: var(--radius-sm); border: 1.5px solid var(--gray-300);
+    background: var(--white); font-family: inherit; font-weight: 600; font-size: 13px;
+    cursor: pointer; color: var(--gray-700); transition: border-color 200ms, color 200ms;
+  }
+  .btn-logout:hover { border-color: var(--blue); color: var(--blue); }
+
+  main { max-width: 640px; margin: 0 auto; padding: 36px 20px 60px; display: flex; flex-direction: column; align-items: center; }
+
+  .session-progress { width: 100%; margin-bottom: 28px; }
+  .session-progress-track { height: 8px; border-radius: 100px; background: var(--white); overflow: hidden; border: 1px solid rgba(17,24,39,0.06); }
+  .session-progress-fill { height: 100%; border-radius: 100px; background: linear-gradient(90deg, var(--blue), var(--orange)); width: 0%; transition: width 400ms ease-out; }
+  .session-progress-text { text-align: center; font-size: 13px; color: var(--gray-500); margin-top: 8px; }
+
+  /* Flip card */
+  .card-scene { width: 100%; max-width: 440px; aspect-ratio: 4/3; perspective: 1200px; margin-bottom: 28px; }
+  .flip-card {
+    width: 100%; height: 100%; position: relative; transition: transform 500ms cubic-bezier(.4,.2,.2,1);
+    transform-style: preserve-3d; cursor: pointer;
+  }
+  .flip-card.flipped { transform: rotateY(180deg); }
+  .card-face {
+    position: absolute; inset: 0; backface-visibility: hidden; border-radius: var(--radius-lg);
+    display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;
+    padding: 32px; box-shadow: var(--shadow-lg);
+  }
+  .card-front { background: var(--white); border: 1.5px solid rgba(17,24,39,0.07); }
+  .card-back { background: linear-gradient(135deg, var(--blue) 0%, var(--blue-dark) 100%); color: white; transform: rotateY(180deg); }
+
+  .card-word { font-family: 'Poppins', sans-serif; font-size: 32px; font-weight: 700; margin-bottom: 12px; }
+  .card-hint { font-size: 13px; color: var(--gray-500); position: absolute; bottom: 20px; }
+  .card-back .card-hint { color: rgba(255,255,255,0.7); }
+  .card-translation { font-family: 'Poppins', sans-serif; font-size: 26px; font-weight: 700; margin-bottom: 14px; }
+  .card-example { font-size: 15px; opacity: 0.9; font-style: italic; max-width: 320px; }
+  .new-word-chip {
+    position: absolute; top: 18px; left: 18px; background: rgba(255,107,53,0.12); color: var(--orange);
+    font-size: 11px; font-weight: 700; padding: 4px 10px; border-radius: 100px; text-transform: uppercase;
+  }
+
+  /* Answer buttons (shown only after flip) */
+  .answer-row { display: flex; gap: 12px; width: 100%; max-width: 440px; opacity: 0; pointer-events: none; transition: opacity 200ms ease-out; }
+  .answer-row.visible { opacity: 1; pointer-events: all; }
+  .answer-btn {
+    flex: 1; padding: 16px 8px; border-radius: var(--radius-md); border: none; font-family: inherit;
+    font-weight: 700; font-size: 14px; cursor: pointer; color: white;
+    display: flex; flex-direction: column; align-items: center; gap: 4px;
+    transition: transform 160ms ease-out, box-shadow 200ms ease-out;
+  }
+  .answer-btn:active { transform: scale(0.96); }
+  .answer-btn .icon { font-size: 20px; }
+  .answer-forgot { background: #DC2626; }
+  .answer-hard { background: #F59E0B; }
+  .answer-good { background: #3B82F6; }
+  .answer-easy { background: #16A34A; }
+
+  .tap-hint { font-size: 14px; color: var(--gray-500); margin-bottom: 28px; min-height: 20px; }
+
+  /* Empty / done state */
+  .done-state { text-align: center; padding: 60px 32px; }
+  .done-emoji { font-size: 56px; margin-bottom: 16px; }
+  .done-state h2 { font-family: 'Poppins', sans-serif; font-size: 22px; margin-bottom: 8px; }
+  .done-state p { color: var(--gray-500); margin-bottom: 28px; }
+  .btn-primary-action {
+    display: inline-flex; padding: 13px 28px; border-radius: 100px; background: var(--orange); color: white;
+    font-weight: 600; text-decoration: none; box-shadow: var(--shadow-md);
+  }
+
+  .loading-state { text-align: center; padding: 80px 20px; color: var(--gray-500); }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="#" id="backLink" class="back-link">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M19 12H5M5 12L11 6M5 12L11 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Back to lesson
+  </a>
+  <div class="lang-badge"><span class="flag" id="langFlag">🌐</span><span id="langName">Flashcards</span></div>
+  <button class="btn-logout" id="logoutBtn">Log out</button>
+</header>
+
+<main>
+  <div id="loadingState" class="loading-state">Loading your flashcards...</div>
+
+  <div id="sessionWrap" style="display:none; width:100%; display:flex; flex-direction:column; align-items:center;">
+    <div class="session-progress">
+      <div class="session-progress-track"><div class="session-progress-fill" id="progressFill"></div></div>
+      <div class="session-progress-text" id="progressText">Card 1 of 10</div>
+    </div>
+
+    <div class="card-scene">
+      <div class="flip-card" id="flipCard">
+        <div class="card-face card-front">
+          <span class="new-word-chip" id="newWordChip" style="display:none;">New word</span>
+          <div class="card-word" id="cardWord">—</div>
+          <div class="card-hint">Tap to reveal translation</div>
+        </div>
+        <div class="card-face card-back">
+          <div class="card-translation" id="cardTranslation">—</div>
+          <div class="card-example" id="cardExample"></div>
+          <div class="card-hint">How well did you know this?</div>
+        </div>
+      </div>
+    </div>
+
+    <p class="tap-hint" id="tapHint">Tap the card to see the answer</p>
+
+    <div class="answer-row" id="answerRow">
+      <button class="answer-btn answer-forgot" data-quality="0"><span class="icon">😵</span>Forgot</button>
+      <button class="answer-btn answer-hard" data-quality="3"><span class="icon">🤔</span>Hard</button>
+      <button class="answer-btn answer-good" data-quality="4"><span class="icon">🙂</span>Good</button>
+      <button class="answer-btn answer-easy" data-quality="5"><span class="icon">⚡</span>Easy</button>
+    </div>
+  </div>
+
+  <div id="doneState" class="done-state" style="display:none;">
+    <div class="done-emoji">🎉</div>
+    <h2>Session complete!</h2>
+    <p id="doneSummary">You reviewed your flashcards for today.</p>
+    <a href="#" id="doneBackLink" class="btn-primary-action">Back to lesson</a>
+  </div>
+</main>
+
+<script src="api.js"></script>
+<script>
+  if (!Auth.isLoggedIn()) { window.location.href = 'login.html'; }
+
+  document.getElementById('logoutBtn').addEventListener('click', async () => {
+    await Auth.logout();
+    window.location.href = 'login.html';
+  });
+
+  const FLAGS = {
+    es: '🇪🇸', fr: '🇫🇷', de: '🇩🇪', ja: '🇯🇵', zh: '🇨🇳', it: '🇮🇹',
+  };
+
+  const params = new URLSearchParams(window.location.search);
+  const profileId = params.get('profileId');
+  if (!profileId) { window.location.href = 'languages.html'; }
+
+  document.getElementById('backLink').href = `lesson.html?profileId=${profileId}`;
+  document.getElementById('doneBackLink').href = `lesson.html?profileId=${profileId}`;
+
+  const loadingState = document.getElementById('loadingState');
+  const sessionWrap = document.getElementById('sessionWrap');
+  const doneState = document.getElementById('doneState');
+  const flipCard = document.getElementById('flipCard');
+  const answerRow = document.getElementById('answerRow');
+  const tapHint = document.getElementById('tapHint');
+  const progressFill = document.getElementById('progressFill');
+  const progressText = document.getElementById('progressText');
+
+  let queue = []; // [{ vocabularyItemId, word, translation, exampleSentence, isNew }]
+  let currentIndex = 0;
+  let isFlipped = false;
+
+  async function loadSession() {
+    try {
+      const profileData = await apiJson('/api/learning-profiles/me');
+      const profile = (profileData.learningProfiles || []).find((p) => p.id === profileId);
+      if (profile) {
+        document.getElementById('langFlag').textContent = FLAGS[profile.language.code] || '🌐';
+        document.getElementById('langName').textContent = `${profile.language.name} Flashcards`;
+      }
+
+      // Mix: words already due for review, plus a few brand-new words to learn
+      const [dueData, newData] = await Promise.all([
+        apiJson(`/api/progress/vocabulary/due?learningProfileId=${profileId}`),
+        apiJson(`/api/progress/vocabulary/new?learningProfileId=${profileId}&limit=8`),
+      ]);
+
+      const dueItems = (dueData.dueItems || []).map((d) => ({
+        vocabularyItemId: d.vocabularyItem.id,
+        word: d.vocabularyItem.word,
+        translation: d.vocabularyItem.translation,
+        exampleSentence: d.vocabularyItem.exampleSentence,
+        isNew: false,
+      }));
+
+      const newItems = (newData.items || []).map((i) => ({
+        vocabularyItemId: i.id,
+        word: i.word,
+        translation: i.translation,
+        exampleSentence: i.exampleSentence,
+        isNew: true,
+      }));
+
+      queue = [...dueItems, ...newItems];
+
+      loadingState.style.display = 'none';
+
+      if (queue.length === 0) {
+        showDoneState("You're all caught up! No words due for review right now \u2014 check back tomorrow, or keep chatting with your AI tutor to encounter new words.");
+        return;
+      }
+
+      sessionWrap.style.display = 'flex';
+      showCard();
+    } catch (err) {
+      loadingState.textContent = 'Could not load flashcards right now. Please try again.';
+    }
+  }
+
+  function showCard() {
+    const item = queue[currentIndex];
+    isFlipped = false;
+    flipCard.classList.remove('flipped');
+    answerRow.classList.remove('visible');
+    tapHint.style.display = 'block';
+
+    document.getElementById('cardWord').textContent = item.word;
+    document.getElementById('cardTranslation').textContent = item.translation;
+    document.getElementById('cardExample').textContent = item.exampleSentence || '';
+    document.getElementById('newWordChip').style.display = item.isNew ? 'inline-block' : 'none';
+
+    progressFill.style.width = `${(currentIndex / queue.length) * 100}%`;
+    progressText.textContent = `Card ${currentIndex + 1} of ${queue.length}`;
+  }
+
+  flipCard.addEventListener('click', () => {
+    if (isFlipped) return;
+    isFlipped = true;
+    flipCard.classList.add('flipped');
+    answerRow.classList.add('visible');
+    tapHint.style.display = 'none';
+  });
+
+  answerRow.querySelectorAll('.answer-btn').forEach((btn) => {
+    btn.addEventListener('click', async () => {
+      const quality = Number(btn.dataset.quality);
+      const item = queue[currentIndex];
+
+      try {
+        if (item.isNew) {
+          // First time seeing this word — create its progress record, then
+          // immediately submit the quality score for this first review.
+          await apiJson('/api/progress/vocabulary/start', {
+            method: 'POST',
+            body: JSON.stringify({ vocabularyItemId: item.vocabularyItemId, learningProfileId: profileId }),
+          });
+        }
+        await apiJson('/api/progress/vocabulary/review', {
+          method: 'POST',
+          body: JSON.stringify({ vocabularyItemId: item.vocabularyItemId, quality }),
+        });
+      } catch (err) {
+        // Non-fatal for the session flow — move on even if one save fails
+        console.error('Could not save review:', err);
+      }
+
+      currentIndex++;
+      if (currentIndex >= queue.length) {
+        progressFill.style.width = '100%';
+        sessionWrap.style.display = 'none';
+        showDoneState(`You reviewed ${queue.length} word${queue.length === 1 ? '' : 's'}. Nice work!`);
+      } else {
+        showCard();
+      }
+    });
+  });
+
+  function showDoneState(message) {
+    doneState.style.display = 'block';
+    document.getElementById('doneSummary').textContent = message;
+  }
+
+  loadSession();
+</script>
+</body>
+</html>

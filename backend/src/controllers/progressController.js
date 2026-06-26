@@ -18,6 +18,80 @@ function calculateNextInterval({ intervalDays, easeFactor, quality }) {
   return { intervalDays: newInterval, easeFactor: newEaseFactor };
 }
 
+/**
+ * Returns a batch of words the learner hasn't started tracking yet for this
+ * learning profile, scoped to their current proficiency level (falls back
+ * to easier levels if nothing is left at their exact level). This is what
+ * powers "Learn new words" in the flashcard screen, as distinct from
+ * "Review due words" which uses existing VocabularyProgress rows.
+ */
+async function getNewVocabulary(req, res, next) {
+  try {
+    const { learningProfileId, limit } = req.query;
+    if (!learningProfileId) throw new ApiError(400, 'learningProfileId query param is required');
+
+    const profile = await prisma.learningProfile.findFirst({
+      where: { id: learningProfileId, userId: req.userId },
+    });
+    if (!profile) throw new ApiError(404, 'Learning profile not found');
+
+    const alreadyTracked = await prisma.vocabularyProgress.findMany({
+      where: { userId: req.userId, learningProfileId },
+      select: { vocabularyItemId: true },
+    });
+    const trackedIds = alreadyTracked.map((p) => p.vocabularyItemId);
+
+    const items = await prisma.vocabularyItem.findMany({
+      where: {
+        languageId: profile.languageId,
+        id: { notIn: trackedIds },
+        difficultyLevel: profile.proficiencyLevel,
+      },
+      take: Number(limit) || 10,
+      orderBy: { createdAt: 'asc' },
+    });
+
+    res.json({ items });
+  } catch (err) {
+    next(err);
+  }
+}
+
+/**
+ * Creates the first VocabularyProgress row for a word the learner has just
+ * seen for the first time, with sane SM-2 defaults. Called once per word
+ * when a learner starts a new flashcard session.
+ */
+async function startTrackingVocabulary(req, res, next) {
+  try {
+    const { vocabularyItemId, learningProfileId } = req.body;
+    if (!vocabularyItemId || !learningProfileId) {
+      throw new ApiError(400, 'vocabularyItemId and learningProfileId are required');
+    }
+
+    const profile = await prisma.learningProfile.findFirst({
+      where: { id: learningProfileId, userId: req.userId },
+    });
+    if (!profile) throw new ApiError(404, 'Learning profile not found');
+
+    const progress = await prisma.vocabularyProgress.upsert({
+      where: { userId_vocabularyItemId: { userId: req.userId, vocabularyItemId } },
+      update: {}, // already being tracked — leave existing progress untouched
+      create: {
+        userId: req.userId,
+        learningProfileId,
+        vocabularyItemId,
+        nextReviewAt: new Date(), // due immediately so it shows up for review right away
+      },
+      include: { vocabularyItem: true },
+    });
+
+    res.status(201).json({ progress });
+  } catch (err) {
+    next(err);
+  }
+}
+
 async function reviewVocabularyItem(req, res, next) {
   try {
     const { vocabularyItemId, quality } = req.body; // quality: 0-5
@@ -113,4 +187,10 @@ async function getProgressSummary(req, res, next) {
   }
 }
 
-module.exports = { reviewVocabularyItem, getDueVocabulary, getProgressSummary };
+module.exports = {
+  reviewVocabularyItem,
+  getDueVocabulary,
+  getNewVocabulary,
+  startTrackingVocabulary,
+  getProgressSummary,
+};

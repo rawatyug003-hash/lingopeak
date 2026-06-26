@@ -1,0 +1,5453 @@
+{
+  "version": "1.0",
+  "description": "LingoPeak Complete Vocabulary Database - All 6 Languages",
+  "generatedDate": "2026-06-26",
+  "totalLanguages": 6,
+  "totalWords": 600,
+  "languages": {
+    "spanish": {
+      "language": "Spanish",
+      "languageCode": "es",
+      "courseOutline": [
+        {
+          "unit": 1,
+          "topic": "Greetings & Introductions",
+          "description": "Learn basic greetings, how to introduce yourself, and common polite phrases"
+        },
+        {
+          "unit": 2,
+          "topic": "Numbers & Counting",
+          "description": "Master numbers from 0-100, telling time, and basic quantities"
+        },
+        {
+          "unit": 3,
+          "topic": "Family & Relationships",
+          "description": "Learn family member names and basic relationship vocabulary"
+        },
+        {
+          "unit": 4,
+          "topic": "Food & Dining",
+          "description": "Explore food vocabulary, restaurant phrases, and meal-related terms"
+        },
+        {
+          "unit": 5,
+          "topic": "Travel & Transportation",
+          "description": "Learn travel vocabulary, directions, and transportation methods"
+        },
+        {
+          "unit": 6,
+          "topic": "Shopping & Money",
+          "description": "Master shopping phrases, currency, and basic transactions"
+        },
+        {
+          "unit": 7,
+          "topic": "Daily Activities & Routines",
+          "description": "Learn verbs and vocabulary for everyday activities"
+        },
+        {
+          "unit": 8,
+          "topic": "Weather & Seasons",
+          "description": "Understand weather conditions and seasonal vocabulary"
+        },
+        {
+          "unit": 9,
+          "topic": "Sports & Hobbies",
+          "description": "Explore sports, games, and leisure activities"
+        },
+        {
+          "unit": 10,
+          "topic": "Culture & Traditions",
+          "description": "Learn about Spanish-speaking cultures and traditions"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "Hola",
+          "translation": "Hello",
+          "exampleSentence": "Hola, ¿cómo estás?",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 1
+        },
+        {
+          "word": "Buenos días",
+          "translation": "Good morning",
+          "exampleSentence": "Buenos días, ¿cómo amaneciste?",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 1
+        },
+        {
+          "word": "Buenas tardes",
+          "translation": "Good afternoon",
+          "exampleSentence": "Buenas tardes, ¿qué tal tu día?",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 1
+        },
+        {
+          "word": "Buenas noches",
+          "translation": "Good evening/night",
+          "exampleSentence": "Buenas noches, que descanses bien.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 1
+        },
+        {
+          "word": "Adiós",
+          "translation": "Goodbye",
+          "exampleSentence": "Adiós, nos vemos mañana.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 1
+        },
+        {
+          "word": "Hasta luego",
+          "translation": "See you later",
+          "exampleSentence": "Hasta luego, amigo.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 1
+        },
+        {
+          "word": "Por favor",
+          "translation": "Please",
+          "exampleSentence": "Un café, por favor.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 1
+        },
+        {
+          "word": "Gracias",
+          "translation": "Thank you",
+          "exampleSentence": "Gracias por tu ayuda.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 1
+        },
+        {
+          "word": "De nada",
+          "translation": "You're welcome",
+          "exampleSentence": "De nada, es un placer.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 1
+        },
+        {
+          "word": "Perdón",
+          "translation": "Sorry/Excuse me",
+          "exampleSentence": "Perdón, ¿puedes repetir?",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 1
+        },
+        {
+          "word": "Me llamo",
+          "translation": "My name is",
+          "exampleSentence": "Me llamo Carlos.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 1
+        },
+        {
+          "word": "¿Cómo te llamas?",
+          "translation": "What is your name?",
+          "exampleSentence": "¿Cómo te llamas, amigo?",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 1
+        },
+        {
+          "word": "Mucho gusto",
+          "translation": "Nice to meet you",
+          "exampleSentence": "Mucho gusto, soy María.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 1
+        },
+        {
+          "word": "¿Cómo estás?",
+          "translation": "How are you?",
+          "exampleSentence": "¿Cómo estás hoy?",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 1
+        },
+        {
+          "word": "Bien",
+          "translation": "Well/Good",
+          "exampleSentence": "Estoy bien, gracias.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 1
+        },
+        {
+          "word": "Mal",
+          "translation": "Bad/Not well",
+          "exampleSentence": "Me siento mal hoy.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 1
+        },
+        {
+          "word": "Cero",
+          "translation": "Zero",
+          "exampleSentence": "La temperatura es cero grados.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 2
+        },
+        {
+          "word": "Uno",
+          "translation": "One",
+          "exampleSentence": "Tengo un hermano.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 2
+        },
+        {
+          "word": "Dos",
+          "translation": "Two",
+          "exampleSentence": "Tengo dos gatos.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 2
+        },
+        {
+          "word": "Tres",
+          "translation": "Three",
+          "exampleSentence": "Necesito tres boletos.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 2
+        },
+        {
+          "word": "Cuatro",
+          "translation": "Four",
+          "exampleSentence": "Hay cuatro sillas en la mesa.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 2
+        },
+        {
+          "word": "Cinco",
+          "translation": "Five",
+          "exampleSentence": "Son las cinco de la tarde.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 2
+        },
+        {
+          "word": "Seis",
+          "translation": "Six",
+          "exampleSentence": "El autobús llega a las seis.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 2
+        },
+        {
+          "word": "Siete",
+          "translation": "Seven",
+          "exampleSentence": "Siete días tiene una semana.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 2
+        },
+        {
+          "word": "Ocho",
+          "translation": "Eight",
+          "exampleSentence": "Trabajo ocho horas al día.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 2
+        },
+        {
+          "word": "Nueve",
+          "translation": "Nine",
+          "exampleSentence": "Tengo nueve años.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 2
+        },
+        {
+          "word": "Diez",
+          "translation": "Ten",
+          "exampleSentence": "Hay diez dedos en las manos.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 2
+        },
+        {
+          "word": "Padre",
+          "translation": "Father",
+          "exampleSentence": "Mi padre es ingeniero.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 3
+        },
+        {
+          "word": "Madre",
+          "translation": "Mother",
+          "exampleSentence": "Mi madre trabaja en un hospital.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 3
+        },
+        {
+          "word": "Hermano",
+          "translation": "Brother",
+          "exampleSentence": "Mi hermano es mayor que yo.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 3
+        },
+        {
+          "word": "Hermana",
+          "translation": "Sister",
+          "exampleSentence": "Mi hermana estudia medicina.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 3
+        },
+        {
+          "word": "Abuelo",
+          "translation": "Grandfather",
+          "exampleSentence": "Mi abuelo tiene ochenta años.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 3
+        },
+        {
+          "word": "Abuela",
+          "translation": "Grandmother",
+          "exampleSentence": "Mi abuela cocina muy bien.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 3
+        },
+        {
+          "word": "Hijo",
+          "translation": "Son",
+          "exampleSentence": "Tengo un hijo de cinco años.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 3
+        },
+        {
+          "word": "Hija",
+          "translation": "Daughter",
+          "exampleSentence": "Mi hija es abogada.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 3
+        },
+        {
+          "word": "Comida",
+          "translation": "Food",
+          "exampleSentence": "La comida española es deliciosa.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 4
+        },
+        {
+          "word": "Pan",
+          "translation": "Bread",
+          "exampleSentence": "Compré pan en la panadería.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 4
+        },
+        {
+          "word": "Agua",
+          "translation": "Water",
+          "exampleSentence": "Bebo agua todos los días.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 4
+        },
+        {
+          "word": "Leche",
+          "translation": "Milk",
+          "exampleSentence": "La leche es buena para los huesos.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 4
+        },
+        {
+          "word": "Queso",
+          "translation": "Cheese",
+          "exampleSentence": "Me encanta el queso italiano.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 4
+        },
+        {
+          "word": "Manzana",
+          "translation": "Apple",
+          "exampleSentence": "Como una manzana cada mañana.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 4
+        },
+        {
+          "word": "Plátano",
+          "translation": "Banana",
+          "exampleSentence": "El plátano es rico en potasio.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 4
+        },
+        {
+          "word": "Carne",
+          "translation": "Meat",
+          "exampleSentence": "La carne roja es nutritiva.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 4
+        },
+        {
+          "word": "Pollo",
+          "translation": "Chicken",
+          "exampleSentence": "Preparo pollo asado los domingos.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 4
+        },
+        {
+          "word": "Pescado",
+          "translation": "Fish",
+          "exampleSentence": "El pescado es saludable.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 4
+        },
+        {
+          "word": "Arroz",
+          "translation": "Rice",
+          "exampleSentence": "Hoy cocino arroz con verduras.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 4
+        },
+        {
+          "word": "Pasta",
+          "translation": "Pasta",
+          "exampleSentence": "La pasta italiana es deliciosa.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 4
+        },
+        {
+          "word": "Restaurante",
+          "translation": "Restaurant",
+          "exampleSentence": "Vamos a un restaurante esta noche.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 4
+        },
+        {
+          "word": "Mesero",
+          "translation": "Waiter",
+          "exampleSentence": "El mesero trae la cuenta.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 4
+        },
+        {
+          "word": "Menú",
+          "translation": "Menu",
+          "exampleSentence": "¿Puedo ver el menú, por favor?",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 4
+        },
+        {
+          "word": "Calle",
+          "translation": "Street",
+          "exampleSentence": "Vivo en la calle Principal.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 5
+        },
+        {
+          "word": "Coche",
+          "translation": "Car",
+          "exampleSentence": "Mi coche es azul.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 5
+        },
+        {
+          "word": "Autobús",
+          "translation": "Bus",
+          "exampleSentence": "Tomo el autobús para ir al trabajo.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 5
+        },
+        {
+          "word": "Tren",
+          "translation": "Train",
+          "exampleSentence": "El tren sale a las ocho.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 5
+        },
+        {
+          "word": "Avión",
+          "translation": "Airplane",
+          "exampleSentence": "Viajo en avión a Madrid.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 5
+        },
+        {
+          "word": "Viaje",
+          "translation": "Trip",
+          "exampleSentence": "Hago un viaje a Barcelona.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 5
+        },
+        {
+          "word": "Derecha",
+          "translation": "Right",
+          "exampleSentence": "Gira a la derecha en la esquina.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 5
+        },
+        {
+          "word": "Izquierda",
+          "translation": "Left",
+          "exampleSentence": "La tienda está a la izquierda.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 5
+        },
+        {
+          "word": "Dinero",
+          "translation": "Money",
+          "exampleSentence": "Necesito dinero para el viaje.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 6
+        },
+        {
+          "word": "Precio",
+          "translation": "Price",
+          "exampleSentence": "¿Cuál es el precio de este libro?",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 6
+        },
+        {
+          "word": "Tienda",
+          "translation": "Store",
+          "exampleSentence": "Voy a la tienda a comprar ropa.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 6
+        },
+        {
+          "word": "Comprar",
+          "translation": "To buy",
+          "exampleSentence": "Compro frutas en el mercado.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 6
+        },
+        {
+          "word": "Vender",
+          "translation": "To sell",
+          "exampleSentence": "Vendo mi coche viejo.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 6
+        },
+        {
+          "word": "Caro",
+          "translation": "Expensive",
+          "exampleSentence": "Este restaurante es muy caro.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 6
+        },
+        {
+          "word": "Barato",
+          "translation": "Cheap",
+          "exampleSentence": "Encontré un hotel barato.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 6
+        },
+        {
+          "word": "Dormir",
+          "translation": "To sleep",
+          "exampleSentence": "Duermo ocho horas cada noche.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 7
+        },
+        {
+          "word": "Desayuno",
+          "translation": "Breakfast",
+          "exampleSentence": "Tomo desayuno a las siete.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 7
+        },
+        {
+          "word": "Almuerzo",
+          "translation": "Lunch",
+          "exampleSentence": "El almuerzo es a las doce.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 7
+        },
+        {
+          "word": "Cena",
+          "translation": "Dinner",
+          "exampleSentence": "Cenamos a las ocho de la noche.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 7
+        },
+        {
+          "word": "Trabajar",
+          "translation": "To work",
+          "exampleSentence": "Trabajo en una oficina.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 7
+        },
+        {
+          "word": "Estudiar",
+          "translation": "To study",
+          "exampleSentence": "Estudio español todos los días.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 7
+        },
+        {
+          "word": "Jugar",
+          "translation": "To play",
+          "exampleSentence": "Juego fútbol los sábados.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 7
+        },
+        {
+          "word": "Leer",
+          "translation": "To read",
+          "exampleSentence": "Leo un libro cada semana.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 7
+        },
+        {
+          "word": "Escribir",
+          "translation": "To write",
+          "exampleSentence": "Escribo cartas a mis amigos.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 7
+        },
+        {
+          "word": "Hablar",
+          "translation": "To speak",
+          "exampleSentence": "Hablo español con mis amigos.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 7
+        },
+        {
+          "word": "Escuchar",
+          "translation": "To listen",
+          "exampleSentence": "Escucho música clásica.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 7
+        },
+        {
+          "word": "Ver",
+          "translation": "To see/watch",
+          "exampleSentence": "Veo películas los viernes.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 7
+        },
+        {
+          "word": "Lluvia",
+          "translation": "Rain",
+          "exampleSentence": "Hay lluvia hoy.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 8
+        },
+        {
+          "word": "Nieve",
+          "translation": "Snow",
+          "exampleSentence": "La nieve cubre las montañas.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 8
+        },
+        {
+          "word": "Sol",
+          "translation": "Sun",
+          "exampleSentence": "El sol brilla hoy.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 8
+        },
+        {
+          "word": "Nube",
+          "translation": "Cloud",
+          "exampleSentence": "Hay nubes en el cielo.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 8
+        },
+        {
+          "word": "Frío",
+          "translation": "Cold",
+          "exampleSentence": "Hace frío en invierno.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 8
+        },
+        {
+          "word": "Calor",
+          "translation": "Heat/Hot",
+          "exampleSentence": "Hace mucho calor en verano.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 8
+        },
+        {
+          "word": "Primavera",
+          "translation": "Spring",
+          "exampleSentence": "La primavera es hermosa.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 8
+        },
+        {
+          "word": "Verano",
+          "translation": "Summer",
+          "exampleSentence": "Me encanta el verano.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 8
+        },
+        {
+          "word": "Otoño",
+          "translation": "Fall/Autumn",
+          "exampleSentence": "Las hojas caen en otoño.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 8
+        },
+        {
+          "word": "Invierno",
+          "translation": "Winter",
+          "exampleSentence": "El invierno es frío.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 8
+        },
+        {
+          "word": "Fútbol",
+          "translation": "Football/Soccer",
+          "exampleSentence": "Juego fútbol en el equipo.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 9
+        },
+        {
+          "word": "Tenis",
+          "translation": "Tennis",
+          "exampleSentence": "Juego tenis los jueves.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 9
+        },
+        {
+          "word": "Natación",
+          "translation": "Swimming",
+          "exampleSentence": "La natación es buen ejercicio.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 9
+        },
+        {
+          "word": "Música",
+          "translation": "Music",
+          "exampleSentence": "Me encanta la música clásica.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 9
+        },
+        {
+          "word": "Guitarra",
+          "translation": "Guitar",
+          "exampleSentence": "Toco guitarra desde los ocho años.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 9
+        },
+        {
+          "word": "Película",
+          "translation": "Movie",
+          "exampleSentence": "Vimos una película excelente.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 9
+        },
+        {
+          "word": "Libro",
+          "translation": "Book",
+          "exampleSentence": "Estoy leyendo un libro interesante.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 9
+        },
+        {
+          "word": "Pintura",
+          "translation": "Painting",
+          "exampleSentence": "Me interesa la pintura moderna.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 9
+        },
+        {
+          "word": "Danza",
+          "translation": "Dance",
+          "exampleSentence": "Aprendo danza flamenco.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 9
+        },
+        {
+          "word": "Fiesta",
+          "translation": "Party",
+          "exampleSentence": "Hay una fiesta el sábado.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "es",
+          "unit": 9
+        },
+        {
+          "word": "Flamenco",
+          "translation": "Flamenco",
+          "exampleSentence": "El flamenco es un arte español.",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "es",
+          "unit": 10
+        },
+        {
+          "word": "Paella",
+          "translation": "Paella",
+          "exampleSentence": "La paella es un plato tradicional.",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "es",
+          "unit": 10
+        },
+        {
+          "word": "Corrida",
+          "translation": "Bullfight",
+          "exampleSentence": "La corrida es controversial.",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "es",
+          "unit": 10
+        },
+        {
+          "word": "Siesta",
+          "translation": "Nap",
+          "exampleSentence": "Tomo una siesta después del almuerzo.",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "es",
+          "unit": 10
+        },
+        {
+          "word": "Tango",
+          "translation": "Tango",
+          "exampleSentence": "El tango es un baile argentino.",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "es",
+          "unit": 10
+        },
+        {
+          "word": "Salsa",
+          "translation": "Salsa",
+          "exampleSentence": "Bailamos salsa en la discoteca.",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "es",
+          "unit": 10
+        },
+        {
+          "word": "Cumbia",
+          "translation": "Cumbia",
+          "exampleSentence": "La cumbia es popular en Colombia.",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "es",
+          "unit": 10
+        },
+        {
+          "word": "Marimba",
+          "translation": "Marimba",
+          "exampleSentence": "El sonido de la marimba es hermoso.",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "es",
+          "unit": 10
+        },
+        {
+          "word": "Día de Muertos",
+          "translation": "Day of the Dead",
+          "exampleSentence": "Día de Muertos es una tradición mexicana.",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "es",
+          "unit": 10
+        },
+        {
+          "word": "Navidad",
+          "translation": "Christmas",
+          "exampleSentence": "Celebramos Navidad en familia.",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "es",
+          "unit": 10
+        }
+      ]
+    },
+    "french": {
+      "language": "French",
+      "languageCode": "fr",
+      "courseOutline": [
+        {
+          "unit": 1,
+          "topic": "Salutations et Présentations",
+          "description": "Learn basic greetings, introductions, and polite phrases"
+        },
+        {
+          "unit": 2,
+          "topic": "Nombres et Quantités",
+          "description": "Master numbers, telling time, and quantities"
+        },
+        {
+          "unit": 3,
+          "topic": "Famille et Relations",
+          "description": "Learn family vocabulary and relationships"
+        },
+        {
+          "unit": 4,
+          "topic": "Nourriture et Cuisine",
+          "description": "Explore food vocabulary and dining phrases"
+        },
+        {
+          "unit": 5,
+          "topic": "Voyage et Transport",
+          "description": "Learn travel and transportation vocabulary"
+        },
+        {
+          "unit": 6,
+          "topic": "Shopping et Argent",
+          "description": "Master shopping and money-related terms"
+        },
+        {
+          "unit": 7,
+          "topic": "Activités Quotidiennes",
+          "description": "Learn everyday activities and routines"
+        },
+        {
+          "unit": 8,
+          "topic": "Météo et Saisons",
+          "description": "Understand weather and seasonal vocabulary"
+        },
+        {
+          "unit": 9,
+          "topic": "Sports et Loisirs",
+          "description": "Explore sports and leisure activities"
+        },
+        {
+          "unit": 10,
+          "topic": "Culture Française",
+          "description": "Learn about French culture and traditions"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "Bonjour",
+          "translation": "Hello/Good day",
+          "exampleSentence": "Bonjour, comment allez-vous?",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 1
+        },
+        {
+          "word": "Bonsoir",
+          "translation": "Good evening",
+          "exampleSentence": "Bonsoir, ça va bien?",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 1
+        },
+        {
+          "word": "Bonne nuit",
+          "translation": "Good night",
+          "exampleSentence": "Bonne nuit, dors bien.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 1
+        },
+        {
+          "word": "Au revoir",
+          "translation": "Goodbye",
+          "exampleSentence": "Au revoir, à bientôt!",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 1
+        },
+        {
+          "word": "À bientôt",
+          "translation": "See you soon",
+          "exampleSentence": "À bientôt, mon ami.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 1
+        },
+        {
+          "word": "S'il vous plaît",
+          "translation": "Please (formal)",
+          "exampleSentence": "Un café, s'il vous plaît.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 1
+        },
+        {
+          "word": "Merci",
+          "translation": "Thank you",
+          "exampleSentence": "Merci beaucoup pour votre aide.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 1
+        },
+        {
+          "word": "De rien",
+          "translation": "You're welcome",
+          "exampleSentence": "De rien, c'est un plaisir.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 1
+        },
+        {
+          "word": "Excusez-moi",
+          "translation": "Excuse me",
+          "exampleSentence": "Excusez-moi, pouvez-vous répéter?",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 1
+        },
+        {
+          "word": "Pardon",
+          "translation": "Sorry",
+          "exampleSentence": "Pardon, je ne comprends pas.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 1
+        },
+        {
+          "word": "Je m'appelle",
+          "translation": "My name is",
+          "exampleSentence": "Je m'appelle Pierre.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 1
+        },
+        {
+          "word": "Comment vous appelez-vous?",
+          "translation": "What is your name?",
+          "exampleSentence": "Comment vous appelez-vous?",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 1
+        },
+        {
+          "word": "Enchanté",
+          "translation": "Nice to meet you",
+          "exampleSentence": "Enchanté de vous rencontrer.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 1
+        },
+        {
+          "word": "Comment allez-vous?",
+          "translation": "How are you? (formal)",
+          "exampleSentence": "Comment allez-vous aujourd'hui?",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 1
+        },
+        {
+          "word": "Ça va bien",
+          "translation": "I'm doing well",
+          "exampleSentence": "Ça va bien, merci.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 1
+        },
+        {
+          "word": "Zéro",
+          "translation": "Zero",
+          "exampleSentence": "La température est zéro degré.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 2
+        },
+        {
+          "word": "Un",
+          "translation": "One",
+          "exampleSentence": "J'ai un chat.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 2
+        },
+        {
+          "word": "Deux",
+          "translation": "Two",
+          "exampleSentence": "J'ai deux chiens.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 2
+        },
+        {
+          "word": "Trois",
+          "translation": "Three",
+          "exampleSentence": "J'ai besoin de trois billets.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 2
+        },
+        {
+          "word": "Quatre",
+          "translation": "Four",
+          "exampleSentence": "Il y a quatre chaises à la table.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 2
+        },
+        {
+          "word": "Cinq",
+          "translation": "Five",
+          "exampleSentence": "Il est cinq heures.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 2
+        },
+        {
+          "word": "Six",
+          "translation": "Six",
+          "exampleSentence": "Le bus arrive à six heures.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 2
+        },
+        {
+          "word": "Sept",
+          "translation": "Seven",
+          "exampleSentence": "Une semaine a sept jours.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 2
+        },
+        {
+          "word": "Huit",
+          "translation": "Eight",
+          "exampleSentence": "Je travaille huit heures par jour.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 2
+        },
+        {
+          "word": "Neuf",
+          "translation": "Nine",
+          "exampleSentence": "J'ai neuf ans.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 2
+        },
+        {
+          "word": "Dix",
+          "translation": "Ten",
+          "exampleSentence": "J'ai dix doigts.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 2
+        },
+        {
+          "word": "Père",
+          "translation": "Father",
+          "exampleSentence": "Mon père est ingénieur.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 3
+        },
+        {
+          "word": "Mère",
+          "translation": "Mother",
+          "exampleSentence": "Ma mère travaille à l'hôpital.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 3
+        },
+        {
+          "word": "Frère",
+          "translation": "Brother",
+          "exampleSentence": "Mon frère est plus âgé que moi.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 3
+        },
+        {
+          "word": "Sœur",
+          "translation": "Sister",
+          "exampleSentence": "Ma sœur étudie la médecine.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 3
+        },
+        {
+          "word": "Grand-père",
+          "translation": "Grandfather",
+          "exampleSentence": "Mon grand-père a quatre-vingts ans.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 3
+        },
+        {
+          "word": "Grand-mère",
+          "translation": "Grandmother",
+          "exampleSentence": "Ma grand-mère cuisine très bien.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 3
+        },
+        {
+          "word": "Fils",
+          "translation": "Son",
+          "exampleSentence": "J'ai un fils de cinq ans.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 3
+        },
+        {
+          "word": "Fille",
+          "translation": "Daughter",
+          "exampleSentence": "Ma fille est avocate.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 3
+        },
+        {
+          "word": "Nourriture",
+          "translation": "Food",
+          "exampleSentence": "La nourriture française est délicieuse.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 4
+        },
+        {
+          "word": "Pain",
+          "translation": "Bread",
+          "exampleSentence": "J'ai acheté du pain à la boulangerie.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 4
+        },
+        {
+          "word": "Eau",
+          "translation": "Water",
+          "exampleSentence": "Je bois de l'eau tous les jours.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 4
+        },
+        {
+          "word": "Lait",
+          "translation": "Milk",
+          "exampleSentence": "Le lait est bon pour les os.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 4
+        },
+        {
+          "word": "Fromage",
+          "translation": "Cheese",
+          "exampleSentence": "J'adore le fromage français.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 4
+        },
+        {
+          "word": "Pomme",
+          "translation": "Apple",
+          "exampleSentence": "Je mange une pomme chaque matin.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 4
+        },
+        {
+          "word": "Banane",
+          "translation": "Banana",
+          "exampleSentence": "La banane est riche en potassium.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 4
+        },
+        {
+          "word": "Viande",
+          "translation": "Meat",
+          "exampleSentence": "La viande rouge est nutritive.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 4
+        },
+        {
+          "word": "Poulet",
+          "translation": "Chicken",
+          "exampleSentence": "Je prépare du poulet rôti le dimanche.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 4
+        },
+        {
+          "word": "Poisson",
+          "translation": "Fish",
+          "exampleSentence": "Le poisson est sain.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 4
+        },
+        {
+          "word": "Riz",
+          "translation": "Rice",
+          "exampleSentence": "Aujourd'hui je cuisine du riz avec des légumes.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 4
+        },
+        {
+          "word": "Pâtes",
+          "translation": "Pasta",
+          "exampleSentence": "Les pâtes italiennes sont délicieuses.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 4
+        },
+        {
+          "word": "Restaurant",
+          "translation": "Restaurant",
+          "exampleSentence": "Allons à un restaurant ce soir.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 4
+        },
+        {
+          "word": "Serveur",
+          "translation": "Waiter",
+          "exampleSentence": "Le serveur apporte l'addition.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 4
+        },
+        {
+          "word": "Menu",
+          "translation": "Menu",
+          "exampleSentence": "Puis-je voir le menu, s'il vous plaît?",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 4
+        },
+        {
+          "word": "Rue",
+          "translation": "Street",
+          "exampleSentence": "J'habite rue Principal.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 5
+        },
+        {
+          "word": "Voiture",
+          "translation": "Car",
+          "exampleSentence": "Ma voiture est bleue.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 5
+        },
+        {
+          "word": "Autobus",
+          "translation": "Bus",
+          "exampleSentence": "Je prends l'autobus pour aller au travail.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 5
+        },
+        {
+          "word": "Train",
+          "translation": "Train",
+          "exampleSentence": "Le train part à huit heures.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 5
+        },
+        {
+          "word": "Avion",
+          "translation": "Airplane",
+          "exampleSentence": "Je voyage en avion à Paris.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 5
+        },
+        {
+          "word": "Voyage",
+          "translation": "Trip",
+          "exampleSentence": "Je fais un voyage à Marseille.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 5
+        },
+        {
+          "word": "Droite",
+          "translation": "Right",
+          "exampleSentence": "Tournez à droite au coin.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 5
+        },
+        {
+          "word": "Gauche",
+          "translation": "Left",
+          "exampleSentence": "Le magasin est à gauche.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 5
+        },
+        {
+          "word": "Argent",
+          "translation": "Money",
+          "exampleSentence": "J'ai besoin d'argent pour le voyage.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 6
+        },
+        {
+          "word": "Prix",
+          "translation": "Price",
+          "exampleSentence": "Quel est le prix de ce livre?",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 6
+        },
+        {
+          "word": "Magasin",
+          "translation": "Store",
+          "exampleSentence": "Je vais au magasin pour acheter des vêtements.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 6
+        },
+        {
+          "word": "Acheter",
+          "translation": "To buy",
+          "exampleSentence": "J'achète des fruits au marché.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 6
+        },
+        {
+          "word": "Vendre",
+          "translation": "To sell",
+          "exampleSentence": "Je vends ma vieille voiture.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 6
+        },
+        {
+          "word": "Cher",
+          "translation": "Expensive",
+          "exampleSentence": "Ce restaurant est très cher.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 6
+        },
+        {
+          "word": "Bon marché",
+          "translation": "Cheap",
+          "exampleSentence": "J'ai trouvé un hôtel bon marché.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 6
+        },
+        {
+          "word": "Dormir",
+          "translation": "To sleep",
+          "exampleSentence": "Je dors huit heures chaque nuit.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 7
+        },
+        {
+          "word": "Petit-déjeuner",
+          "translation": "Breakfast",
+          "exampleSentence": "Je prends le petit-déjeuner à sept heures.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 7
+        },
+        {
+          "word": "Déjeuner",
+          "translation": "Lunch",
+          "exampleSentence": "Le déjeuner est à midi.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 7
+        },
+        {
+          "word": "Dîner",
+          "translation": "Dinner",
+          "exampleSentence": "Nous dînons à huit heures du soir.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 7
+        },
+        {
+          "word": "Travailler",
+          "translation": "To work",
+          "exampleSentence": "Je travaille dans un bureau.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 7
+        },
+        {
+          "word": "Étudier",
+          "translation": "To study",
+          "exampleSentence": "J'étudie le français tous les jours.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 7
+        },
+        {
+          "word": "Jouer",
+          "translation": "To play",
+          "exampleSentence": "Je joue au football le samedi.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 7
+        },
+        {
+          "word": "Lire",
+          "translation": "To read",
+          "exampleSentence": "Je lis un livre chaque semaine.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 7
+        },
+        {
+          "word": "Écrire",
+          "translation": "To write",
+          "exampleSentence": "J'écris des lettres à mes amis.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 7
+        },
+        {
+          "word": "Parler",
+          "translation": "To speak",
+          "exampleSentence": "Je parle français avec mes amis.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 7
+        },
+        {
+          "word": "Écouter",
+          "translation": "To listen",
+          "exampleSentence": "J'écoute de la musique classique.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 7
+        },
+        {
+          "word": "Regarder",
+          "translation": "To watch",
+          "exampleSentence": "Je regarde des films le vendredi.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 7
+        },
+        {
+          "word": "Pluie",
+          "translation": "Rain",
+          "exampleSentence": "Il y a de la pluie aujourd'hui.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 8
+        },
+        {
+          "word": "Neige",
+          "translation": "Snow",
+          "exampleSentence": "La neige couvre les montagnes.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 8
+        },
+        {
+          "word": "Soleil",
+          "translation": "Sun",
+          "exampleSentence": "Le soleil brille aujourd'hui.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 8
+        },
+        {
+          "word": "Nuage",
+          "translation": "Cloud",
+          "exampleSentence": "Il y a des nuages dans le ciel.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 8
+        },
+        {
+          "word": "Froid",
+          "translation": "Cold",
+          "exampleSentence": "Il fait froid en hiver.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 8
+        },
+        {
+          "word": "Chaud",
+          "translation": "Hot",
+          "exampleSentence": "Il fait très chaud en été.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 8
+        },
+        {
+          "word": "Printemps",
+          "translation": "Spring",
+          "exampleSentence": "Le printemps est magnifique.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 8
+        },
+        {
+          "word": "Été",
+          "translation": "Summer",
+          "exampleSentence": "J'adore l'été.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 8
+        },
+        {
+          "word": "Automne",
+          "translation": "Fall/Autumn",
+          "exampleSentence": "Les feuilles tombent en automne.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 8
+        },
+        {
+          "word": "Hiver",
+          "translation": "Winter",
+          "exampleSentence": "L'hiver est froid.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 8
+        },
+        {
+          "word": "Football",
+          "translation": "Football/Soccer",
+          "exampleSentence": "Je joue au football dans l'équipe.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 9
+        },
+        {
+          "word": "Tennis",
+          "translation": "Tennis",
+          "exampleSentence": "Je joue au tennis le jeudi.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 9
+        },
+        {
+          "word": "Natation",
+          "translation": "Swimming",
+          "exampleSentence": "La natation est un bon exercice.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 9
+        },
+        {
+          "word": "Musique",
+          "translation": "Music",
+          "exampleSentence": "J'adore la musique classique.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 9
+        },
+        {
+          "word": "Guitare",
+          "translation": "Guitar",
+          "exampleSentence": "Je joue de la guitare depuis l'âge de huit ans.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 9
+        },
+        {
+          "word": "Film",
+          "translation": "Movie",
+          "exampleSentence": "Nous avons regardé un excellent film.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 9
+        },
+        {
+          "word": "Livre",
+          "translation": "Book",
+          "exampleSentence": "Je lis un livre intéressant.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 9
+        },
+        {
+          "word": "Peinture",
+          "translation": "Painting",
+          "exampleSentence": "Je m'intéresse à la peinture moderne.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 9
+        },
+        {
+          "word": "Danse",
+          "translation": "Dance",
+          "exampleSentence": "J'apprends la danse classique.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 9
+        },
+        {
+          "word": "Fête",
+          "translation": "Party",
+          "exampleSentence": "Il y a une fête samedi.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "fr",
+          "unit": 9
+        },
+        {
+          "word": "Baguette",
+          "translation": "Baguette",
+          "exampleSentence": "La baguette française est délicieuse.",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "fr",
+          "unit": 10
+        },
+        {
+          "word": "Croissant",
+          "translation": "Croissant",
+          "exampleSentence": "Je prends un croissant au petit-déjeuner.",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "fr",
+          "unit": 10
+        },
+        {
+          "word": "Vin",
+          "translation": "Wine",
+          "exampleSentence": "Le vin français est excellent.",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "fr",
+          "unit": 10
+        },
+        {
+          "word": "Champagne",
+          "translation": "Champagne",
+          "exampleSentence": "Nous buvons du champagne pour célébrer.",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "fr",
+          "unit": 10
+        },
+        {
+          "word": "Café",
+          "translation": "Coffee",
+          "exampleSentence": "Je bois un café le matin.",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "fr",
+          "unit": 10
+        },
+        {
+          "word": "Musée",
+          "translation": "Museum",
+          "exampleSentence": "Je visite le musée du Louvre.",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "fr",
+          "unit": 10
+        },
+        {
+          "word": "Cathédrale",
+          "translation": "Cathedral",
+          "exampleSentence": "La cathédrale Notre-Dame est magnifique.",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "fr",
+          "unit": 10
+        },
+        {
+          "word": "Tour Eiffel",
+          "translation": "Eiffel Tower",
+          "exampleSentence": "La Tour Eiffel est l'emblème de Paris.",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "fr",
+          "unit": 10
+        },
+        {
+          "word": "Bastille",
+          "translation": "Bastille",
+          "exampleSentence": "La Bastille est un symbole historique.",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "fr",
+          "unit": 10
+        },
+        {
+          "word": "Révolution",
+          "translation": "Revolution",
+          "exampleSentence": "La Révolution française a changé l'histoire.",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "fr",
+          "unit": 10
+        }
+      ]
+    },
+    "german": {
+      "language": "German",
+      "languageCode": "de",
+      "courseOutline": [
+        {
+          "unit": 1,
+          "topic": "Grüße und Vorstellungen",
+          "description": "Learn basic greetings, introductions, and polite phrases"
+        },
+        {
+          "unit": 2,
+          "topic": "Zahlen und Mengen",
+          "description": "Master numbers, telling time, and quantities"
+        },
+        {
+          "unit": 3,
+          "topic": "Familie und Beziehungen",
+          "description": "Learn family vocabulary and relationships"
+        },
+        {
+          "unit": 4,
+          "topic": "Essen und Kochen",
+          "description": "Explore food vocabulary and dining phrases"
+        },
+        {
+          "unit": 5,
+          "topic": "Reisen und Transport",
+          "description": "Learn travel and transportation vocabulary"
+        },
+        {
+          "unit": 6,
+          "topic": "Einkaufen und Geld",
+          "description": "Master shopping and money-related terms"
+        },
+        {
+          "unit": 7,
+          "topic": "Tägliche Aktivitäten",
+          "description": "Learn everyday activities and routines"
+        },
+        {
+          "unit": 8,
+          "topic": "Wetter und Jahreszeiten",
+          "description": "Understand weather and seasonal vocabulary"
+        },
+        {
+          "unit": 9,
+          "topic": "Sport und Freizeit",
+          "description": "Explore sports and leisure activities"
+        },
+        {
+          "unit": 10,
+          "topic": "Deutsche Kultur",
+          "description": "Learn about German culture and traditions"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "Hallo",
+          "translation": "Hello",
+          "exampleSentence": "Hallo, wie geht es dir?",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 1
+        },
+        {
+          "word": "Guten Morgen",
+          "translation": "Good morning",
+          "exampleSentence": "Guten Morgen, wie hast du geschlafen?",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 1
+        },
+        {
+          "word": "Guten Abend",
+          "translation": "Good evening",
+          "exampleSentence": "Guten Abend, wie war dein Tag?",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 1
+        },
+        {
+          "word": "Gute Nacht",
+          "translation": "Good night",
+          "exampleSentence": "Gute Nacht, schlaf gut.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 1
+        },
+        {
+          "word": "Auf Wiedersehen",
+          "translation": "Goodbye",
+          "exampleSentence": "Auf Wiedersehen, bis bald!",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 1
+        },
+        {
+          "word": "Bis später",
+          "translation": "See you later",
+          "exampleSentence": "Bis später, Freund.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 1
+        },
+        {
+          "word": "Bitte",
+          "translation": "Please",
+          "exampleSentence": "Einen Kaffee, bitte.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 1
+        },
+        {
+          "word": "Danke",
+          "translation": "Thank you",
+          "exampleSentence": "Danke für deine Hilfe.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 1
+        },
+        {
+          "word": "Gerne",
+          "translation": "You're welcome",
+          "exampleSentence": "Gerne, es ist mir ein Vergnügen.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 1
+        },
+        {
+          "word": "Entschuldigung",
+          "translation": "Excuse me/Sorry",
+          "exampleSentence": "Entschuldigung, kannst du das wiederholen?",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 1
+        },
+        {
+          "word": "Ich heiße",
+          "translation": "My name is",
+          "exampleSentence": "Ich heiße Klaus.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 1
+        },
+        {
+          "word": "Wie heißt du?",
+          "translation": "What is your name?",
+          "exampleSentence": "Wie heißt du, Freund?",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 1
+        },
+        {
+          "word": "Freut mich",
+          "translation": "Nice to meet you",
+          "exampleSentence": "Freut mich, dich kennenzulernen.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 1
+        },
+        {
+          "word": "Wie geht es dir?",
+          "translation": "How are you?",
+          "exampleSentence": "Wie geht es dir heute?",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 1
+        },
+        {
+          "word": "Mir geht es gut",
+          "translation": "I'm doing well",
+          "exampleSentence": "Mir geht es gut, danke.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 1
+        },
+        {
+          "word": "Null",
+          "translation": "Zero",
+          "exampleSentence": "Die Temperatur ist null Grad.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 2
+        },
+        {
+          "word": "Eins",
+          "translation": "One",
+          "exampleSentence": "Ich habe eine Katze.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 2
+        },
+        {
+          "word": "Zwei",
+          "translation": "Two",
+          "exampleSentence": "Ich habe zwei Hunde.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 2
+        },
+        {
+          "word": "Drei",
+          "translation": "Three",
+          "exampleSentence": "Ich brauche drei Tickets.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 2
+        },
+        {
+          "word": "Vier",
+          "translation": "Four",
+          "exampleSentence": "Es gibt vier Stühle am Tisch.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 2
+        },
+        {
+          "word": "Fünf",
+          "translation": "Five",
+          "exampleSentence": "Es ist fünf Uhr.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 2
+        },
+        {
+          "word": "Sechs",
+          "translation": "Six",
+          "exampleSentence": "Der Bus kommt um sechs Uhr.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 2
+        },
+        {
+          "word": "Sieben",
+          "translation": "Seven",
+          "exampleSentence": "Eine Woche hat sieben Tage.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 2
+        },
+        {
+          "word": "Acht",
+          "translation": "Eight",
+          "exampleSentence": "Ich arbeite acht Stunden pro Tag.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 2
+        },
+        {
+          "word": "Neun",
+          "translation": "Nine",
+          "exampleSentence": "Ich bin neun Jahre alt.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 2
+        },
+        {
+          "word": "Zehn",
+          "translation": "Ten",
+          "exampleSentence": "Ich habe zehn Finger.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 2
+        },
+        {
+          "word": "Vater",
+          "translation": "Father",
+          "exampleSentence": "Mein Vater ist Ingenieur.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 3
+        },
+        {
+          "word": "Mutter",
+          "translation": "Mother",
+          "exampleSentence": "Meine Mutter arbeitet im Krankenhaus.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 3
+        },
+        {
+          "word": "Bruder",
+          "translation": "Brother",
+          "exampleSentence": "Mein Bruder ist älter als ich.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 3
+        },
+        {
+          "word": "Schwester",
+          "translation": "Sister",
+          "exampleSentence": "Meine Schwester studiert Medizin.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 3
+        },
+        {
+          "word": "Großvater",
+          "translation": "Grandfather",
+          "exampleSentence": "Mein Großvater ist achtzig Jahre alt.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 3
+        },
+        {
+          "word": "Großmutter",
+          "translation": "Grandmother",
+          "exampleSentence": "Meine Großmutter kocht sehr gut.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 3
+        },
+        {
+          "word": "Sohn",
+          "translation": "Son",
+          "exampleSentence": "Ich habe einen Sohn von fünf Jahren.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 3
+        },
+        {
+          "word": "Tochter",
+          "translation": "Daughter",
+          "exampleSentence": "Meine Tochter ist Rechtsanwältin.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 3
+        },
+        {
+          "word": "Essen",
+          "translation": "Food",
+          "exampleSentence": "Das deutsche Essen ist lecker.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 4
+        },
+        {
+          "word": "Brot",
+          "translation": "Bread",
+          "exampleSentence": "Ich habe Brot in der Bäckerei gekauft.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 4
+        },
+        {
+          "word": "Wasser",
+          "translation": "Water",
+          "exampleSentence": "Ich trinke jeden Tag Wasser.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 4
+        },
+        {
+          "word": "Milch",
+          "translation": "Milk",
+          "exampleSentence": "Milch ist gut für die Knochen.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 4
+        },
+        {
+          "word": "Käse",
+          "translation": "Cheese",
+          "exampleSentence": "Ich liebe deutschen Käse.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 4
+        },
+        {
+          "word": "Apfel",
+          "translation": "Apple",
+          "exampleSentence": "Ich esse jeden Morgen einen Apfel.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 4
+        },
+        {
+          "word": "Banane",
+          "translation": "Banana",
+          "exampleSentence": "Banane ist reich an Kalium.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 4
+        },
+        {
+          "word": "Fleisch",
+          "translation": "Meat",
+          "exampleSentence": "Rotes Fleisch ist nahrhaft.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 4
+        },
+        {
+          "word": "Huhn",
+          "translation": "Chicken",
+          "exampleSentence": "Ich bereite Brathähnchen am Sonntag zu.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 4
+        },
+        {
+          "word": "Fisch",
+          "translation": "Fish",
+          "exampleSentence": "Fisch ist gesund.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 4
+        },
+        {
+          "word": "Reis",
+          "translation": "Rice",
+          "exampleSentence": "Heute koche ich Reis mit Gemüse.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 4
+        },
+        {
+          "word": "Nudeln",
+          "translation": "Pasta",
+          "exampleSentence": "Italienische Nudeln sind köstlich.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 4
+        },
+        {
+          "word": "Restaurant",
+          "translation": "Restaurant",
+          "exampleSentence": "Lass uns heute Abend ins Restaurant gehen.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 4
+        },
+        {
+          "word": "Kellner",
+          "translation": "Waiter",
+          "exampleSentence": "Der Kellner bringt die Rechnung.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 4
+        },
+        {
+          "word": "Speisekarte",
+          "translation": "Menu",
+          "exampleSentence": "Kann ich die Speisekarte sehen, bitte?",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 4
+        },
+        {
+          "word": "Straße",
+          "translation": "Street",
+          "exampleSentence": "Ich wohne in der Hauptstraße.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 5
+        },
+        {
+          "word": "Auto",
+          "translation": "Car",
+          "exampleSentence": "Mein Auto ist blau.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 5
+        },
+        {
+          "word": "Bus",
+          "translation": "Bus",
+          "exampleSentence": "Ich nehme den Bus zur Arbeit.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 5
+        },
+        {
+          "word": "Zug",
+          "translation": "Train",
+          "exampleSentence": "Der Zug fährt um acht Uhr ab.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 5
+        },
+        {
+          "word": "Flugzeug",
+          "translation": "Airplane",
+          "exampleSentence": "Ich fliege mit dem Flugzeug nach Berlin.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 5
+        },
+        {
+          "word": "Reise",
+          "translation": "Trip",
+          "exampleSentence": "Ich mache eine Reise nach München.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 5
+        },
+        {
+          "word": "Rechts",
+          "translation": "Right",
+          "exampleSentence": "Biegen Sie an der Ecke rechts ab.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 5
+        },
+        {
+          "word": "Links",
+          "translation": "Left",
+          "exampleSentence": "Das Geschäft ist auf der linken Seite.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 5
+        },
+        {
+          "word": "Geld",
+          "translation": "Money",
+          "exampleSentence": "Ich brauche Geld für die Reise.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 6
+        },
+        {
+          "word": "Preis",
+          "translation": "Price",
+          "exampleSentence": "Was ist der Preis dieses Buches?",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 6
+        },
+        {
+          "word": "Geschäft",
+          "translation": "Store",
+          "exampleSentence": "Ich gehe ins Geschäft, um Kleidung zu kaufen.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 6
+        },
+        {
+          "word": "Kaufen",
+          "translation": "To buy",
+          "exampleSentence": "Ich kaufe Obst auf dem Markt.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 6
+        },
+        {
+          "word": "Verkaufen",
+          "translation": "To sell",
+          "exampleSentence": "Ich verkaufe mein altes Auto.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 6
+        },
+        {
+          "word": "Teuer",
+          "translation": "Expensive",
+          "exampleSentence": "Dieses Restaurant ist sehr teuer.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 6
+        },
+        {
+          "word": "Billig",
+          "translation": "Cheap",
+          "exampleSentence": "Ich habe ein billiges Hotel gefunden.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 6
+        },
+        {
+          "word": "Schlafen",
+          "translation": "To sleep",
+          "exampleSentence": "Ich schlafe acht Stunden jede Nacht.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 7
+        },
+        {
+          "word": "Frühstück",
+          "translation": "Breakfast",
+          "exampleSentence": "Ich esse Frühstück um sieben Uhr.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 7
+        },
+        {
+          "word": "Mittagessen",
+          "translation": "Lunch",
+          "exampleSentence": "Mittagessen ist um zwölf Uhr.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 7
+        },
+        {
+          "word": "Abendessen",
+          "translation": "Dinner",
+          "exampleSentence": "Wir essen Abendessen um acht Uhr.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 7
+        },
+        {
+          "word": "Arbeiten",
+          "translation": "To work",
+          "exampleSentence": "Ich arbeite in einem Büro.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 7
+        },
+        {
+          "word": "Lernen",
+          "translation": "To study",
+          "exampleSentence": "Ich lerne jeden Tag Deutsch.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 7
+        },
+        {
+          "word": "Spielen",
+          "translation": "To play",
+          "exampleSentence": "Ich spiele Fußball am Samstag.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 7
+        },
+        {
+          "word": "Lesen",
+          "translation": "To read",
+          "exampleSentence": "Ich lese jede Woche ein Buch.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 7
+        },
+        {
+          "word": "Schreiben",
+          "translation": "To write",
+          "exampleSentence": "Ich schreibe Briefe an meine Freunde.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 7
+        },
+        {
+          "word": "Sprechen",
+          "translation": "To speak",
+          "exampleSentence": "Ich spreche Deutsch mit meinen Freunden.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 7
+        },
+        {
+          "word": "Hören",
+          "translation": "To listen",
+          "exampleSentence": "Ich höre klassische Musik.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 7
+        },
+        {
+          "word": "Sehen",
+          "translation": "To watch",
+          "exampleSentence": "Ich schaue Filme am Freitag.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 7
+        },
+        {
+          "word": "Regen",
+          "translation": "Rain",
+          "exampleSentence": "Es gibt Regen heute.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 8
+        },
+        {
+          "word": "Schnee",
+          "translation": "Snow",
+          "exampleSentence": "Schnee bedeckt die Berge.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 8
+        },
+        {
+          "word": "Sonne",
+          "translation": "Sun",
+          "exampleSentence": "Die Sonne scheint heute.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 8
+        },
+        {
+          "word": "Wolke",
+          "translation": "Cloud",
+          "exampleSentence": "Es gibt Wolken am Himmel.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 8
+        },
+        {
+          "word": "Kalt",
+          "translation": "Cold",
+          "exampleSentence": "Es ist kalt im Winter.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 8
+        },
+        {
+          "word": "Heiß",
+          "translation": "Hot",
+          "exampleSentence": "Es ist sehr heiß im Sommer.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 8
+        },
+        {
+          "word": "Frühling",
+          "translation": "Spring",
+          "exampleSentence": "Der Frühling ist wunderschön.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 8
+        },
+        {
+          "word": "Sommer",
+          "translation": "Summer",
+          "exampleSentence": "Ich liebe den Sommer.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 8
+        },
+        {
+          "word": "Herbst",
+          "translation": "Fall/Autumn",
+          "exampleSentence": "Die Blätter fallen im Herbst.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 8
+        },
+        {
+          "word": "Winter",
+          "translation": "Winter",
+          "exampleSentence": "Der Winter ist kalt.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 8
+        },
+        {
+          "word": "Fußball",
+          "translation": "Football/Soccer",
+          "exampleSentence": "Ich spiele Fußball in der Mannschaft.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 9
+        },
+        {
+          "word": "Tennis",
+          "translation": "Tennis",
+          "exampleSentence": "Ich spiele Tennis am Donnerstag.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 9
+        },
+        {
+          "word": "Schwimmen",
+          "translation": "Swimming",
+          "exampleSentence": "Schwimmen ist gute Bewegung.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 9
+        },
+        {
+          "word": "Musik",
+          "translation": "Music",
+          "exampleSentence": "Ich liebe klassische Musik.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 9
+        },
+        {
+          "word": "Gitarre",
+          "translation": "Guitar",
+          "exampleSentence": "Ich spiele Gitarre seit acht Jahren.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 9
+        },
+        {
+          "word": "Film",
+          "translation": "Movie",
+          "exampleSentence": "Wir haben einen ausgezeichneten Film gesehen.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 9
+        },
+        {
+          "word": "Buch",
+          "translation": "Book",
+          "exampleSentence": "Ich lese ein interessantes Buch.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 9
+        },
+        {
+          "word": "Malerei",
+          "translation": "Painting",
+          "exampleSentence": "Ich interessiere mich für moderne Malerei.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 9
+        },
+        {
+          "word": "Tanz",
+          "translation": "Dance",
+          "exampleSentence": "Ich lerne klassischen Tanz.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 9
+        },
+        {
+          "word": "Fest",
+          "translation": "Party",
+          "exampleSentence": "Es gibt ein Fest am Samstag.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "de",
+          "unit": 9
+        },
+        {
+          "word": "Brezel",
+          "translation": "Pretzel",
+          "exampleSentence": "Die deutsche Brezel ist lecker.",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "de",
+          "unit": 10
+        },
+        {
+          "word": "Wurst",
+          "translation": "Sausage",
+          "exampleSentence": "Deutsche Wurst ist berühmt.",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "de",
+          "unit": 10
+        },
+        {
+          "word": "Bier",
+          "translation": "Beer",
+          "exampleSentence": "Deutsches Bier ist ausgezeichnet.",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "de",
+          "unit": 10
+        },
+        {
+          "word": "Schnitzel",
+          "translation": "Schnitzel",
+          "exampleSentence": "Ich esse gerne Schnitzel.",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "de",
+          "unit": 10
+        },
+        {
+          "word": "Sauerkraut",
+          "translation": "Sauerkraut",
+          "exampleSentence": "Sauerkraut ist ein traditionelles Gericht.",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "de",
+          "unit": 10
+        },
+        {
+          "word": "Lederhosen",
+          "translation": "Lederhosen",
+          "exampleSentence": "Lederhosen sind traditionelle bayerische Kleidung.",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "de",
+          "unit": 10
+        },
+        {
+          "word": "Oktoberfest",
+          "translation": "Oktoberfest",
+          "exampleSentence": "Das Oktoberfest ist ein großes Fest in München.",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "de",
+          "unit": 10
+        },
+        {
+          "word": "Schloss",
+          "translation": "Castle",
+          "exampleSentence": "Das Schloss Neuschwanstein ist wunderschön.",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "de",
+          "unit": 10
+        },
+        {
+          "word": "Schwarzwald",
+          "translation": "Black Forest",
+          "exampleSentence": "Der Schwarzwald ist wunderschön.",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "de",
+          "unit": 10
+        },
+        {
+          "word": "Alpen",
+          "translation": "Alps",
+          "exampleSentence": "Die Alpen sind beeindruckend.",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "de",
+          "unit": 10
+        }
+      ]
+    },
+    "japanese": {
+      "language": "Japanese",
+      "languageCode": "ja",
+      "courseOutline": [
+        {
+          "unit": 1,
+          "topic": "挨拶と自己紹介",
+          "description": "Learn basic greetings, introductions, and polite phrases"
+        },
+        {
+          "unit": 2,
+          "topic": "数字と時間",
+          "description": "Master numbers, telling time, and quantities"
+        },
+        {
+          "unit": 3,
+          "topic": "家族と関係",
+          "description": "Learn family vocabulary and relationships"
+        },
+        {
+          "unit": 4,
+          "topic": "食べ物と食事",
+          "description": "Explore food vocabulary and dining phrases"
+        },
+        {
+          "unit": 5,
+          "topic": "旅行と交通",
+          "description": "Learn travel and transportation vocabulary"
+        },
+        {
+          "unit": 6,
+          "topic": "買い物とお金",
+          "description": "Master shopping and money-related terms"
+        },
+        {
+          "unit": 7,
+          "topic": "日常活動",
+          "description": "Learn everyday activities and routines"
+        },
+        {
+          "unit": 8,
+          "topic": "天気と季節",
+          "description": "Understand weather and seasonal vocabulary"
+        },
+        {
+          "unit": 9,
+          "topic": "スポーツと趣味",
+          "description": "Explore sports and leisure activities"
+        },
+        {
+          "unit": 10,
+          "topic": "日本文化",
+          "description": "Learn about Japanese culture and traditions"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "こんにちは",
+          "translation": "Hello",
+          "exampleSentence": "こんにちは、元気ですか？",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 1
+        },
+        {
+          "word": "おはよう",
+          "translation": "Good morning",
+          "exampleSentence": "おはよう、よく寝ましたか？",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 1
+        },
+        {
+          "word": "こんばんは",
+          "translation": "Good evening",
+          "exampleSentence": "こんばんは、今日はどうでしたか？",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 1
+        },
+        {
+          "word": "おやすみなさい",
+          "translation": "Good night",
+          "exampleSentence": "おやすみなさい、よく寝てください。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 1
+        },
+        {
+          "word": "さようなら",
+          "translation": "Goodbye",
+          "exampleSentence": "さようなら、また明日。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 1
+        },
+        {
+          "word": "またね",
+          "translation": "See you later",
+          "exampleSentence": "またね、友達。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 1
+        },
+        {
+          "word": "ください",
+          "translation": "Please",
+          "exampleSentence": "コーヒーをください。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 1
+        },
+        {
+          "word": "ありがとう",
+          "translation": "Thank you",
+          "exampleSentence": "助けてくれてありがとう。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 1
+        },
+        {
+          "word": "どういたしまして",
+          "translation": "You're welcome",
+          "exampleSentence": "どういたしまして、喜んでです。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 1
+        },
+        {
+          "word": "すみません",
+          "translation": "Excuse me/Sorry",
+          "exampleSentence": "すみません、もう一度言ってください。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 1
+        },
+        {
+          "word": "私は",
+          "translation": "I am",
+          "exampleSentence": "私は田中です。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 1
+        },
+        {
+          "word": "あなたの名前は？",
+          "translation": "What is your name?",
+          "exampleSentence": "あなたの名前は何ですか？",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 1
+        },
+        {
+          "word": "初めまして",
+          "translation": "Nice to meet you",
+          "exampleSentence": "初めまして、よろしくお願いします。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 1
+        },
+        {
+          "word": "元気ですか？",
+          "translation": "How are you?",
+          "exampleSentence": "元気ですか、今日は？",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 1
+        },
+        {
+          "word": "元気です",
+          "translation": "I'm doing well",
+          "exampleSentence": "元気です、ありがとう。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 1
+        },
+        {
+          "word": "ゼロ",
+          "translation": "Zero",
+          "exampleSentence": "気温はゼロ度です。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 2
+        },
+        {
+          "word": "一",
+          "translation": "One",
+          "exampleSentence": "私は猫が一匹います。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 2
+        },
+        {
+          "word": "二",
+          "translation": "Two",
+          "exampleSentence": "私は犬が二匹います。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 2
+        },
+        {
+          "word": "三",
+          "translation": "Three",
+          "exampleSentence": "三枚のチケットが必要です。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 2
+        },
+        {
+          "word": "四",
+          "translation": "Four",
+          "exampleSentence": "テーブルに四つの椅子があります。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 2
+        },
+        {
+          "word": "五",
+          "translation": "Five",
+          "exampleSentence": "今は五時です。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 2
+        },
+        {
+          "word": "六",
+          "translation": "Six",
+          "exampleSentence": "バスは六時に来ます。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 2
+        },
+        {
+          "word": "七",
+          "translation": "Seven",
+          "exampleSentence": "一週間は七日です。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 2
+        },
+        {
+          "word": "八",
+          "translation": "Eight",
+          "exampleSentence": "私は一日八時間働きます。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 2
+        },
+        {
+          "word": "九",
+          "translation": "Nine",
+          "exampleSentence": "私は九歳です。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 2
+        },
+        {
+          "word": "十",
+          "translation": "Ten",
+          "exampleSentence": "私は十本の指があります。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 2
+        },
+        {
+          "word": "父",
+          "translation": "Father",
+          "exampleSentence": "私の父はエンジニアです。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 3
+        },
+        {
+          "word": "母",
+          "translation": "Mother",
+          "exampleSentence": "私の母は病院で働きます。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 3
+        },
+        {
+          "word": "兄",
+          "translation": "Older brother",
+          "exampleSentence": "私の兄は私より年上です。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 3
+        },
+        {
+          "word": "妹",
+          "translation": "Younger sister",
+          "exampleSentence": "私の妹は医学を勉強しています。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 3
+        },
+        {
+          "word": "祖父",
+          "translation": "Grandfather",
+          "exampleSentence": "私の祖父は八十歳です。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 3
+        },
+        {
+          "word": "祖母",
+          "translation": "Grandmother",
+          "exampleSentence": "私の祖母はとても上手に料理します。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 3
+        },
+        {
+          "word": "息子",
+          "translation": "Son",
+          "exampleSentence": "私は五歳の息子がいます。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 3
+        },
+        {
+          "word": "娘",
+          "translation": "Daughter",
+          "exampleSentence": "私の娘は弁護士です。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 3
+        },
+        {
+          "word": "食べ物",
+          "translation": "Food",
+          "exampleSentence": "日本の食べ物は美味しいです。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 4
+        },
+        {
+          "word": "パン",
+          "translation": "Bread",
+          "exampleSentence": "パン屋でパンを買いました。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 4
+        },
+        {
+          "word": "水",
+          "translation": "Water",
+          "exampleSentence": "毎日水を飲みます。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 4
+        },
+        {
+          "word": "牛乳",
+          "translation": "Milk",
+          "exampleSentence": "牛乳は骨に良いです。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 4
+        },
+        {
+          "word": "チーズ",
+          "translation": "Cheese",
+          "exampleSentence": "日本のチーズが好きです。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 4
+        },
+        {
+          "word": "りんご",
+          "translation": "Apple",
+          "exampleSentence": "毎朝りんごを食べます。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 4
+        },
+        {
+          "word": "バナナ",
+          "translation": "Banana",
+          "exampleSentence": "バナナはカリウムが豊富です。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 4
+        },
+        {
+          "word": "肉",
+          "translation": "Meat",
+          "exampleSentence": "赤肉は栄養があります。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 4
+        },
+        {
+          "word": "鶏肉",
+          "translation": "Chicken",
+          "exampleSentence": "日曜日にローストチキンを作ります。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 4
+        },
+        {
+          "word": "魚",
+          "translation": "Fish",
+          "exampleSentence": "魚は健康的です。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 4
+        },
+        {
+          "word": "米",
+          "translation": "Rice",
+          "exampleSentence": "今日は野菜と一緒に米を料理します。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 4
+        },
+        {
+          "word": "麺",
+          "translation": "Noodles",
+          "exampleSentence": "日本の麺は美味しいです。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 4
+        },
+        {
+          "word": "レストラン",
+          "translation": "Restaurant",
+          "exampleSentence": "今夜レストランに行きましょう。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 4
+        },
+        {
+          "word": "ウェイター",
+          "translation": "Waiter",
+          "exampleSentence": "ウェイターが請求書を持ってきます。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 4
+        },
+        {
+          "word": "メニュー",
+          "translation": "Menu",
+          "exampleSentence": "メニューを見てもいいですか？",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 4
+        },
+        {
+          "word": "通り",
+          "translation": "Street",
+          "exampleSentence": "私はメイン通りに住んでいます。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 5
+        },
+        {
+          "word": "車",
+          "translation": "Car",
+          "exampleSentence": "私の車は青いです。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 5
+        },
+        {
+          "word": "バス",
+          "translation": "Bus",
+          "exampleSentence": "仕事に行くためにバスに乗ります。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 5
+        },
+        {
+          "word": "電車",
+          "translation": "Train",
+          "exampleSentence": "電車は八時に出発します。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 5
+        },
+        {
+          "word": "飛行機",
+          "translation": "Airplane",
+          "exampleSentence": "飛行機で東京に行きます。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 5
+        },
+        {
+          "word": "旅行",
+          "translation": "Trip",
+          "exampleSentence": "大阪への旅行をしています。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 5
+        },
+        {
+          "word": "右",
+          "translation": "Right",
+          "exampleSentence": "角で右に曲がってください。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 5
+        },
+        {
+          "word": "左",
+          "translation": "Left",
+          "exampleSentence": "お店は左側にあります。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 5
+        },
+        {
+          "word": "お金",
+          "translation": "Money",
+          "exampleSentence": "旅行のためにお金が必要です。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 6
+        },
+        {
+          "word": "価格",
+          "translation": "Price",
+          "exampleSentence": "この本の価格はいくらですか？",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 6
+        },
+        {
+          "word": "店",
+          "translation": "Store",
+          "exampleSentence": "服を買うために店に行きます。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 6
+        },
+        {
+          "word": "買う",
+          "translation": "To buy",
+          "exampleSentence": "市場で果物を買います。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 6
+        },
+        {
+          "word": "売る",
+          "translation": "To sell",
+          "exampleSentence": "古い車を売ります。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 6
+        },
+        {
+          "word": "高い",
+          "translation": "Expensive",
+          "exampleSentence": "このレストランはとても高いです。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 6
+        },
+        {
+          "word": "安い",
+          "translation": "Cheap",
+          "exampleSentence": "安いホテルを見つけました。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 6
+        },
+        {
+          "word": "寝る",
+          "translation": "To sleep",
+          "exampleSentence": "毎晩八時間寝ます。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 7
+        },
+        {
+          "word": "朝食",
+          "translation": "Breakfast",
+          "exampleSentence": "七時に朝食を食べます。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 7
+        },
+        {
+          "word": "昼食",
+          "translation": "Lunch",
+          "exampleSentence": "昼食は正午です。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 7
+        },
+        {
+          "word": "夕食",
+          "translation": "Dinner",
+          "exampleSentence": "夕食は八時です。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 7
+        },
+        {
+          "word": "働く",
+          "translation": "To work",
+          "exampleSentence": "私はオフィスで働きます。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 7
+        },
+        {
+          "word": "勉強する",
+          "translation": "To study",
+          "exampleSentence": "毎日日本語を勉強します。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 7
+        },
+        {
+          "word": "遊ぶ",
+          "translation": "To play",
+          "exampleSentence": "土曜日にサッカーをします。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 7
+        },
+        {
+          "word": "読む",
+          "translation": "To read",
+          "exampleSentence": "毎週本を読みます。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 7
+        },
+        {
+          "word": "書く",
+          "translation": "To write",
+          "exampleSentence": "友達に手紙を書きます。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 7
+        },
+        {
+          "word": "話す",
+          "translation": "To speak",
+          "exampleSentence": "友達と日本語で話します。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 7
+        },
+        {
+          "word": "聞く",
+          "translation": "To listen",
+          "exampleSentence": "クラシック音楽を聞きます。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 7
+        },
+        {
+          "word": "見る",
+          "translation": "To watch",
+          "exampleSentence": "金曜日に映画を見ます。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 7
+        },
+        {
+          "word": "雨",
+          "translation": "Rain",
+          "exampleSentence": "今日は雨です。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 8
+        },
+        {
+          "word": "雪",
+          "translation": "Snow",
+          "exampleSentence": "雪が山を覆っています。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 8
+        },
+        {
+          "word": "太陽",
+          "translation": "Sun",
+          "exampleSentence": "太陽が今日輝いています。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 8
+        },
+        {
+          "word": "雲",
+          "translation": "Cloud",
+          "exampleSentence": "空に雲があります。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 8
+        },
+        {
+          "word": "寒い",
+          "translation": "Cold",
+          "exampleSentence": "冬は寒いです。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 8
+        },
+        {
+          "word": "暑い",
+          "translation": "Hot",
+          "exampleSentence": "夏はとても暑いです。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 8
+        },
+        {
+          "word": "春",
+          "translation": "Spring",
+          "exampleSentence": "春は美しいです。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 8
+        },
+        {
+          "word": "夏",
+          "translation": "Summer",
+          "exampleSentence": "私は夏が大好きです。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 8
+        },
+        {
+          "word": "秋",
+          "translation": "Fall/Autumn",
+          "exampleSentence": "秋に葉が落ちます。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 8
+        },
+        {
+          "word": "冬",
+          "translation": "Winter",
+          "exampleSentence": "冬は寒いです。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 8
+        },
+        {
+          "word": "サッカー",
+          "translation": "Football/Soccer",
+          "exampleSentence": "私はチームでサッカーをします。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 9
+        },
+        {
+          "word": "テニス",
+          "translation": "Tennis",
+          "exampleSentence": "木曜日にテニスをします。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 9
+        },
+        {
+          "word": "水泳",
+          "translation": "Swimming",
+          "exampleSentence": "水泳は良い運動です。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 9
+        },
+        {
+          "word": "音楽",
+          "translation": "Music",
+          "exampleSentence": "私はクラシック音楽が大好きです。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 9
+        },
+        {
+          "word": "ギター",
+          "translation": "Guitar",
+          "exampleSentence": "八歳からギターを弾いています。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 9
+        },
+        {
+          "word": "映画",
+          "translation": "Movie",
+          "exampleSentence": "素晴らしい映画を見ました。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 9
+        },
+        {
+          "word": "本",
+          "translation": "Book",
+          "exampleSentence": "面白い本を読んでいます。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 9
+        },
+        {
+          "word": "絵画",
+          "translation": "Painting",
+          "exampleSentence": "現代絵画に興味があります。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 9
+        },
+        {
+          "word": "ダンス",
+          "translation": "Dance",
+          "exampleSentence": "クラシックダンスを学んでいます。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 9
+        },
+        {
+          "word": "パーティー",
+          "translation": "Party",
+          "exampleSentence": "土曜日にパーティーがあります。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "ja",
+          "unit": 9
+        },
+        {
+          "word": "寿司",
+          "translation": "Sushi",
+          "exampleSentence": "日本の寿司は美味しいです。",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "ja",
+          "unit": 10
+        },
+        {
+          "word": "天ぷら",
+          "translation": "Tempura",
+          "exampleSentence": "天ぷらは伝統的な料理です。",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "ja",
+          "unit": 10
+        },
+        {
+          "word": "味噌汁",
+          "translation": "Miso soup",
+          "exampleSentence": "毎朝味噌汁を飲みます。",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "ja",
+          "unit": 10
+        },
+        {
+          "word": "日本酒",
+          "translation": "Sake",
+          "exampleSentence": "日本酒は特別な飲み物です。",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "ja",
+          "unit": 10
+        },
+        {
+          "word": "茶",
+          "translation": "Tea",
+          "exampleSentence": "日本茶が好きです。",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "ja",
+          "unit": 10
+        },
+        {
+          "word": "神社",
+          "translation": "Shrine",
+          "exampleSentence": "神社は静かな場所です。",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "ja",
+          "unit": 10
+        },
+        {
+          "word": "寺",
+          "translation": "Temple",
+          "exampleSentence": "古い寺を訪れました。",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "ja",
+          "unit": 10
+        },
+        {
+          "word": "富士山",
+          "translation": "Mount Fuji",
+          "exampleSentence": "富士山は美しいです。",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "ja",
+          "unit": 10
+        },
+        {
+          "word": "桜",
+          "translation": "Cherry blossom",
+          "exampleSentence": "春に桜が咲きます。",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "ja",
+          "unit": 10
+        },
+        {
+          "word": "武道",
+          "translation": "Martial arts",
+          "exampleSentence": "武道は日本の伝統です。",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "ja",
+          "unit": 10
+        }
+      ]
+    },
+    "mandarin": {
+      "language": "Mandarin Chinese",
+      "languageCode": "zh",
+      "courseOutline": [
+        {
+          "unit": 1,
+          "topic": "问候和自我介绍",
+          "description": "Learn basic greetings, introductions, and polite phrases"
+        },
+        {
+          "unit": 2,
+          "topic": "数字和时间",
+          "description": "Master numbers, telling time, and quantities"
+        },
+        {
+          "unit": 3,
+          "topic": "家庭和关系",
+          "description": "Learn family vocabulary and relationships"
+        },
+        {
+          "unit": 4,
+          "topic": "食物和饮食",
+          "description": "Explore food vocabulary and dining phrases"
+        },
+        {
+          "unit": 5,
+          "topic": "旅行和交通",
+          "description": "Learn travel and transportation vocabulary"
+        },
+        {
+          "unit": 6,
+          "topic": "购物和金钱",
+          "description": "Master shopping and money-related terms"
+        },
+        {
+          "unit": 7,
+          "topic": "日常活动",
+          "description": "Learn everyday activities and routines"
+        },
+        {
+          "unit": 8,
+          "topic": "天气和季节",
+          "description": "Understand weather and seasonal vocabulary"
+        },
+        {
+          "unit": 9,
+          "topic": "运动和爱好",
+          "description": "Explore sports and leisure activities"
+        },
+        {
+          "unit": 10,
+          "topic": "中国文化",
+          "description": "Learn about Chinese culture and traditions"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "你好",
+          "translation": "Hello",
+          "exampleSentence": "你好，你好吗？",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 1
+        },
+        {
+          "word": "早上好",
+          "translation": "Good morning",
+          "exampleSentence": "早上好，你睡得好吗？",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 1
+        },
+        {
+          "word": "晚上好",
+          "translation": "Good evening",
+          "exampleSentence": "晚上好，今天怎么样？",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 1
+        },
+        {
+          "word": "晚安",
+          "translation": "Good night",
+          "exampleSentence": "晚安，睡得好。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 1
+        },
+        {
+          "word": "再见",
+          "translation": "Goodbye",
+          "exampleSentence": "再见，明天见。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 1
+        },
+        {
+          "word": "待会见",
+          "translation": "See you later",
+          "exampleSentence": "待会见，朋友。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 1
+        },
+        {
+          "word": "请",
+          "translation": "Please",
+          "exampleSentence": "请给我一杯咖啡。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 1
+        },
+        {
+          "word": "谢谢",
+          "translation": "Thank you",
+          "exampleSentence": "谢谢你的帮助。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 1
+        },
+        {
+          "word": "不客气",
+          "translation": "You're welcome",
+          "exampleSentence": "不客气，我很高兴。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 1
+        },
+        {
+          "word": "对不起",
+          "translation": "Sorry/Excuse me",
+          "exampleSentence": "对不起，请再说一遍。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 1
+        },
+        {
+          "word": "我叫",
+          "translation": "My name is",
+          "exampleSentence": "我叫李明。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 1
+        },
+        {
+          "word": "你叫什么名字？",
+          "translation": "What is your name?",
+          "exampleSentence": "你叫什么名字？",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 1
+        },
+        {
+          "word": "很高兴认识你",
+          "translation": "Nice to meet you",
+          "exampleSentence": "很高兴认识你。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 1
+        },
+        {
+          "word": "你好吗？",
+          "translation": "How are you?",
+          "exampleSentence": "你好吗，今天怎么样？",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 1
+        },
+        {
+          "word": "我很好",
+          "translation": "I'm doing well",
+          "exampleSentence": "我很好，谢谢。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 1
+        },
+        {
+          "word": "零",
+          "translation": "Zero",
+          "exampleSentence": "温度是零度。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 2
+        },
+        {
+          "word": "一",
+          "translation": "One",
+          "exampleSentence": "我有一只猫。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 2
+        },
+        {
+          "word": "二",
+          "translation": "Two",
+          "exampleSentence": "我有两只狗。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 2
+        },
+        {
+          "word": "三",
+          "translation": "Three",
+          "exampleSentence": "我需要三张票。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 2
+        },
+        {
+          "word": "四",
+          "translation": "Four",
+          "exampleSentence": "桌子上有四把椅子。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 2
+        },
+        {
+          "word": "五",
+          "translation": "Five",
+          "exampleSentence": "现在是五点。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 2
+        },
+        {
+          "word": "六",
+          "translation": "Six",
+          "exampleSentence": "公交车六点来。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 2
+        },
+        {
+          "word": "七",
+          "translation": "Seven",
+          "exampleSentence": "一周有七天。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 2
+        },
+        {
+          "word": "八",
+          "translation": "Eight",
+          "exampleSentence": "我每天工作八小时。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 2
+        },
+        {
+          "word": "九",
+          "translation": "Nine",
+          "exampleSentence": "我九岁。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 2
+        },
+        {
+          "word": "十",
+          "translation": "Ten",
+          "exampleSentence": "我有十根手指。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 2
+        },
+        {
+          "word": "父亲",
+          "translation": "Father",
+          "exampleSentence": "我的父亲是工程师。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 3
+        },
+        {
+          "word": "母亲",
+          "translation": "Mother",
+          "exampleSentence": "我的母亲在医院工作。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 3
+        },
+        {
+          "word": "哥哥",
+          "translation": "Older brother",
+          "exampleSentence": "我的哥哥比我大。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 3
+        },
+        {
+          "word": "妹妹",
+          "translation": "Younger sister",
+          "exampleSentence": "我的妹妹在学医。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 3
+        },
+        {
+          "word": "祖父",
+          "translation": "Grandfather",
+          "exampleSentence": "我的祖父八十岁。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 3
+        },
+        {
+          "word": "祖母",
+          "translation": "Grandmother",
+          "exampleSentence": "我的祖母做饭很好。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 3
+        },
+        {
+          "word": "儿子",
+          "translation": "Son",
+          "exampleSentence": "我有一个五岁的儿子。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 3
+        },
+        {
+          "word": "女儿",
+          "translation": "Daughter",
+          "exampleSentence": "我的女儿是律师。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 3
+        },
+        {
+          "word": "食物",
+          "translation": "Food",
+          "exampleSentence": "中国食物很好吃。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 4
+        },
+        {
+          "word": "面包",
+          "translation": "Bread",
+          "exampleSentence": "我在面包店买了面包。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 4
+        },
+        {
+          "word": "水",
+          "translation": "Water",
+          "exampleSentence": "我每天喝水。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 4
+        },
+        {
+          "word": "牛奶",
+          "translation": "Milk",
+          "exampleSentence": "牛奶对骨头好。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 4
+        },
+        {
+          "word": "奶酪",
+          "translation": "Cheese",
+          "exampleSentence": "我喜欢中国奶酪。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 4
+        },
+        {
+          "word": "苹果",
+          "translation": "Apple",
+          "exampleSentence": "我每天早上吃苹果。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 4
+        },
+        {
+          "word": "香蕉",
+          "translation": "Banana",
+          "exampleSentence": "香蕉含有丰富的钾。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 4
+        },
+        {
+          "word": "肉",
+          "translation": "Meat",
+          "exampleSentence": "红肉有营养。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 4
+        },
+        {
+          "word": "鸡肉",
+          "translation": "Chicken",
+          "exampleSentence": "我周日做烤鸡。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 4
+        },
+        {
+          "word": "鱼",
+          "translation": "Fish",
+          "exampleSentence": "鱼很健康。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 4
+        },
+        {
+          "word": "米",
+          "translation": "Rice",
+          "exampleSentence": "今天我用蔬菜做米。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 4
+        },
+        {
+          "word": "面条",
+          "translation": "Noodles",
+          "exampleSentence": "中国面条很好吃。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 4
+        },
+        {
+          "word": "餐厅",
+          "translation": "Restaurant",
+          "exampleSentence": "今晚我们去餐厅。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 4
+        },
+        {
+          "word": "服务员",
+          "translation": "Waiter",
+          "exampleSentence": "服务员拿来账单。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 4
+        },
+        {
+          "word": "菜单",
+          "translation": "Menu",
+          "exampleSentence": "我可以看菜单吗？",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 4
+        },
+        {
+          "word": "街道",
+          "translation": "Street",
+          "exampleSentence": "我住在主街。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 5
+        },
+        {
+          "word": "汽车",
+          "translation": "Car",
+          "exampleSentence": "我的汽车是蓝色的。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 5
+        },
+        {
+          "word": "公交车",
+          "translation": "Bus",
+          "exampleSentence": "我坐公交车去上班。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 5
+        },
+        {
+          "word": "火车",
+          "translation": "Train",
+          "exampleSentence": "火车八点出发。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 5
+        },
+        {
+          "word": "飞机",
+          "translation": "Airplane",
+          "exampleSentence": "我坐飞机去北京。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 5
+        },
+        {
+          "word": "旅行",
+          "translation": "Trip",
+          "exampleSentence": "我去上海旅行。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 5
+        },
+        {
+          "word": "右",
+          "translation": "Right",
+          "exampleSentence": "在角落右转。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 5
+        },
+        {
+          "word": "左",
+          "translation": "Left",
+          "exampleSentence": "商店在左边。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 5
+        },
+        {
+          "word": "钱",
+          "translation": "Money",
+          "exampleSentence": "我需要钱去旅行。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 6
+        },
+        {
+          "word": "价格",
+          "translation": "Price",
+          "exampleSentence": "这本书的价格是多少？",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 6
+        },
+        {
+          "word": "商店",
+          "translation": "Store",
+          "exampleSentence": "我去商店买衣服。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 6
+        },
+        {
+          "word": "买",
+          "translation": "To buy",
+          "exampleSentence": "我在市场买水果。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 6
+        },
+        {
+          "word": "卖",
+          "translation": "To sell",
+          "exampleSentence": "我卖我的旧车。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 6
+        },
+        {
+          "word": "贵",
+          "translation": "Expensive",
+          "exampleSentence": "这家餐厅很贵。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 6
+        },
+        {
+          "word": "便宜",
+          "translation": "Cheap",
+          "exampleSentence": "我找到了便宜的酒店。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 6
+        },
+        {
+          "word": "睡觉",
+          "translation": "To sleep",
+          "exampleSentence": "我每晚睡八小时。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 7
+        },
+        {
+          "word": "早餐",
+          "translation": "Breakfast",
+          "exampleSentence": "我七点吃早餐。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 7
+        },
+        {
+          "word": "午餐",
+          "translation": "Lunch",
+          "exampleSentence": "午餐是中午。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 7
+        },
+        {
+          "word": "晚餐",
+          "translation": "Dinner",
+          "exampleSentence": "我们八点吃晚餐。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 7
+        },
+        {
+          "word": "工作",
+          "translation": "To work",
+          "exampleSentence": "我在办公室工作。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 7
+        },
+        {
+          "word": "学习",
+          "translation": "To study",
+          "exampleSentence": "我每天学习中文。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 7
+        },
+        {
+          "word": "玩",
+          "translation": "To play",
+          "exampleSentence": "我周六踢足球。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 7
+        },
+        {
+          "word": "读",
+          "translation": "To read",
+          "exampleSentence": "我每周读一本书。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 7
+        },
+        {
+          "word": "写",
+          "translation": "To write",
+          "exampleSentence": "我给朋友写信。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 7
+        },
+        {
+          "word": "说",
+          "translation": "To speak",
+          "exampleSentence": "我和朋友说中文。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 7
+        },
+        {
+          "word": "听",
+          "translation": "To listen",
+          "exampleSentence": "我听古典音乐。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 7
+        },
+        {
+          "word": "看",
+          "translation": "To watch",
+          "exampleSentence": "我周五看电影。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 7
+        },
+        {
+          "word": "雨",
+          "translation": "Rain",
+          "exampleSentence": "今天下雨。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 8
+        },
+        {
+          "word": "雪",
+          "translation": "Snow",
+          "exampleSentence": "雪覆盖了山。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 8
+        },
+        {
+          "word": "太阳",
+          "translation": "Sun",
+          "exampleSentence": "太阳今天在闪闪发光。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 8
+        },
+        {
+          "word": "云",
+          "translation": "Cloud",
+          "exampleSentence": "天空中有云。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 8
+        },
+        {
+          "word": "冷",
+          "translation": "Cold",
+          "exampleSentence": "冬天很冷。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 8
+        },
+        {
+          "word": "热",
+          "translation": "Hot",
+          "exampleSentence": "夏天很热。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 8
+        },
+        {
+          "word": "春天",
+          "translation": "Spring",
+          "exampleSentence": "春天很美。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 8
+        },
+        {
+          "word": "夏天",
+          "translation": "Summer",
+          "exampleSentence": "我喜欢夏天。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 8
+        },
+        {
+          "word": "秋天",
+          "translation": "Fall/Autumn",
+          "exampleSentence": "秋天叶子落下。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 8
+        },
+        {
+          "word": "冬天",
+          "translation": "Winter",
+          "exampleSentence": "冬天很冷。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 8
+        },
+        {
+          "word": "足球",
+          "translation": "Football/Soccer",
+          "exampleSentence": "我在队里踢足球。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 9
+        },
+        {
+          "word": "网球",
+          "translation": "Tennis",
+          "exampleSentence": "我周四打网球。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 9
+        },
+        {
+          "word": "游泳",
+          "translation": "Swimming",
+          "exampleSentence": "游泳是很好的运动。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 9
+        },
+        {
+          "word": "音乐",
+          "translation": "Music",
+          "exampleSentence": "我喜欢古典音乐。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 9
+        },
+        {
+          "word": "吉他",
+          "translation": "Guitar",
+          "exampleSentence": "我从八岁开始弹吉他。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 9
+        },
+        {
+          "word": "电影",
+          "translation": "Movie",
+          "exampleSentence": "我们看了一部很好的电影。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 9
+        },
+        {
+          "word": "书",
+          "translation": "Book",
+          "exampleSentence": "我在读一本有趣的书。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 9
+        },
+        {
+          "word": "绘画",
+          "translation": "Painting",
+          "exampleSentence": "我对现代绘画感兴趣。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 9
+        },
+        {
+          "word": "舞蹈",
+          "translation": "Dance",
+          "exampleSentence": "我在学古典舞蹈。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 9
+        },
+        {
+          "word": "派对",
+          "translation": "Party",
+          "exampleSentence": "周六有派对。",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "zh",
+          "unit": 9
+        },
+        {
+          "word": "寿司",
+          "translation": "Sushi",
+          "exampleSentence": "日本寿司很好吃。",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "zh",
+          "unit": 10
+        },
+        {
+          "word": "饺子",
+          "translation": "Dumplings",
+          "exampleSentence": "中国饺子是传统食物。",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "zh",
+          "unit": 10
+        },
+        {
+          "word": "茶",
+          "translation": "Tea",
+          "exampleSentence": "中国茶很有名。",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "zh",
+          "unit": 10
+        },
+        {
+          "word": "酒",
+          "translation": "Alcohol",
+          "exampleSentence": "中国酒是特殊的饮料。",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "zh",
+          "unit": 10
+        },
+        {
+          "word": "咖啡",
+          "translation": "Coffee",
+          "exampleSentence": "我早上喝咖啡。",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "zh",
+          "unit": 10
+        },
+        {
+          "word": "寺庙",
+          "translation": "Temple",
+          "exampleSentence": "寺庙是安静的地方。",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "zh",
+          "unit": 10
+        },
+        {
+          "word": "长城",
+          "translation": "Great Wall",
+          "exampleSentence": "长城很壮观。",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "zh",
+          "unit": 10
+        },
+        {
+          "word": "故宫",
+          "translation": "Forbidden City",
+          "exampleSentence": "故宫是历史建筑。",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "zh",
+          "unit": 10
+        },
+        {
+          "word": "春节",
+          "translation": "Spring Festival",
+          "exampleSentence": "春节是中国最重要的节日。",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "zh",
+          "unit": 10
+        },
+        {
+          "word": "武术",
+          "translation": "Martial arts",
+          "exampleSentence": "武术是中国的传统。",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "zh",
+          "unit": 10
+        }
+      ]
+    },
+    "italian": {
+      "language": "Italian",
+      "languageCode": "it",
+      "courseOutline": [
+        {
+          "unit": 1,
+          "topic": "Saluti e Presentazioni",
+          "description": "Learn basic greetings, introductions, and polite phrases"
+        },
+        {
+          "unit": 2,
+          "topic": "Numeri e Tempo",
+          "description": "Master numbers, telling time, and quantities"
+        },
+        {
+          "unit": 3,
+          "topic": "Famiglia e Relazioni",
+          "description": "Learn family vocabulary and relationships"
+        },
+        {
+          "unit": 4,
+          "topic": "Cibo e Cucina",
+          "description": "Explore food vocabulary and dining phrases"
+        },
+        {
+          "unit": 5,
+          "topic": "Viaggio e Trasporto",
+          "description": "Learn travel and transportation vocabulary"
+        },
+        {
+          "unit": 6,
+          "topic": "Shopping e Soldi",
+          "description": "Master shopping and money-related terms"
+        },
+        {
+          "unit": 7,
+          "topic": "Attività Quotidiane",
+          "description": "Learn everyday activities and routines"
+        },
+        {
+          "unit": 8,
+          "topic": "Tempo e Stagioni",
+          "description": "Understand weather and seasonal vocabulary"
+        },
+        {
+          "unit": 9,
+          "topic": "Sport e Hobby",
+          "description": "Explore sports and leisure activities"
+        },
+        {
+          "unit": 10,
+          "topic": "Cultura Italiana",
+          "description": "Learn about Italian culture and traditions"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "Ciao",
+          "translation": "Hello/Goodbye",
+          "exampleSentence": "Ciao, come stai?",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 1
+        },
+        {
+          "word": "Buongiorno",
+          "translation": "Good morning",
+          "exampleSentence": "Buongiorno, hai dormito bene?",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 1
+        },
+        {
+          "word": "Buonasera",
+          "translation": "Good evening",
+          "exampleSentence": "Buonasera, come è stata la tua giornata?",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 1
+        },
+        {
+          "word": "Buonanotte",
+          "translation": "Good night",
+          "exampleSentence": "Buonanotte, dormi bene.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 1
+        },
+        {
+          "word": "Arrivederci",
+          "translation": "Goodbye",
+          "exampleSentence": "Arrivederci, a presto!",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 1
+        },
+        {
+          "word": "A dopo",
+          "translation": "See you later",
+          "exampleSentence": "A dopo, amico.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 1
+        },
+        {
+          "word": "Per favore",
+          "translation": "Please",
+          "exampleSentence": "Un caffè, per favore.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 1
+        },
+        {
+          "word": "Grazie",
+          "translation": "Thank you",
+          "exampleSentence": "Grazie per il tuo aiuto.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 1
+        },
+        {
+          "word": "Prego",
+          "translation": "You're welcome",
+          "exampleSentence": "Prego, è un piacere.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 1
+        },
+        {
+          "word": "Scusa",
+          "translation": "Sorry/Excuse me",
+          "exampleSentence": "Scusa, puoi ripetere?",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 1
+        },
+        {
+          "word": "Mi chiamo",
+          "translation": "My name is",
+          "exampleSentence": "Mi chiamo Marco.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 1
+        },
+        {
+          "word": "Come ti chiami?",
+          "translation": "What is your name?",
+          "exampleSentence": "Come ti chiami, amico?",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 1
+        },
+        {
+          "word": "Piacere",
+          "translation": "Nice to meet you",
+          "exampleSentence": "Piacere di conoscerti.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 1
+        },
+        {
+          "word": "Come stai?",
+          "translation": "How are you?",
+          "exampleSentence": "Come stai oggi?",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 1
+        },
+        {
+          "word": "Sto bene",
+          "translation": "I'm doing well",
+          "exampleSentence": "Sto bene, grazie.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 1
+        },
+        {
+          "word": "Zero",
+          "translation": "Zero",
+          "exampleSentence": "La temperatura è zero gradi.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 2
+        },
+        {
+          "word": "Uno",
+          "translation": "One",
+          "exampleSentence": "Ho un gatto.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 2
+        },
+        {
+          "word": "Due",
+          "translation": "Two",
+          "exampleSentence": "Ho due cani.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 2
+        },
+        {
+          "word": "Tre",
+          "translation": "Three",
+          "exampleSentence": "Ho bisogno di tre biglietti.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 2
+        },
+        {
+          "word": "Quattro",
+          "translation": "Four",
+          "exampleSentence": "Ci sono quattro sedie al tavolo.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 2
+        },
+        {
+          "word": "Cinque",
+          "translation": "Five",
+          "exampleSentence": "Sono le cinque.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 2
+        },
+        {
+          "word": "Sei",
+          "translation": "Six",
+          "exampleSentence": "L'autobus arriva alle sei.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 2
+        },
+        {
+          "word": "Sette",
+          "translation": "Seven",
+          "exampleSentence": "Una settimana ha sette giorni.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 2
+        },
+        {
+          "word": "Otto",
+          "translation": "Eight",
+          "exampleSentence": "Lavoro otto ore al giorno.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 2
+        },
+        {
+          "word": "Nove",
+          "translation": "Nine",
+          "exampleSentence": "Ho nove anni.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 2
+        },
+        {
+          "word": "Dieci",
+          "translation": "Ten",
+          "exampleSentence": "Ho dieci dita.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 2
+        },
+        {
+          "word": "Padre",
+          "translation": "Father",
+          "exampleSentence": "Mio padre è un ingegnere.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 3
+        },
+        {
+          "word": "Madre",
+          "translation": "Mother",
+          "exampleSentence": "Mia madre lavora in ospedale.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 3
+        },
+        {
+          "word": "Fratello",
+          "translation": "Brother",
+          "exampleSentence": "Mio fratello è più grande di me.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 3
+        },
+        {
+          "word": "Sorella",
+          "translation": "Sister",
+          "exampleSentence": "Mia sorella studia medicina.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 3
+        },
+        {
+          "word": "Nonno",
+          "translation": "Grandfather",
+          "exampleSentence": "Mio nonno ha ottanta anni.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 3
+        },
+        {
+          "word": "Nonna",
+          "translation": "Grandmother",
+          "exampleSentence": "Mia nonna cucina molto bene.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 3
+        },
+        {
+          "word": "Figlio",
+          "translation": "Son",
+          "exampleSentence": "Ho un figlio di cinque anni.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 3
+        },
+        {
+          "word": "Figlia",
+          "translation": "Daughter",
+          "exampleSentence": "Mia figlia è un'avvocata.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 3
+        },
+        {
+          "word": "Cibo",
+          "translation": "Food",
+          "exampleSentence": "Il cibo italiano è delizioso.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 4
+        },
+        {
+          "word": "Pane",
+          "translation": "Bread",
+          "exampleSentence": "Ho comprato il pane in panetteria.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 4
+        },
+        {
+          "word": "Acqua",
+          "translation": "Water",
+          "exampleSentence": "Bevo acqua ogni giorno.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 4
+        },
+        {
+          "word": "Latte",
+          "translation": "Milk",
+          "exampleSentence": "Il latte è buono per le ossa.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 4
+        },
+        {
+          "word": "Formaggio",
+          "translation": "Cheese",
+          "exampleSentence": "Amo il formaggio italiano.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 4
+        },
+        {
+          "word": "Mela",
+          "translation": "Apple",
+          "exampleSentence": "Mangio una mela ogni mattina.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 4
+        },
+        {
+          "word": "Banana",
+          "translation": "Banana",
+          "exampleSentence": "La banana è ricca di potassio.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 4
+        },
+        {
+          "word": "Carne",
+          "translation": "Meat",
+          "exampleSentence": "La carne rossa è nutriente.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 4
+        },
+        {
+          "word": "Pollo",
+          "translation": "Chicken",
+          "exampleSentence": "Preparo il pollo arrosto la domenica.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 4
+        },
+        {
+          "word": "Pesce",
+          "translation": "Fish",
+          "exampleSentence": "Il pesce è sano.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 4
+        },
+        {
+          "word": "Riso",
+          "translation": "Rice",
+          "exampleSentence": "Oggi cucino riso con verdure.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 4
+        },
+        {
+          "word": "Pasta",
+          "translation": "Pasta",
+          "exampleSentence": "La pasta italiana è deliziosa.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 4
+        },
+        {
+          "word": "Ristorante",
+          "translation": "Restaurant",
+          "exampleSentence": "Andiamo al ristorante stasera.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 4
+        },
+        {
+          "word": "Cameriere",
+          "translation": "Waiter",
+          "exampleSentence": "Il cameriere porta il conto.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 4
+        },
+        {
+          "word": "Menu",
+          "translation": "Menu",
+          "exampleSentence": "Posso vedere il menu, per favore?",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 4
+        },
+        {
+          "word": "Via",
+          "translation": "Street",
+          "exampleSentence": "Abito in Via Principale.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 5
+        },
+        {
+          "word": "Auto",
+          "translation": "Car",
+          "exampleSentence": "La mia auto è blu.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 5
+        },
+        {
+          "word": "Autobus",
+          "translation": "Bus",
+          "exampleSentence": "Prendo l'autobus per andare al lavoro.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 5
+        },
+        {
+          "word": "Treno",
+          "translation": "Train",
+          "exampleSentence": "Il treno parte alle otto.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 5
+        },
+        {
+          "word": "Aereo",
+          "translation": "Airplane",
+          "exampleSentence": "Volo in aereo a Roma.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 5
+        },
+        {
+          "word": "Viaggio",
+          "translation": "Trip",
+          "exampleSentence": "Faccio un viaggio a Milano.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 5
+        },
+        {
+          "word": "Destra",
+          "translation": "Right",
+          "exampleSentence": "Gira a destra all'angolo.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 5
+        },
+        {
+          "word": "Sinistra",
+          "translation": "Left",
+          "exampleSentence": "Il negozio è a sinistra.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 5
+        },
+        {
+          "word": "Soldi",
+          "translation": "Money",
+          "exampleSentence": "Ho bisogno di soldi per il viaggio.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 6
+        },
+        {
+          "word": "Prezzo",
+          "translation": "Price",
+          "exampleSentence": "Qual è il prezzo di questo libro?",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 6
+        },
+        {
+          "word": "Negozio",
+          "translation": "Store",
+          "exampleSentence": "Vado al negozio a comprare vestiti.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 6
+        },
+        {
+          "word": "Comprare",
+          "translation": "To buy",
+          "exampleSentence": "Compro frutta al mercato.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 6
+        },
+        {
+          "word": "Vendere",
+          "translation": "To sell",
+          "exampleSentence": "Vendo la mia vecchia auto.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 6
+        },
+        {
+          "word": "Caro",
+          "translation": "Expensive",
+          "exampleSentence": "Questo ristorante è molto caro.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 6
+        },
+        {
+          "word": "Economico",
+          "translation": "Cheap",
+          "exampleSentence": "Ho trovato un hotel economico.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 6
+        },
+        {
+          "word": "Dormire",
+          "translation": "To sleep",
+          "exampleSentence": "Dormo otto ore ogni notte.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 7
+        },
+        {
+          "word": "Colazione",
+          "translation": "Breakfast",
+          "exampleSentence": "Faccio colazione alle sette.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 7
+        },
+        {
+          "word": "Pranzo",
+          "translation": "Lunch",
+          "exampleSentence": "Il pranzo è a mezzogiorno.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 7
+        },
+        {
+          "word": "Cena",
+          "translation": "Dinner",
+          "exampleSentence": "Ceniamo alle otto di sera.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 7
+        },
+        {
+          "word": "Lavorare",
+          "translation": "To work",
+          "exampleSentence": "Lavoro in un ufficio.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 7
+        },
+        {
+          "word": "Studiare",
+          "translation": "To study",
+          "exampleSentence": "Studio italiano ogni giorno.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 7
+        },
+        {
+          "word": "Giocare",
+          "translation": "To play",
+          "exampleSentence": "Gioco a calcio il sabato.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 7
+        },
+        {
+          "word": "Leggere",
+          "translation": "To read",
+          "exampleSentence": "Leggo un libro ogni settimana.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 7
+        },
+        {
+          "word": "Scrivere",
+          "translation": "To write",
+          "exampleSentence": "Scrivo lettere ai miei amici.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 7
+        },
+        {
+          "word": "Parlare",
+          "translation": "To speak",
+          "exampleSentence": "Parlo italiano con i miei amici.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 7
+        },
+        {
+          "word": "Ascoltare",
+          "translation": "To listen",
+          "exampleSentence": "Ascolto musica classica.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 7
+        },
+        {
+          "word": "Guardare",
+          "translation": "To watch",
+          "exampleSentence": "Guardo film il venerdì.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 7
+        },
+        {
+          "word": "Pioggia",
+          "translation": "Rain",
+          "exampleSentence": "C'è pioggia oggi.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 8
+        },
+        {
+          "word": "Neve",
+          "translation": "Snow",
+          "exampleSentence": "La neve copre le montagne.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 8
+        },
+        {
+          "word": "Sole",
+          "translation": "Sun",
+          "exampleSentence": "Il sole splende oggi.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 8
+        },
+        {
+          "word": "Nuvola",
+          "translation": "Cloud",
+          "exampleSentence": "Ci sono nuvole nel cielo.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 8
+        },
+        {
+          "word": "Freddo",
+          "translation": "Cold",
+          "exampleSentence": "Fa freddo in inverno.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 8
+        },
+        {
+          "word": "Caldo",
+          "translation": "Hot",
+          "exampleSentence": "Fa molto caldo in estate.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 8
+        },
+        {
+          "word": "Primavera",
+          "translation": "Spring",
+          "exampleSentence": "La primavera è bellissima.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 8
+        },
+        {
+          "word": "Estate",
+          "translation": "Summer",
+          "exampleSentence": "Amo l'estate.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 8
+        },
+        {
+          "word": "Autunno",
+          "translation": "Fall/Autumn",
+          "exampleSentence": "Le foglie cadono in autunno.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 8
+        },
+        {
+          "word": "Inverno",
+          "translation": "Winter",
+          "exampleSentence": "L'inverno è freddo.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 8
+        },
+        {
+          "word": "Calcio",
+          "translation": "Football/Soccer",
+          "exampleSentence": "Gioco a calcio nella squadra.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 9
+        },
+        {
+          "word": "Tennis",
+          "translation": "Tennis",
+          "exampleSentence": "Gioco a tennis il giovedì.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 9
+        },
+        {
+          "word": "Nuoto",
+          "translation": "Swimming",
+          "exampleSentence": "Il nuoto è un buon esercizio.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 9
+        },
+        {
+          "word": "Musica",
+          "translation": "Music",
+          "exampleSentence": "Amo la musica classica.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 9
+        },
+        {
+          "word": "Chitarra",
+          "translation": "Guitar",
+          "exampleSentence": "Suono la chitarra da otto anni.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 9
+        },
+        {
+          "word": "Film",
+          "translation": "Movie",
+          "exampleSentence": "Abbiamo visto un film eccellente.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 9
+        },
+        {
+          "word": "Libro",
+          "translation": "Book",
+          "exampleSentence": "Sto leggendo un libro interessante.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 9
+        },
+        {
+          "word": "Pittura",
+          "translation": "Painting",
+          "exampleSentence": "Mi interessa la pittura moderna.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 9
+        },
+        {
+          "word": "Danza",
+          "translation": "Dance",
+          "exampleSentence": "Sto imparando la danza classica.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 9
+        },
+        {
+          "word": "Festa",
+          "translation": "Party",
+          "exampleSentence": "C'è una festa sabato.",
+          "difficultyLevel": "BEGINNER",
+          "languageCode": "it",
+          "unit": 9
+        },
+        {
+          "word": "Pizza",
+          "translation": "Pizza",
+          "exampleSentence": "La pizza italiana è deliziosa.",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "it",
+          "unit": 10
+        },
+        {
+          "word": "Spaghetti",
+          "translation": "Spaghetti",
+          "exampleSentence": "Gli spaghetti sono un piatto tradizionale.",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "it",
+          "unit": 10
+        },
+        {
+          "word": "Vino",
+          "translation": "Wine",
+          "exampleSentence": "Il vino italiano è eccellente.",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "it",
+          "unit": 10
+        },
+        {
+          "word": "Espresso",
+          "translation": "Espresso",
+          "exampleSentence": "Bevo un espresso al mattino.",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "it",
+          "unit": 10
+        },
+        {
+          "word": "Gelato",
+          "translation": "Ice cream",
+          "exampleSentence": "Mi piace il gelato italiano.",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "it",
+          "unit": 10
+        },
+        {
+          "word": "Colosseo",
+          "translation": "Colosseum",
+          "exampleSentence": "Il Colosseo è un monumento storico.",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "it",
+          "unit": 10
+        },
+        {
+          "word": "Vaticano",
+          "translation": "Vatican",
+          "exampleSentence": "Il Vaticano è una città-stato.",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "it",
+          "unit": 10
+        },
+        {
+          "word": "Venezia",
+          "translation": "Venice",
+          "exampleSentence": "Venezia è una città bellissima.",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "it",
+          "unit": 10
+        },
+        {
+          "word": "Carnevale",
+          "translation": "Carnival",
+          "exampleSentence": "Il Carnevale è una festa italiana.",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "it",
+          "unit": 10
+        },
+        {
+          "word": "Opera",
+          "translation": "Opera",
+          "exampleSentence": "L'opera italiana è famosa nel mondo.",
+          "difficultyLevel": "ELEMENTARY",
+          "languageCode": "it",
+          "unit": 10
+        }
+      ]
+    }
+  }
+}
